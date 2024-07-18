@@ -1,0 +1,40 @@
+.social-card {
+    background-color: #ffe5e5; /* Color de fondo rosado */
+    padding: 16px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+  }
+  
+  .label {
+    font-weight: bold;
+    color: #b30000; /* Color del texto */
+  }
+  
+  .value {
+    display: block;
+    margin-top: 8px;
+    color: #b30000; /* Color del texto */
+  }
+  
+  .social-card2 {
+    background-color: #fff3cd; /* Color de fondo rosado */
+    padding: 16px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+  }
+  
+  .label2 {
+    font-weight: bold;
+    color: #856404; /* Color del texto */
+  }
+  
+  .value2 {
+    display: block;
+    margin-top: 8px;
+    color: #856404; /* Color del texto */
+  }
+
+  
+
+  .btn-primary.disabled {
+    pointer-events: none;
+    opacity: 0.6;
+  }

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">infurbanistica</string>
+    <string name="title_activity_main">infurbanistica</string>
+    <string name="package_name">io.infurbanistica.starter</string>
+    <string name="custom_url_scheme">io.infurbanistica.starter</string>
+</resources>

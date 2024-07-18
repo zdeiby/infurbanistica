@@ -1,0 +1,127 @@
+[
+	{
+		"id" : 1,
+		"descripcion" : "1 Popular",
+		"estado" : 1
+	},
+	{
+		"id" : 2,
+		"descripcion" : "2 Santa Cruz",
+		"estado" : 1
+	},
+	{
+		"id" : 3,
+		"descripcion" : "3 Manrique",
+		"estado" : 1
+	},
+	{
+		"id" : 4,
+		"descripcion" : "4 Aranjuez",
+		"estado" : 1
+	},
+	{
+		"id" : 5,
+		"descripcion" : "5 Castilla",
+		"estado" : 1
+	},
+	{
+		"id" : 6,
+		"descripcion" : "6 Doce de Octubre",
+		"estado" : 1
+	},
+	{
+		"id" : 7,
+		"descripcion" : "7 Robledo",
+		"estado" : 1
+	},
+	{
+		"id" : 8,
+		"descripcion" : "8 Villa Hermosa",
+		"estado" : 1
+	},
+	{
+		"id" : 9,
+		"descripcion" : "9 Buenos Aires",
+		"estado" : 1
+	},
+	{
+		"id" : 10,
+		"descripcion" : "10 La Candelaria",
+		"estado" : 1
+	},
+	{
+		"id" : 11,
+		"descripcion" : "11 Laureles Estadio",
+		"estado" : 1
+	},
+	{
+		"id" : 12,
+		"descripcion" : "12 La América",
+		"estado" : 1
+	},
+	{
+		"id" : 13,
+		"descripcion" : "13 San Javier",
+		"estado" : 1
+	},
+	{
+		"id" : 14,
+		"descripcion" : "14 El Poblado",
+		"estado" : 1
+	},
+	{
+		"id" : 15,
+		"descripcion" : "15 Guayabal",
+		"estado" : 1
+	},
+	{
+		"id" : 16,
+		"descripcion" : "16 Belén",
+		"estado" : 1
+	},
+	{
+		"id" : 17,
+		"descripcion" : "17 Ciudadela",
+		"estado" : 1
+	},
+	{
+		"id" : 50,
+		"descripcion" : "50 Palmitas",
+		"estado" : 1
+	},
+	{
+		"id" : 60,
+		"descripcion" : "60 San Cristóbal",
+		"estado" : 1
+	},
+	{
+		"id" : 70,
+		"descripcion" : "70 Altavista",
+		"estado" : 1
+	},
+	{
+		"id" : 80,
+		"descripcion" : "80 San Antonio de Prado",
+		"estado" : 1
+	},
+	{
+		"id" : 90,
+		"descripcion" : "90 Santa Elena",
+		"estado" : 1
+	},
+	{
+		"id" : 91,
+		"descripcion" : "Otro",
+		"estado" : 1
+	},
+	{
+		"id" : 120,
+		"descripcion" : "20 - FUERA DE MEDELLIN",
+		"estado" : 1
+	},
+	{
+		"id" : 121,
+		"descripcion" : "21 - FUERA DE ANTIOQUIA",
+		"estado" : 1
+	}
+]

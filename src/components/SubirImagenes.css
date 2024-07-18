@@ -1,0 +1,19 @@
+.modal-backdropnew {
+    position: inherit;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparente */
+    z-index: 1040; /* Menor que el modal pero mayor que el contenido */
+}
+
+.modalnew {
+    position: inherit;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el modal exactamente */
+    z-index: 1050; /* Asegura que el modal esté sobre el backdrop */
+    width: auto; /* O un ancho específico si es necesario */
+    max-width: 90%; /* Ajusta según necesidades */
+}

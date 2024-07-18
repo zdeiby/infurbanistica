@@ -1,0 +1,2036 @@
+[
+	{
+		"id" : 101,
+		"descripcion" : "Santo Domingo Savio Nº 1-101",
+		"comuna" : 1,
+		"estado" : 1
+	},
+	{
+		"id" : 102,
+		"descripcion" : "Santo Domingo Savio Nº 2-102",
+		"comuna" : 1,
+		"estado" : 1
+	},
+	{
+		"id" : 103,
+		"descripcion" : "Popular-103",
+		"comuna" : 1,
+		"estado" : 1
+	},
+	{
+		"id" : 104,
+		"descripcion" : "Granizal-104",
+		"comuna" : 1,
+		"estado" : 1
+	},
+	{
+		"id" : 105,
+		"descripcion" : "Moscú Nº 2-105",
+		"comuna" : 1,
+		"estado" : 1
+	},
+	{
+		"id" : 106,
+		"descripcion" : "Villa de Guadalupe-106",
+		"comuna" : 1,
+		"estado" : 1
+	},
+	{
+		"id" : 107,
+		"descripcion" : "San Pablo-107",
+		"comuna" : 1,
+		"estado" : 1
+	},
+	{
+		"id" : 108,
+		"descripcion" : "El Compromiso-108",
+		"comuna" : 1,
+		"estado" : 1
+	},
+	{
+		"id" : 109,
+		"descripcion" : "La Aldea Pablo VI-109",
+		"comuna" : 1,
+		"estado" : 1
+	},
+	{
+		"id" : 110,
+		"descripcion" : "La Esperanza Nº 2-110",
+		"comuna" : 1,
+		"estado" : 1
+	},
+	{
+		"id" : 111,
+		"descripcion" : "La Avanzada-111",
+		"comuna" : 1,
+		"estado" : 1
+	},
+	{
+		"id" : 112,
+		"descripcion" : "Carpinelo-112",
+		"comuna" : 1,
+		"estado" : 1
+	},
+	{
+		"id" : 201,
+		"descripcion" : "La Isla-201",
+		"comuna" : 2,
+		"estado" : 1
+	},
+	{
+		"id" : 202,
+		"descripcion" : "El Playón de Los Comuneros-202",
+		"comuna" : 2,
+		"estado" : 1
+	},
+	{
+		"id" : 203,
+		"descripcion" : "Pablo VI-203",
+		"comuna" : 2,
+		"estado" : 1
+	},
+	{
+		"id" : 204,
+		"descripcion" : "La Frontera-204",
+		"comuna" : 2,
+		"estado" : 1
+	},
+	{
+		"id" : 205,
+		"descripcion" : "La Francia-205",
+		"comuna" : 2,
+		"estado" : 1
+	},
+	{
+		"id" : 206,
+		"descripcion" : "Andalucia-206",
+		"comuna" : 2,
+		"estado" : 1
+	},
+	{
+		"id" : 207,
+		"descripcion" : "Villa del Socorro-207",
+		"comuna" : 2,
+		"estado" : 1
+	},
+	{
+		"id" : 208,
+		"descripcion" : "Villa Niza-208",
+		"comuna" : 2,
+		"estado" : 1
+	},
+	{
+		"id" : 209,
+		"descripcion" : "Moscú Nº 1-209",
+		"comuna" : 2,
+		"estado" : 1
+	},
+	{
+		"id" : 210,
+		"descripcion" : "Santa Cruz-210",
+		"comuna" : 2,
+		"estado" : 1
+	},
+	{
+		"id" : 211,
+		"descripcion" : "La Rosa-211",
+		"comuna" : 2,
+		"estado" : 1
+	},
+	{
+		"id" : 301,
+		"descripcion" : "La Salle-301",
+		"comuna" : 3,
+		"estado" : 1
+	},
+	{
+		"id" : 302,
+		"descripcion" : "Las Granjas-302",
+		"comuna" : 3,
+		"estado" : 1
+	},
+	{
+		"id" : 303,
+		"descripcion" : "Campo Valdés Nº 2-303",
+		"comuna" : 3,
+		"estado" : 1
+	},
+	{
+		"id" : 304,
+		"descripcion" : "Santa Inés-304",
+		"comuna" : 3,
+		"estado" : 1
+	},
+	{
+		"id" : 305,
+		"descripcion" : "El Raizal-305",
+		"comuna" : 3,
+		"estado" : 1
+	},
+	{
+		"id" : 306,
+		"descripcion" : "El Pomar-306",
+		"comuna" : 3,
+		"estado" : 1
+	},
+	{
+		"id" : 307,
+		"descripcion" : "Manrique Central-307",
+		"comuna" : 3,
+		"estado" : 1
+	},
+	{
+		"id" : 308,
+		"descripcion" : "Manrique Oriental-308",
+		"comuna" : 3,
+		"estado" : 1
+	},
+	{
+		"id" : 309,
+		"descripcion" : "Versalles Nº 1-309",
+		"comuna" : 3,
+		"estado" : 1
+	},
+	{
+		"id" : 310,
+		"descripcion" : "Versalles Nº 2-310",
+		"comuna" : 3,
+		"estado" : 1
+	},
+	{
+		"id" : 311,
+		"descripcion" : "La Cruz-311",
+		"comuna" : 3,
+		"estado" : 1
+	},
+	{
+		"id" : 312,
+		"descripcion" : "Oriente-312",
+		"comuna" : 3,
+		"estado" : 1
+	},
+	{
+		"id" : 313,
+		"descripcion" : "María Cano-Carambolas-313",
+		"comuna" : 3,
+		"estado" : 1
+	},
+	{
+		"id" : 314,
+		"descripcion" : "San José la Cima Nº 1-314",
+		"comuna" : 3,
+		"estado" : 1
+	},
+	{
+		"id" : 315,
+		"descripcion" : "San José la Cima Nº 2-315",
+		"comuna" : 3,
+		"estado" : 1
+	},
+	{
+		"id" : 401,
+		"descripcion" : "Berlín-401",
+		"comuna" : 4,
+		"estado" : 1
+	},
+	{
+		"id" : 402,
+		"descripcion" : "San Isidro-402",
+		"comuna" : 4,
+		"estado" : 1
+	},
+	{
+		"id" : 403,
+		"descripcion" : "Palermo-403",
+		"comuna" : 4,
+		"estado" : 1
+	},
+	{
+		"id" : 404,
+		"descripcion" : "Bermejal-404",
+		"comuna" : 4,
+		"estado" : 1
+	},
+	{
+		"id" : 405,
+		"descripcion" : "Moravia-405",
+		"comuna" : 4,
+		"estado" : 1
+	},
+	{
+		"id" : 406,
+		"descripcion" : "Universidad de Antioquia-406",
+		"comuna" : 4,
+		"estado" : 1
+	},
+	{
+		"id" : 407,
+		"descripcion" : "Sevilla-407",
+		"comuna" : 4,
+		"estado" : 1
+	},
+	{
+		"id" : 408,
+		"descripcion" : "San Pedro-408",
+		"comuna" : 4,
+		"estado" : 1
+	},
+	{
+		"id" : 409,
+		"descripcion" : "Manrique Central-409",
+		"comuna" : 4,
+		"estado" : 1
+	},
+	{
+		"id" : 410,
+		"descripcion" : "Campo Valdés Nº 1-410",
+		"comuna" : 4,
+		"estado" : 1
+	},
+	{
+		"id" : 411,
+		"descripcion" : "Las Esmeraldas-411",
+		"comuna" : 4,
+		"estado" : 1
+	},
+	{
+		"id" : 412,
+		"descripcion" : "La Piñuela-412",
+		"comuna" : 4,
+		"estado" : 1
+	},
+	{
+		"id" : 413,
+		"descripcion" : "Aranjuez-413",
+		"comuna" : 4,
+		"estado" : 1
+	},
+	{
+		"id" : 414,
+		"descripcion" : "Brasilia-414",
+		"comuna" : 4,
+		"estado" : 1
+	},
+	{
+		"id" : 415,
+		"descripcion" : "Miranda-415",
+		"comuna" : 4,
+		"estado" : 1
+	},
+	{
+		"id" : 416,
+		"descripcion" : "Jardín Botánico-416",
+		"comuna" : 4,
+		"estado" : 1
+	},
+	{
+		"id" : 417,
+		"descripcion" : "Parque Norte-417",
+		"comuna" : 4,
+		"estado" : 1
+	},
+	{
+		"id" : 501,
+		"descripcion" : "Toscana-501",
+		"comuna" : 5,
+		"estado" : 1
+	},
+	{
+		"id" : 502,
+		"descripcion" : "Las Brisas-502",
+		"comuna" : 5,
+		"estado" : 1
+	},
+	{
+		"id" : 503,
+		"descripcion" : "Florencia-503",
+		"comuna" : 5,
+		"estado" : 1
+	},
+	{
+		"id" : 504,
+		"descripcion" : "Tejelo-504",
+		"comuna" : 5,
+		"estado" : 1
+	},
+	{
+		"id" : 505,
+		"descripcion" : "Boyaca-505",
+		"comuna" : 5,
+		"estado" : 1
+	},
+	{
+		"id" : 506,
+		"descripcion" : "Plaza de Ferias-506",
+		"comuna" : 5,
+		"estado" : 1
+	},
+	{
+		"id" : 507,
+		"descripcion" : "Héctor Abad Gómez-507",
+		"comuna" : 5,
+		"estado" : 1
+	},
+	{
+		"id" : 508,
+		"descripcion" : "Belalcázar-508",
+		"comuna" : 5,
+		"estado" : 1
+	},
+	{
+		"id" : 509,
+		"descripcion" : "Girardot-509",
+		"comuna" : 5,
+		"estado" : 1
+	},
+	{
+		"id" : 510,
+		"descripcion" : "Tricentenario-510",
+		"comuna" : 5,
+		"estado" : 1
+	},
+	{
+		"id" : 511,
+		"descripcion" : "Castilla-511",
+		"comuna" : 5,
+		"estado" : 1
+	},
+	{
+		"id" : 512,
+		"descripcion" : "Oleoducto-512",
+		"comuna" : 5,
+		"estado" : 1
+	},
+	{
+		"id" : 513,
+		"descripcion" : "Francisco Antonio Zea-513",
+		"comuna" : 5,
+		"estado" : 1
+	},
+	{
+		"id" : 514,
+		"descripcion" : "Alfonso López-514",
+		"comuna" : 5,
+		"estado" : 1
+	},
+	{
+		"id" : 515,
+		"descripcion" : "Cementerio Universal-515",
+		"comuna" : 5,
+		"estado" : 1
+	},
+	{
+		"id" : 516,
+		"descripcion" : "Terminal de Transporte-516",
+		"comuna" : 5,
+		"estado" : 1
+	},
+	{
+		"id" : 517,
+		"descripcion" : "Caribe-517",
+		"comuna" : 5,
+		"estado" : 1
+	},
+	{
+		"id" : 518,
+		"descripcion" : "Everfit-518",
+		"comuna" : 5,
+		"estado" : 1
+	},
+	{
+		"id" : 519,
+		"descripcion" : "Progreso-519",
+		"comuna" : 5,
+		"estado" : 1
+	},
+	{
+		"id" : 601,
+		"descripcion" : "Santander-601",
+		"comuna" : 6,
+		"estado" : 1
+	},
+	{
+		"id" : 602,
+		"descripcion" : "Doce de Octubre Nº 1-602",
+		"comuna" : 6,
+		"estado" : 1
+	},
+	{
+		"id" : 603,
+		"descripcion" : "Doce de Octubre Nº 2-603",
+		"comuna" : 6,
+		"estado" : 1
+	},
+	{
+		"id" : 604,
+		"descripcion" : "Pedregal-604",
+		"comuna" : 6,
+		"estado" : 1
+	},
+	{
+		"id" : 605,
+		"descripcion" : "La Esperanza-605",
+		"comuna" : 6,
+		"estado" : 1
+	},
+	{
+		"id" : 606,
+		"descripcion" : "San Martín de Porres-606",
+		"comuna" : 6,
+		"estado" : 1
+	},
+	{
+		"id" : 607,
+		"descripcion" : "Kennedy-607",
+		"comuna" : 6,
+		"estado" : 1
+	},
+	{
+		"id" : 608,
+		"descripcion" : "Picacho-608",
+		"comuna" : 6,
+		"estado" : 1
+	},
+	{
+		"id" : 609,
+		"descripcion" : "Picachito-609",
+		"comuna" : 6,
+		"estado" : 1
+	},
+	{
+		"id" : 610,
+		"descripcion" : "El Mirador del Doce-610",
+		"comuna" : 6,
+		"estado" : 1
+	},
+	{
+		"id" : 611,
+		"descripcion" : "El Progreso Nº 2-611",
+		"comuna" : 6,
+		"estado" : 1
+	},
+	{
+		"id" : 612,
+		"descripcion" : "El Triunfo-612",
+		"comuna" : 6,
+		"estado" : 1
+	},
+	{
+		"id" : 701,
+		"descripcion" : "Universidad Nacional-701",
+		"comuna" : 7,
+		"estado" : 1
+	},
+	{
+		"id" : 702,
+		"descripcion" : "Cerro el Volador-702",
+		"comuna" : 7,
+		"estado" : 1
+	},
+	{
+		"id" : 703,
+		"descripcion" : "San Germán-703",
+		"comuna" : 7,
+		"estado" : 1
+	},
+	{
+		"id" : 704,
+		"descripcion" : "Liceo Universidad de Antioquia-704",
+		"comuna" : 7,
+		"estado" : 1
+	},
+	{
+		"id" : 705,
+		"descripcion" : "Facultad de Minas Universidad Nacional-705",
+		"comuna" : 7,
+		"estado" : 1
+	},
+	{
+		"id" : 706,
+		"descripcion" : "La Pilarica-706",
+		"comuna" : 7,
+		"estado" : 1
+	},
+	{
+		"id" : 707,
+		"descripcion" : "Bosques de San Pablo-707",
+		"comuna" : 7,
+		"estado" : 1
+	},
+	{
+		"id" : 708,
+		"descripcion" : "Altamira-708",
+		"comuna" : 7,
+		"estado" : 1
+	},
+	{
+		"id" : 709,
+		"descripcion" : "Córdoba-709",
+		"comuna" : 7,
+		"estado" : 1
+	},
+	{
+		"id" : 710,
+		"descripcion" : "López de Mesa-710",
+		"comuna" : 7,
+		"estado" : 1
+	},
+	{
+		"id" : 711,
+		"descripcion" : "El Diamante-711",
+		"comuna" : 7,
+		"estado" : 1
+	},
+	{
+		"id" : 712,
+		"descripcion" : "Aures Nº 2-712",
+		"comuna" : 7,
+		"estado" : 1
+	},
+	{
+		"id" : 713,
+		"descripcion" : "Aures Nº 1-713",
+		"comuna" : 7,
+		"estado" : 1
+	},
+	{
+		"id" : 714,
+		"descripcion" : "Bello Horizonte-714",
+		"comuna" : 7,
+		"estado" : 1
+	},
+	{
+		"id" : 715,
+		"descripcion" : "Villa Flora-715",
+		"comuna" : 7,
+		"estado" : 1
+	},
+	{
+		"id" : 716,
+		"descripcion" : "Palenque-716",
+		"comuna" : 7,
+		"estado" : 1
+	},
+	{
+		"id" : 717,
+		"descripcion" : "Robledo-717",
+		"comuna" : 7,
+		"estado" : 1
+	},
+	{
+		"id" : 718,
+		"descripcion" : "El Cucaracho-718",
+		"comuna" : 7,
+		"estado" : 1
+	},
+	{
+		"id" : 719,
+		"descripcion" : "Fuente Clara-719",
+		"comuna" : 7,
+		"estado" : 1
+	},
+	{
+		"id" : 720,
+		"descripcion" : "Santa Margarita-720",
+		"comuna" : 7,
+		"estado" : 1
+	},
+	{
+		"id" : 721,
+		"descripcion" : "Nazareth-721",
+		"comuna" : 7,
+		"estado" : 1
+	},
+	{
+		"id" : 722,
+		"descripcion" : "Olaya Herrera-722",
+		"comuna" : 7,
+		"estado" : 1
+	},
+	{
+		"id" : 723,
+		"descripcion" : "Pajarito-723",
+		"comuna" : 7,
+		"estado" : 1
+	},
+	{
+		"id" : 724,
+		"descripcion" : "Monteclaro-724",
+		"comuna" : 7,
+		"estado" : 1
+	},
+	{
+		"id" : 725,
+		"descripcion" : "Nueva Villa de la Iguana-725",
+		"comuna" : 7,
+		"estado" : 1
+	},
+	{
+		"id" : 801,
+		"descripcion" : "Villa Hermosa-801",
+		"comuna" : 8,
+		"estado" : 1
+	},
+	{
+		"id" : 802,
+		"descripcion" : "La Mansión-802",
+		"comuna" : 8,
+		"estado" : 1
+	},
+	{
+		"id" : 803,
+		"descripcion" : "San Miguel-803",
+		"comuna" : 8,
+		"estado" : 1
+	},
+	{
+		"id" : 804,
+		"descripcion" : "La Ladera-804",
+		"comuna" : 8,
+		"estado" : 1
+	},
+	{
+		"id" : 805,
+		"descripcion" : "Batallón Girardot-805",
+		"comuna" : 8,
+		"estado" : 1
+	},
+	{
+		"id" : 806,
+		"descripcion" : "Llanaditas-806",
+		"comuna" : 8,
+		"estado" : 1
+	},
+	{
+		"id" : 807,
+		"descripcion" : "Los Mangos-807",
+		"comuna" : 8,
+		"estado" : 1
+	},
+	{
+		"id" : 808,
+		"descripcion" : "Enciso-808",
+		"comuna" : 8,
+		"estado" : 1
+	},
+	{
+		"id" : 809,
+		"descripcion" : "Sucre-809",
+		"comuna" : 8,
+		"estado" : 1
+	},
+	{
+		"id" : 810,
+		"descripcion" : "El Pinal-810",
+		"comuna" : 8,
+		"estado" : 1
+	},
+	{
+		"id" : 811,
+		"descripcion" : "Trece de Noviembre-811",
+		"comuna" : 8,
+		"estado" : 1
+	},
+	{
+		"id" : 812,
+		"descripcion" : "La Libertad-812",
+		"comuna" : 8,
+		"estado" : 1
+	},
+	{
+		"id" : 813,
+		"descripcion" : "Villatina-813",
+		"comuna" : 8,
+		"estado" : 1
+	},
+	{
+		"id" : 814,
+		"descripcion" : "San Antonio-814",
+		"comuna" : 8,
+		"estado" : 1
+	},
+	{
+		"id" : 815,
+		"descripcion" : "Las Estancias-815",
+		"comuna" : 8,
+		"estado" : 1
+	},
+	{
+		"id" : 816,
+		"descripcion" : "Villa Turbay-816",
+		"comuna" : 8,
+		"estado" : 1
+	},
+	{
+		"id" : 817,
+		"descripcion" : "La Sierra-817",
+		"comuna" : 8,
+		"estado" : 1
+	},
+	{
+		"id" : 818,
+		"descripcion" : "Santa Lucía Las Estancias-818",
+		"comuna" : 8,
+		"estado" : 1
+	},
+	{
+		"id" : 819,
+		"descripcion" : "Villa Lilliam-819",
+		"comuna" : 8,
+		"estado" : 1
+	},
+	{
+		"id" : 901,
+		"descripcion" : "Juan Pablo II-901",
+		"comuna" : 9,
+		"estado" : 1
+	},
+	{
+		"id" : 902,
+		"descripcion" : "Barrios de Jesús-902",
+		"comuna" : 9,
+		"estado" : 1
+	},
+	{
+		"id" : 903,
+		"descripcion" : "Bomboná Nº 2-903",
+		"comuna" : 9,
+		"estado" : 1
+	},
+	{
+		"id" : 904,
+		"descripcion" : "Los Cerros - El Vergel-904",
+		"comuna" : 9,
+		"estado" : 1
+	},
+	{
+		"id" : 905,
+		"descripcion" : "Alejandro Echavarría-905",
+		"comuna" : 9,
+		"estado" : 1
+	},
+	{
+		"id" : 906,
+		"descripcion" : "Barrio Caicedo-906",
+		"comuna" : 9,
+		"estado" : 1
+	},
+	{
+		"id" : 907,
+		"descripcion" : "Buenos Aires-907",
+		"comuna" : 9,
+		"estado" : 1
+	},
+	{
+		"id" : 908,
+		"descripcion" : "Miraflores-908",
+		"comuna" : 9,
+		"estado" : 1
+	},
+	{
+		"id" : 909,
+		"descripcion" : "Cataluña-909",
+		"comuna" : 9,
+		"estado" : 1
+	},
+	{
+		"id" : 910,
+		"descripcion" : "La Milagrosa-910",
+		"comuna" : 9,
+		"estado" : 1
+	},
+	{
+		"id" : 911,
+		"descripcion" : "Gerona-911",
+		"comuna" : 9,
+		"estado" : 1
+	},
+	{
+		"id" : 912,
+		"descripcion" : "El Salvador-912",
+		"comuna" : 9,
+		"estado" : 1
+	},
+	{
+		"id" : 913,
+		"descripcion" : "Loreto-913",
+		"comuna" : 9,
+		"estado" : 1
+	},
+	{
+		"id" : 914,
+		"descripcion" : "Asomadera Nº 1-914",
+		"comuna" : 9,
+		"estado" : 1
+	},
+	{
+		"id" : 915,
+		"descripcion" : "Asomadera Nº 2-915",
+		"comuna" : 9,
+		"estado" : 1
+	},
+	{
+		"id" : 916,
+		"descripcion" : "Asomadera Nº 3-916",
+		"comuna" : 9,
+		"estado" : 1
+	},
+	{
+		"id" : 917,
+		"descripcion" : "Ocho de Marzo-917",
+		"comuna" : 9,
+		"estado" : 1
+	},
+	{
+		"id" : 1001,
+		"descripcion" : "Prado-1001",
+		"comuna" : 10,
+		"estado" : 1
+	},
+	{
+		"id" : 1002,
+		"descripcion" : "Hospital San Vicente-1002",
+		"comuna" : 10,
+		"estado" : 1
+	},
+	{
+		"id" : 1003,
+		"descripcion" : "Jesús Nazareno-1003",
+		"comuna" : 10,
+		"estado" : 1
+	},
+	{
+		"id" : 1004,
+		"descripcion" : "El Chagualo-1004",
+		"comuna" : 10,
+		"estado" : 1
+	},
+	{
+		"id" : 1005,
+		"descripcion" : "Estación Villa-1005",
+		"comuna" : 10,
+		"estado" : 1
+	},
+	{
+		"id" : 1006,
+		"descripcion" : "San Benito-1006",
+		"comuna" : 10,
+		"estado" : 1
+	},
+	{
+		"id" : 1007,
+		"descripcion" : "Guayaquil-1007",
+		"comuna" : 10,
+		"estado" : 1
+	},
+	{
+		"id" : 1008,
+		"descripcion" : "Corazón de Jesús-1008",
+		"comuna" : 10,
+		"estado" : 1
+	},
+	{
+		"id" : 1009,
+		"descripcion" : "La Alpujarra-1009",
+		"comuna" : 10,
+		"estado" : 1
+	},
+	{
+		"id" : 1010,
+		"descripcion" : "Centro Administrativo-1010",
+		"comuna" : 10,
+		"estado" : 1
+	},
+	{
+		"id" : 1011,
+		"descripcion" : "Calle Nueva-1011",
+		"comuna" : 10,
+		"estado" : 1
+	},
+	{
+		"id" : 1012,
+		"descripcion" : "Perpetuo Socorro-1012",
+		"comuna" : 10,
+		"estado" : 1
+	},
+	{
+		"id" : 1013,
+		"descripcion" : "Barrio Colón-1013",
+		"comuna" : 10,
+		"estado" : 1
+	},
+	{
+		"id" : 1014,
+		"descripcion" : "Las Palmas-1014",
+		"comuna" : 10,
+		"estado" : 1
+	},
+	{
+		"id" : 1015,
+		"descripcion" : "Bomboná Nº 1-1015",
+		"comuna" : 10,
+		"estado" : 1
+	},
+	{
+		"id" : 1016,
+		"descripcion" : "Bostón-1016",
+		"comuna" : 10,
+		"estado" : 1
+	},
+	{
+		"id" : 1017,
+		"descripcion" : "Los Angeles-1017",
+		"comuna" : 10,
+		"estado" : 1
+	},
+	{
+		"id" : 1018,
+		"descripcion" : "Villa Nueva-1018",
+		"comuna" : 10,
+		"estado" : 1
+	},
+	{
+		"id" : 1019,
+		"descripcion" : "La Candelaria-1019",
+		"comuna" : 10,
+		"estado" : 1
+	},
+	{
+		"id" : 1020,
+		"descripcion" : "San Diego-1020",
+		"comuna" : 10,
+		"estado" : 1
+	},
+	{
+		"id" : 1101,
+		"descripcion" : "Carlos E. Restrepo-1101",
+		"comuna" : 11,
+		"estado" : 1
+	},
+	{
+		"id" : 1102,
+		"descripcion" : "Suramericana-1102",
+		"comuna" : 11,
+		"estado" : 1
+	},
+	{
+		"id" : 1103,
+		"descripcion" : "Naranjal-1103",
+		"comuna" : 11,
+		"estado" : 1
+	},
+	{
+		"id" : 1104,
+		"descripcion" : "San Joaquín-1104",
+		"comuna" : 11,
+		"estado" : 1
+	},
+	{
+		"id" : 1105,
+		"descripcion" : "Los Conquistadores-1105",
+		"comuna" : 11,
+		"estado" : 1
+	},
+	{
+		"id" : 1106,
+		"descripcion" : "Universidad Pontificia-1106",
+		"comuna" : 11,
+		"estado" : 1
+	},
+	{
+		"id" : 1107,
+		"descripcion" : "Bolivariana-1107",
+		"comuna" : 11,
+		"estado" : 1
+	},
+	{
+		"id" : 1108,
+		"descripcion" : "Laureles-1108",
+		"comuna" : 11,
+		"estado" : 1
+	},
+	{
+		"id" : 1109,
+		"descripcion" : "Las Acacias-1109",
+		"comuna" : 11,
+		"estado" : 1
+	},
+	{
+		"id" : 1110,
+		"descripcion" : "La Castellana-1110",
+		"comuna" : 11,
+		"estado" : 1
+	},
+	{
+		"id" : 1111,
+		"descripcion" : "Lorena-1111",
+		"comuna" : 11,
+		"estado" : 1
+	},
+	{
+		"id" : 1112,
+		"descripcion" : "El Velódromo-1112",
+		"comuna" : 11,
+		"estado" : 1
+	},
+	{
+		"id" : 1113,
+		"descripcion" : "Estadio-1113",
+		"comuna" : 11,
+		"estado" : 1
+	},
+	{
+		"id" : 1114,
+		"descripcion" : "Los Colores-1114",
+		"comuna" : 11,
+		"estado" : 1
+	},
+	{
+		"id" : 1115,
+		"descripcion" : "Cuarta Brigada-1115",
+		"comuna" : 11,
+		"estado" : 1
+	},
+	{
+		"id" : 1116,
+		"descripcion" : "U.D. Atanasio Girardot-1116",
+		"comuna" : 11,
+		"estado" : 1
+	},
+	{
+		"id" : 1117,
+		"descripcion" : "Florida Nueva-1117",
+		"comuna" : 11,
+		"estado" : 1
+	},
+	{
+		"id" : 1201,
+		"descripcion" : "Ferrini-1201",
+		"comuna" : 12,
+		"estado" : 1
+	},
+	{
+		"id" : 1202,
+		"descripcion" : "Calasanz-1202",
+		"comuna" : 12,
+		"estado" : 1
+	},
+	{
+		"id" : 1203,
+		"descripcion" : "Los Pinos-1203",
+		"comuna" : 12,
+		"estado" : 1
+	},
+	{
+		"id" : 1204,
+		"descripcion" : "La América-1204",
+		"comuna" : 12,
+		"estado" : 1
+	},
+	{
+		"id" : 1205,
+		"descripcion" : "La Floresta-1205",
+		"comuna" : 12,
+		"estado" : 1
+	},
+	{
+		"id" : 1206,
+		"descripcion" : "Santa Lucía-1206",
+		"comuna" : 12,
+		"estado" : 1
+	},
+	{
+		"id" : 1207,
+		"descripcion" : "El Danubio-1207",
+		"comuna" : 12,
+		"estado" : 1
+	},
+	{
+		"id" : 1208,
+		"descripcion" : "Campo Alegre-1208",
+		"comuna" : 12,
+		"estado" : 1
+	},
+	{
+		"id" : 1209,
+		"descripcion" : "Santa Mónica-1209",
+		"comuna" : 12,
+		"estado" : 1
+	},
+	{
+		"id" : 1210,
+		"descripcion" : "Barrio Cristóbal-1210",
+		"comuna" : 12,
+		"estado" : 1
+	},
+	{
+		"id" : 1211,
+		"descripcion" : "Simón Bolivar-1211",
+		"comuna" : 12,
+		"estado" : 1
+	},
+	{
+		"id" : 1212,
+		"descripcion" : "Santa Teresita-1212",
+		"comuna" : 12,
+		"estado" : 1
+	},
+	{
+		"id" : 1213,
+		"descripcion" : "Calasanz Parte Alta-1213",
+		"comuna" : 12,
+		"estado" : 1
+	},
+	{
+		"id" : 1301,
+		"descripcion" : "El Pesebre-1301",
+		"comuna" : 13,
+		"estado" : 1
+	},
+	{
+		"id" : 1302,
+		"descripcion" : "Blanquizal-1302",
+		"comuna" : 13,
+		"estado" : 1
+	},
+	{
+		"id" : 1303,
+		"descripcion" : "Santa Rosa de Lima-1303",
+		"comuna" : 13,
+		"estado" : 1
+	},
+	{
+		"id" : 1304,
+		"descripcion" : "Los Alcázares-1304",
+		"comuna" : 13,
+		"estado" : 1
+	},
+	{
+		"id" : 1305,
+		"descripcion" : "Metropolitano-1305",
+		"comuna" : 13,
+		"estado" : 1
+	},
+	{
+		"id" : 1306,
+		"descripcion" : "La Pradera-1306",
+		"comuna" : 13,
+		"estado" : 1
+	},
+	{
+		"id" : 1307,
+		"descripcion" : "Juan XXIII - La Queibra-1307",
+		"comuna" : 13,
+		"estado" : 1
+	},
+	{
+		"id" : 1308,
+		"descripcion" : "San Javier Nº 2-1308",
+		"comuna" : 13,
+		"estado" : 1
+	},
+	{
+		"id" : 1309,
+		"descripcion" : "San Javier Nº 1-1309",
+		"comuna" : 13,
+		"estado" : 1
+	},
+	{
+		"id" : 1310,
+		"descripcion" : "Veinte de Julio-1310",
+		"comuna" : 13,
+		"estado" : 1
+	},
+	{
+		"id" : 1311,
+		"descripcion" : "Belencito-1311",
+		"comuna" : 13,
+		"estado" : 1
+	},
+	{
+		"id" : 1312,
+		"descripcion" : "Betania-1312",
+		"comuna" : 13,
+		"estado" : 1
+	},
+	{
+		"id" : 1313,
+		"descripcion" : "El Corazón-1313",
+		"comuna" : 13,
+		"estado" : 1
+	},
+	{
+		"id" : 1314,
+		"descripcion" : "Las Independencias-1314",
+		"comuna" : 13,
+		"estado" : 1
+	},
+	{
+		"id" : 1315,
+		"descripcion" : "Nuevos Conquistadores-1315",
+		"comuna" : 13,
+		"estado" : 1
+	},
+	{
+		"id" : 1316,
+		"descripcion" : "El Salado-1316",
+		"comuna" : 13,
+		"estado" : 1
+	},
+	{
+		"id" : 1317,
+		"descripcion" : "Eduardo Santos-1317",
+		"comuna" : 13,
+		"estado" : 1
+	},
+	{
+		"id" : 1318,
+		"descripcion" : "Antonio Nariño-1318",
+		"comuna" : 13,
+		"estado" : 1
+	},
+	{
+		"id" : 1319,
+		"descripcion" : "El Socorro-1319",
+		"comuna" : 13,
+		"estado" : 1
+	},
+	{
+		"id" : 1320,
+		"descripcion" : "La Gabriela-1320",
+		"comuna" : 13,
+		"estado" : 1
+	},
+	{
+		"id" : 1401,
+		"descripcion" : "Barrio Colombia-1401",
+		"comuna" : 14,
+		"estado" : 1
+	},
+	{
+		"id" : 1402,
+		"descripcion" : "SIMESA-1402",
+		"comuna" : 14,
+		"estado" : 1
+	},
+	{
+		"id" : 1403,
+		"descripcion" : "Villa Carlota-1403",
+		"comuna" : 14,
+		"estado" : 1
+	},
+	{
+		"id" : 1404,
+		"descripcion" : "Castropol-1404",
+		"comuna" : 14,
+		"estado" : 1
+	},
+	{
+		"id" : 1405,
+		"descripcion" : "Lalinde-1405",
+		"comuna" : 14,
+		"estado" : 1
+	},
+	{
+		"id" : 1406,
+		"descripcion" : "Las Lomas Nº 1-1406",
+		"comuna" : 14,
+		"estado" : 1
+	},
+	{
+		"id" : 1407,
+		"descripcion" : "Las Lomas Nº 2-1407",
+		"comuna" : 14,
+		"estado" : 1
+	},
+	{
+		"id" : 1408,
+		"descripcion" : "Altos del Poblado-1408",
+		"comuna" : 14,
+		"estado" : 1
+	},
+	{
+		"id" : 1409,
+		"descripcion" : "El Tesoro-1409",
+		"comuna" : 14,
+		"estado" : 1
+	},
+	{
+		"id" : 1410,
+		"descripcion" : "Los Naranjos-1410",
+		"comuna" : 14,
+		"estado" : 1
+	},
+	{
+		"id" : 1411,
+		"descripcion" : "Los Balsos Nº 1-1411",
+		"comuna" : 14,
+		"estado" : 1
+	},
+	{
+		"id" : 1412,
+		"descripcion" : "San Lucas-1412",
+		"comuna" : 14,
+		"estado" : 1
+	},
+	{
+		"id" : 1413,
+		"descripcion" : "El Diamante Nº 2-1413",
+		"comuna" : 14,
+		"estado" : 1
+	},
+	{
+		"id" : 1414,
+		"descripcion" : "El Castillo-1414",
+		"comuna" : 14,
+		"estado" : 1
+	},
+	{
+		"id" : 1415,
+		"descripcion" : "Los Balsos Nº 2-1415",
+		"comuna" : 14,
+		"estado" : 1
+	},
+	{
+		"id" : 1416,
+		"descripcion" : "Alejandría-1416",
+		"comuna" : 14,
+		"estado" : 1
+	},
+	{
+		"id" : 1417,
+		"descripcion" : "La Florida-1417",
+		"comuna" : 14,
+		"estado" : 1
+	},
+	{
+		"id" : 1418,
+		"descripcion" : "El Poblado-1418",
+		"comuna" : 14,
+		"estado" : 1
+	},
+	{
+		"id" : 1419,
+		"descripcion" : "Manila-1419",
+		"comuna" : 14,
+		"estado" : 1
+	},
+	{
+		"id" : 1420,
+		"descripcion" : "Astorga-1420",
+		"comuna" : 14,
+		"estado" : 1
+	},
+	{
+		"id" : 1421,
+		"descripcion" : "Patio Bonito-1421",
+		"comuna" : 14,
+		"estado" : 1
+	},
+	{
+		"id" : 1422,
+		"descripcion" : "La Aguacatala-1422",
+		"comuna" : 14,
+		"estado" : 1
+	},
+	{
+		"id" : 1423,
+		"descripcion" : "Santa María de los Angeles-1423",
+		"comuna" : 14,
+		"estado" : 1
+	},
+	{
+		"id" : 1501,
+		"descripcion" : "El Rodeo-1501",
+		"comuna" : 15,
+		"estado" : 1
+	},
+	{
+		"id" : 1502,
+		"descripcion" : "Tenche-1502",
+		"comuna" : 15,
+		"estado" : 1
+	},
+	{
+		"id" : 1503,
+		"descripcion" : "Trinidad-1503",
+		"comuna" : 15,
+		"estado" : 1
+	},
+	{
+		"id" : 1504,
+		"descripcion" : "Santa Fé-1504",
+		"comuna" : 15,
+		"estado" : 1
+	},
+	{
+		"id" : 1505,
+		"descripcion" : "Shellmar-1505",
+		"comuna" : 15,
+		"estado" : 1
+	},
+	{
+		"id" : 1506,
+		"descripcion" : "Parque Juan Pablo II-1506",
+		"comuna" : 15,
+		"estado" : 1
+	},
+	{
+		"id" : 1507,
+		"descripcion" : "Campo Amor-1507",
+		"comuna" : 15,
+		"estado" : 1
+	},
+	{
+		"id" : 1508,
+		"descripcion" : "Noel-1508",
+		"comuna" : 15,
+		"estado" : 1
+	},
+	{
+		"id" : 1509,
+		"descripcion" : "Cristo Rey-1509",
+		"comuna" : 15,
+		"estado" : 1
+	},
+	{
+		"id" : 1510,
+		"descripcion" : "Guayabal-1510",
+		"comuna" : 15,
+		"estado" : 1
+	},
+	{
+		"id" : 1511,
+		"descripcion" : "La Colina-1511",
+		"comuna" : 15,
+		"estado" : 1
+	},
+	{
+		"id" : 1601,
+		"descripcion" : "Fátima-1601",
+		"comuna" : 16,
+		"estado" : 1
+	},
+	{
+		"id" : 1602,
+		"descripcion" : "Rosales-1602",
+		"comuna" : 16,
+		"estado" : 1
+	},
+	{
+		"id" : 1603,
+		"descripcion" : "Belén-1603",
+		"comuna" : 16,
+		"estado" : 1
+	},
+	{
+		"id" : 1604,
+		"descripcion" : "Granada-1604",
+		"comuna" : 16,
+		"estado" : 1
+	},
+	{
+		"id" : 1605,
+		"descripcion" : "San Bernardo-1605",
+		"comuna" : 16,
+		"estado" : 1
+	},
+	{
+		"id" : 1606,
+		"descripcion" : "Las Playas-1606",
+		"comuna" : 16,
+		"estado" : 1
+	},
+	{
+		"id" : 1607,
+		"descripcion" : "Diego Echavarría-1607",
+		"comuna" : 16,
+		"estado" : 1
+	},
+	{
+		"id" : 1608,
+		"descripcion" : "La Mota-1608",
+		"comuna" : 16,
+		"estado" : 1
+	},
+	{
+		"id" : 1609,
+		"descripcion" : "Hondonada-1609",
+		"comuna" : 16,
+		"estado" : 1
+	},
+	{
+		"id" : 1610,
+		"descripcion" : "El Rincón-1610",
+		"comuna" : 16,
+		"estado" : 1
+	},
+	{
+		"id" : 1611,
+		"descripcion" : "La Loma de los Bernal-1611",
+		"comuna" : 16,
+		"estado" : 1
+	},
+	{
+		"id" : 1612,
+		"descripcion" : "La Gloria-1612",
+		"comuna" : 16,
+		"estado" : 1
+	},
+	{
+		"id" : 1613,
+		"descripcion" : "Altavista-1613",
+		"comuna" : 16,
+		"estado" : 1
+	},
+	{
+		"id" : 1614,
+		"descripcion" : "La Palma-1614",
+		"comuna" : 16,
+		"estado" : 1
+	},
+	{
+		"id" : 1615,
+		"descripcion" : "Los Alpes-1615",
+		"comuna" : 16,
+		"estado" : 1
+	},
+	{
+		"id" : 1616,
+		"descripcion" : "Las Violetas-1616",
+		"comuna" : 16,
+		"estado" : 1
+	},
+	{
+		"id" : 1617,
+		"descripcion" : "Las Mercedes-1617",
+		"comuna" : 16,
+		"estado" : 1
+	},
+	{
+		"id" : 1618,
+		"descripcion" : "Nueva Villa de Aburrá-1618",
+		"comuna" : 16,
+		"estado" : 1
+	},
+	{
+		"id" : 1619,
+		"descripcion" : "Miravalle-1619",
+		"comuna" : 16,
+		"estado" : 1
+	},
+	{
+		"id" : 1620,
+		"descripcion" : "El Nogal Los Almendros-1620",
+		"comuna" : 16,
+		"estado" : 1
+	},
+	{
+		"id" : 1621,
+		"descripcion" : "Cerro Nutibara-1621",
+		"comuna" : 16,
+		"estado" : 1
+	},
+	{
+		"id" : 1701,
+		"descripcion" : "Ciudadela-1701",
+		"comuna" : 17,
+		"estado" : 1
+	},
+	{
+		"id" : 5000,
+		"descripcion" : "Cabecera Palmitas-5000",
+		"comuna" : 50,
+		"estado" : 1
+	},
+	{
+		"id" : 5001,
+		"descripcion" : "La Suiza-5001",
+		"comuna" : 50,
+		"estado" : 1
+	},
+	{
+		"id" : 5002,
+		"descripcion" : "La Sucia-5002",
+		"comuna" : 50,
+		"estado" : 1
+	},
+	{
+		"id" : 5003,
+		"descripcion" : "Urquita-5003",
+		"comuna" : 50,
+		"estado" : 1
+	},
+	{
+		"id" : 5004,
+		"descripcion" : "Sector Central-5004",
+		"comuna" : 50,
+		"estado" : 1
+	},
+	{
+		"id" : 5005,
+		"descripcion" : "Volcana Guayabal-5005",
+		"comuna" : 50,
+		"estado" : 1
+	},
+	{
+		"id" : 5006,
+		"descripcion" : "La Frisola-5006",
+		"comuna" : 50,
+		"estado" : 1
+	},
+	{
+		"id" : 5007,
+		"descripcion" : "La Aldea-5007",
+		"comuna" : 50,
+		"estado" : 1
+	},
+	{
+		"id" : 5008,
+		"descripcion" : "Potrera Miserenga-5008",
+		"comuna" : 50,
+		"estado" : 1
+	},
+	{
+		"id" : 6000,
+		"descripcion" : "Cabecera San Cristóbal-6000",
+		"comuna" : 60,
+		"estado" : 1
+	},
+	{
+		"id" : 6001,
+		"descripcion" : "La Palma-6001",
+		"comuna" : 60,
+		"estado" : 1
+	},
+	{
+		"id" : 6002,
+		"descripcion" : "El Patio-6002",
+		"comuna" : 60,
+		"estado" : 1
+	},
+	{
+		"id" : 6003,
+		"descripcion" : "El Uvito-6003",
+		"comuna" : 60,
+		"estado" : 1
+	},
+	{
+		"id" : 6004,
+		"descripcion" : "La Cuchilla-6004",
+		"comuna" : 60,
+		"estado" : 1
+	},
+	{
+		"id" : 6005,
+		"descripcion" : "Naranjal-6005",
+		"comuna" : 60,
+		"estado" : 1
+	},
+	{
+		"id" : 6006,
+		"descripcion" : "Boquerón-6006",
+		"comuna" : 60,
+		"estado" : 1
+	},
+	{
+		"id" : 6007,
+		"descripcion" : "San José de La Montaña-6007",
+		"comuna" : 60,
+		"estado" : 1
+	},
+	{
+		"id" : 6008,
+		"descripcion" : "La Ilusión-6008",
+		"comuna" : 60,
+		"estado" : 1
+	},
+	{
+		"id" : 6009,
+		"descripcion" : "El Yolombó-6009",
+		"comuna" : 60,
+		"estado" : 1
+	},
+	{
+		"id" : 6010,
+		"descripcion" : "El Carmelo-6010",
+		"comuna" : 60,
+		"estado" : 1
+	},
+	{
+		"id" : 6011,
+		"descripcion" : "El Picacho-6011",
+		"comuna" : 60,
+		"estado" : 1
+	},
+	{
+		"id" : 6012,
+		"descripcion" : "Pajarito-6012",
+		"comuna" : 60,
+		"estado" : 1
+	},
+	{
+		"id" : 6013,
+		"descripcion" : "Pedregal Alto-6013",
+		"comuna" : 60,
+		"estado" : 1
+	},
+	{
+		"id" : 6014,
+		"descripcion" : "La Loma-6014",
+		"comuna" : 60,
+		"estado" : 1
+	},
+	{
+		"id" : 6015,
+		"descripcion" : "Las Playas-6015",
+		"comuna" : 60,
+		"estado" : 1
+	},
+	{
+		"id" : 6016,
+		"descripcion" : "Travesías-6016",
+		"comuna" : 60,
+		"estado" : 1
+	},
+	{
+		"id" : 6017,
+		"descripcion" : "El Llano-6017",
+		"comuna" : 60,
+		"estado" : 1
+	},
+	{
+		"id" : 6018,
+		"descripcion" : "San Cristóbal-6018",
+		"comuna" : 60,
+		"estado" : 1
+	},
+	{
+		"id" : 7000,
+		"descripcion" : "Cabecera Altavista-7000",
+		"comuna" : 70,
+		"estado" : 1
+	},
+	{
+		"id" : 7001,
+		"descripcion" : "Buga Patio Bonito-7001",
+		"comuna" : 70,
+		"estado" : 1
+	},
+	{
+		"id" : 7002,
+		"descripcion" : "Aguas Frías-7002",
+		"comuna" : 70,
+		"estado" : 1
+	},
+	{
+		"id" : 7003,
+		"descripcion" : "El Corazón El Morro-7003",
+		"comuna" : 70,
+		"estado" : 1
+	},
+	{
+		"id" : 7004,
+		"descripcion" : "San Pablo-7004",
+		"comuna" : 70,
+		"estado" : 1
+	},
+	{
+		"id" : 7005,
+		"descripcion" : "Altavista Central-7005",
+		"comuna" : 70,
+		"estado" : 1
+	},
+	{
+		"id" : 7006,
+		"descripcion" : "La Esperanza-7006",
+		"comuna" : 70,
+		"estado" : 1
+	},
+	{
+		"id" : 7007,
+		"descripcion" : "San José del Manzanillo-7007",
+		"comuna" : 70,
+		"estado" : 1
+	},
+	{
+		"id" : 7008,
+		"descripcion" : "El Jardín-7008",
+		"comuna" : 70,
+		"estado" : 1
+	},
+	{
+		"id" : 8000,
+		"descripcion" : "Cabecera San Ant de Pr.-8000",
+		"comuna" : 80,
+		"estado" : 1
+	},
+	{
+		"id" : 8001,
+		"descripcion" : "La Florida-8001",
+		"comuna" : 80,
+		"estado" : 1
+	},
+	{
+		"id" : 8002,
+		"descripcion" : "Potrerito-8002",
+		"comuna" : 80,
+		"estado" : 1
+	},
+	{
+		"id" : 8003,
+		"descripcion" : "Montañita-8003",
+		"comuna" : 80,
+		"estado" : 1
+	},
+	{
+		"id" : 8004,
+		"descripcion" : "Yarumalito-8004",
+		"comuna" : 80,
+		"estado" : 1
+	},
+	{
+		"id" : 8005,
+		"descripcion" : "Astillero-8005",
+		"comuna" : 80,
+		"estado" : 1
+	},
+	{
+		"id" : 8006,
+		"descripcion" : "El Salado-8006",
+		"comuna" : 80,
+		"estado" : 1
+	},
+	{
+		"id" : 8007,
+		"descripcion" : "La Verde-8007",
+		"comuna" : 80,
+		"estado" : 1
+	},
+	{
+		"id" : 8008,
+		"descripcion" : "San José-8008",
+		"comuna" : 80,
+		"estado" : 1
+	},
+	{
+		"id" : 9000,
+		"descripcion" : "Cabecera Sta Elena-9000",
+		"comuna" : 90,
+		"estado" : 1
+	},
+	{
+		"id" : 9001,
+		"descripcion" : "Las Palmas-9001",
+		"comuna" : 90,
+		"estado" : 1
+	},
+	{
+		"id" : 9002,
+		"descripcion" : "Media Luna-9002",
+		"comuna" : 90,
+		"estado" : 1
+	},
+	{
+		"id" : 9003,
+		"descripcion" : "Piedras Blancas-9003",
+		"comuna" : 90,
+		"estado" : 1
+	},
+	{
+		"id" : 9004,
+		"descripcion" : "Barro Blanco-9004",
+		"comuna" : 90,
+		"estado" : 1
+	},
+	{
+		"id" : 9005,
+		"descripcion" : "El Placer-9005",
+		"comuna" : 90,
+		"estado" : 1
+	},
+	{
+		"id" : 9006,
+		"descripcion" : "Sector Central-9006",
+		"comuna" : 90,
+		"estado" : 1
+	},
+	{
+		"id" : 9007,
+		"descripcion" : "El Cerro-9007",
+		"comuna" : 90,
+		"estado" : 1
+	},
+	{
+		"id" : 9008,
+		"descripcion" : "El Llano-9008",
+		"comuna" : 90,
+		"estado" : 1
+	},
+	{
+		"id" : 9009,
+		"descripcion" : "El Plan-9009",
+		"comuna" : 90,
+		"estado" : 1
+	},
+	{
+		"id" : 9010,
+		"descripcion" : "Piedra Gorda-9010",
+		"comuna" : 90,
+		"estado" : 1
+	},
+	{
+		"id" : 9011,
+		"descripcion" : "Mazo-9011",
+		"comuna" : 90,
+		"estado" : 1
+	},
+	{
+		"id" : 9101,
+		"descripcion" : "BELLO",
+		"comuna" : 91,
+		"estado" : 1
+	},
+	{
+		"id" : 9102,
+		"descripcion" : "ITAGUI",
+		"comuna" : 91,
+		"estado" : 1
+	},
+	{
+		"id" : 9103,
+		"descripcion" : "ENVIGADO",
+		"comuna" : 91,
+		"estado" : 1
+	},
+	{
+		"id" : 9104,
+		"descripcion" : "LA ESTRELLA",
+		"comuna" : 91,
+		"estado" : 1
+	},
+	{
+		"id" : 9105,
+		"descripcion" : "OTRO MUNICIPIO FUERA DEL VALLE DEL ABURRA",
+		"comuna" : 91,
+		"estado" : 1
+	},
+	{
+		"id" : 9106,
+		"descripcion" : "SABANETA",
+		"comuna" : 91,
+		"estado" : 1
+	},
+	{
+		"id" : 12001,
+		"descripcion" : "20 - FUERA DE MEDELLIN",
+		"comuna" : 120,
+		"estado" : 1
+	},
+	{
+		"id" : 12101,
+		"descripcion" : "21 - FUERA DE ANTIOAUIA",
+		"comuna" : 121,
+		"estado" : 1
+	}
+]

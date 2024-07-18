@@ -1,0 +1,6 @@
+.simbolo {
+    display: flex !important;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}

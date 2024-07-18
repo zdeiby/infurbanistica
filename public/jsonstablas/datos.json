@@ -1,0 +1,40 @@
+ [
+ 	{
+ 		"fichasocial" : 39688,
+ 		"fichatecnia" : "111010",
+ 		"motivovisita" : 1,
+ 		"tipovisita" : "1",
+ 		"horaactivacion" : "15:11:00",
+ 		"horaatencion" : "15:30:00",
+ 		"fechavisita" : "2024-01-12",
+ 		"fecharegistro" : "2024-01-15 09:59:49",
+ 		"usuario" : 32240430,
+ 		"estado" : 1,
+ 		"tabla" : "0_informaciondelevento",
+ 		"tipo" : 1,
+ 		"declaradafallida" : null,
+ 		"ficharecuperda" : null,
+ 		"horallegadaalevento" : "00:00:00",
+ 		"remitir" : null,
+ 		"remitir2" : null
+ 	},
+ 	{
+ 		"fichasocial" : 39692,
+ 		"fichatecnia" : "PENDIENTE",
+ 		"motivovisita" : 1,
+ 		"tipovisita" : "1",
+ 		"horaactivacion" : "00:00:00",
+ 		"horaatencion" : "17:10:00",
+ 		"fechavisita" : "2024-01-12",
+ 		"fecharegistro" : "2024-01-12 17:08:03",
+ 		"usuario" : 32240430,
+ 		"estado" : 0,
+ 		"tabla" : "0_informaciondelevento",
+ 		"tipo" : 1,
+ 		"declaradafallida" : null,
+ 		"ficharecuperda" : null,
+ 		"horallegadaalevento" : "00:00:00",
+ 		"remitir" : null,
+ 		"remitir2" : null
+ 	}]
+	

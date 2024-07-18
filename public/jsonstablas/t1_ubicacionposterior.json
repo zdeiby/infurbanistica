@@ -1,0 +1,37 @@
+[
+	{
+		"id" : 1,
+		"descripcion" : "LA FAMILIA SE TRASLADA A ALBERGUE TEMPORAL",
+		"estado" : 1
+	},
+	{
+		"id" : 2,
+		"descripcion" : "LA FAMILIA SE TRASLADA A AUXILIO HABITACIONAL",
+		"estado" : 1
+	},
+	{
+		"id" : 3,
+		"descripcion" : "LA FAMILIA SE TRASLADA A AUTO ALBERGE",
+		"estado" : 1
+	},
+	{
+		"id" : 4,
+		"descripcion" : "LA FAMILIA SE TRASLADA A PAGAR ARRENDAMIENTO POR CUENTA PROPIA",
+		"estado" : 1
+	},
+	{
+		"id" : 5,
+		"descripcion" : "LA FAMILIA SE TRASLADA A VIVIENDA PRESTADA",
+		"estado" : 1
+	},
+	{
+		"id" : 6,
+		"descripcion" : "LA FAMILIA SE UBICA EN OTRO LUGAR DISTINTO A LOS RELACIONADOS ANTERIORMENTE",
+		"estado" : 1
+	},
+	{
+		"id" : 7,
+		"descripcion" : "LA FAMILIA CONTINÚA EN LA VIVIENDA AFECTADA",
+		"estado" : 1
+	}
+]

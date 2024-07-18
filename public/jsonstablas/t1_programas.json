@@ -1,0 +1,587 @@
+[
+	{
+		"id" : 1,
+		"descripcion" : "PROGRAMA ARRENDAMIENTO TEMPORAL",
+		"estado" : 1,
+		"tipo" : 1,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 2,
+		"descripcion" : "MEJORAMIENTO DE VIVIENDA",
+		"estado" : 1,
+		"tipo" : 1,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 3,
+		"descripcion" : "AMAUTTA",
+		"estado" : 1,
+		"tipo" : 1,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 4,
+		"descripcion" : "AID FOR AIDS",
+		"estado" : 1,
+		"tipo" : 1,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 5,
+		"descripcion" : "BUEN COMIENZO",
+		"estado" : 1,
+		"tipo" : 1,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 6,
+		"descripcion" : "CENTRO INTEGRAL PARA LA FAMILIA",
+		"estado" : 1,
+		"tipo" : 1,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 7,
+		"descripcion" : "CENTROS DE ESCUCHA",
+		"estado" : 2,
+		"tipo" : 1,
+		"usuario" : 9976711,
+		"tabla" : "t1_programas",
+		"fecharegistro" : "2024-02-02"
+	},
+	{
+		"id" : 8,
+		"descripcion" : "COMISARIA DE FAMILIA",
+		"estado" : 1,
+		"tipo" : 1,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 9,
+		"descripcion" : "EMPLEABILIDAD Y CAPACITACION SENA",
+		"estado" : 1,
+		"tipo" : 1,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 10,
+		"descripcion" : "EQUIPO DE DISCAPACIDAD",
+		"estado" : 1,
+		"tipo" : 1,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 11,
+		"descripcion" : "EQUIPO MUNICIPAL DE VICTIMAS",
+		"estado" : 1,
+		"tipo" : 1,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 12,
+		"descripcion" : "FUNDACION FUTUROS DIVINOS",
+		"estado" : 2,
+		"tipo" : 1,
+		"usuario" : 9976711,
+		"tabla" : "t1_programas",
+		"fecharegistro" : "2024-02-16"
+	},
+	{
+		"id" : 13,
+		"descripcion" : "GERENCIA DE ETNIAS",
+		"estado" : 1,
+		"tipo" : 1,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 14,
+		"descripcion" : "INSPECCIÓN DE PROTECCION ANIMAL",
+		"estado" : 1,
+		"tipo" : 1,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 15,
+		"descripcion" : "INTEGRATE",
+		"estado" : 1,
+		"tipo" : 1,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 16,
+		"descripcion" : "MODULO 123 MIGRANTES",
+		"estado" : 2,
+		"tipo" : 1,
+		"usuario" : 9976711,
+		"tabla" : "t1_programas",
+		"fecharegistro" : "2023-09-05"
+	},
+	{
+		"id" : 17,
+		"descripcion" : "OFICINA PUBLICA DE EMPLEO",
+		"estado" : 1,
+		"tipo" : 1,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 18,
+		"descripcion" : "OPADI",
+		"estado" : 1,
+		"tipo" : 1,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 19,
+		"descripcion" : "PATRONATO MARIA AUXILIADORA",
+		"estado" : 1,
+		"tipo" : 1,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 20,
+		"descripcion" : "SECRETARIA DE EDUCACION",
+		"estado" : 1,
+		"tipo" : 1,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 21,
+		"descripcion" : "SECRETARIA DE SALUD PUBLICA",
+		"estado" : 1,
+		"tipo" : 1,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 22,
+		"descripcion" : "SECRETARIA DESARROLLO ECONOMICO",
+		"estado" : 1,
+		"tipo" : 1,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 23,
+		"descripcion" : "UNIDAD DE NIÑEZ",
+		"estado" : 1,
+		"tipo" : 1,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 24,
+		"descripcion" : "UNIDAD FAMILIAS MEDELLIN",
+		"estado" : 1,
+		"tipo" : 1,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 25,
+		"descripcion" : "MEDELLIN ME CUIDA",
+		"estado" : 1,
+		"tipo" : 1,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 26,
+		"descripcion" : "CENTRO DIA",
+		"estado" : 1,
+		"tipo" : 1,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 27,
+		"descripcion" : "OTROS",
+		"estado" : 2,
+		"tipo" : 3,
+		"usuario" : 9976711,
+		"tabla" : "t1_programas",
+		"fecharegistro" : "2023-09-05"
+	},
+	{
+		"id" : 28,
+		"descripcion" : "COMUNA 1 - INSPECCIÓN 1 V. GUADALUPE",
+		"estado" : 1,
+		"tipo" : 2,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 29,
+		"descripcion" : "COMUNA 2 - INSPECCIÓN 2 VILLA DEL SOCORRO",
+		"estado" : 1,
+		"tipo" : 2,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 30,
+		"descripcion" : "COMUNA 3 - INSPECCIÓN 3 PARQUE GAITAN",
+		"estado" : 1,
+		"tipo" : 2,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 31,
+		"descripcion" : "COMUNA 4 - INSPECCIÓN 4A ARANJUEZ",
+		"estado" : 1,
+		"tipo" : 2,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 32,
+		"descripcion" : "COMUNA 4 - INSPECCIÓN 4B CAMPO VALDEZ",
+		"estado" : 1,
+		"tipo" : 2,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 33,
+		"descripcion" : "COMUNA 5 - INSPECCIÓN 5 CASTILLA",
+		"estado" : 1,
+		"tipo" : 2,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 34,
+		"descripcion" : "COMUNA 6 - INSPECCIÓN 6A 12 DE OCTUBRE",
+		"estado" : 1,
+		"tipo" : 2,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 35,
+		"descripcion" : "COMUNA 6 - INSPECCIÓN 6B KENEDY",
+		"estado" : 1,
+		"tipo" : 2,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 36,
+		"descripcion" : "COMUNA 7 - INSPECCIÓN 7A ROBLEDO",
+		"estado" : 1,
+		"tipo" : 2,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 37,
+		"descripcion" : "COMUNA 7 - INSPECCIÓN 7B ROBLEDO",
+		"estado" : 1,
+		"tipo" : 2,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 38,
+		"descripcion" : "COMUNA 8 - INSPECCIÓN 8A VILLA HERMOSA",
+		"estado" : 1,
+		"tipo" : 2,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 39,
+		"descripcion" : "COMUNA 8 - INSPECCIÓN 8B VILLATINA",
+		"estado" : 1,
+		"tipo" : 2,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 40,
+		"descripcion" : "COMUNA 9 - INSPECCIÓN 9A BUENOS AIRES",
+		"estado" : 1,
+		"tipo" : 2,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 41,
+		"descripcion" : "COMUNA 9 - INSPECCIÓN 9B EL SALVADOR",
+		"estado" : 1,
+		"tipo" : 2,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 42,
+		"descripcion" : "COMUNA 10 - INSPECCIÓN 10A PRADO CENTRO",
+		"estado" : 1,
+		"tipo" : 2,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 43,
+		"descripcion" : "COMUNA 10 - INSPECCIÓN 10B BOSTON",
+		"estado" : 1,
+		"tipo" : 2,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 44,
+		"descripcion" : "COMUNA 10 - INSPECCIÓN 10C MINORISTA",
+		"estado" : 1,
+		"tipo" : 2,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 45,
+		"descripcion" : "COMUNA 10 - INSPECCION 10D ALPUJARRA",
+		"estado" : 1,
+		"tipo" : 2,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 46,
+		"descripcion" : "COMUNA 11 - INSPECCIÓN 11A LA AMERICA",
+		"estado" : 1,
+		"tipo" : 2,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 47,
+		"descripcion" : "COMUNA 11 - INSPECCIÓN 11B SAN JUAQUIN",
+		"estado" : 1,
+		"tipo" : 2,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 48,
+		"descripcion" : "COMUNA 12 - INSPECCIÓN 12 SANTA MONICA",
+		"estado" : 1,
+		"tipo" : 2,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 49,
+		"descripcion" : "COMUNA 13 - INSPECCIÓN 13 SAN JAVIER",
+		"estado" : 1,
+		"tipo" : 2,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 50,
+		"descripcion" : "COMUNA 14 - INSPECCIÓN 14A  POBLADO CENTRO",
+		"estado" : 1,
+		"tipo" : 2,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 51,
+		"descripcion" : "COMUNA 14 - INSPECCIÓN 14B  POBLADO SUR",
+		"estado" : 1,
+		"tipo" : 2,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 52,
+		"descripcion" : "COMUNA 15 - INSPECCIÓN 15 GUAYABAL",
+		"estado" : 1,
+		"tipo" : 2,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 53,
+		"descripcion" : "COMUNA 16 - INSPECCIÓN 16A PARQUE BELEN",
+		"estado" : 1,
+		"tipo" : 2,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 54,
+		"descripcion" : "COMUNA 16 - INSPECCIÓN 16B PARQUE BELEN",
+		"estado" : 1,
+		"tipo" : 2,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 55,
+		"descripcion" : "CORREGIMIENTO 50 - CORREGIDURIA 50 SEBASTIAN DE PALMITAS",
+		"estado" : 1,
+		"tipo" : 2,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 56,
+		"descripcion" : "CORREGIMIENTO 60 - CORREGIDURIA 60 SAN CRISTOBAL",
+		"estado" : 1,
+		"tipo" : 2,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 57,
+		"descripcion" : "CORREGIMIENTO 70 - CORREGIDURIA 70 ALTAVISTA",
+		"estado" : 1,
+		"tipo" : 2,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 58,
+		"descripcion" : "CORREGIMIENTO 80 - CORREGIDURIA 80 SAN ANTONIO DE PRADO",
+		"estado" : 1,
+		"tipo" : 2,
+		"usuario" : 8026204,
+		"tabla" : "t1_tipoprogramasremisiones",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 59,
+		"descripcion" : "CORREGIMIENTO 90 - CORREGIDURIA 90 SANTA ELENA",
+		"estado" : 1,
+		"tipo" : 2,
+		"usuario" : 8026204,
+		"tabla" : "t1_programas",
+		"fecharegistro" : "2023-08-16"
+	},
+	{
+		"id" : 60,
+		"descripcion" : "ACNUR CAH",
+		"estado" : 2,
+		"tipo" : 1,
+		"usuario" : 9976711,
+		"tabla" : "t1_programas",
+		"fecharegistro" : "2024-01-15"
+	},
+	{
+		"id" : 61,
+		"descripcion" : "HOSPITAL INFANTIL SANTA  ANA VALORACION NUTRICIONAL ",
+		"estado" : 1,
+		"tipo" : 1,
+		"usuario" : 9976711,
+		"tabla" : "t1_programas",
+		"fecharegistro" : "2023-09-07"
+	},
+	{
+		"id" : 62,
+		"descripcion" : "HOSPITAL INFANTIL SANTA  ANA VALORACION NUTRICIONAL ",
+		"estado" : 2,
+		"tipo" : 1,
+		"usuario" : 9976711,
+		"tabla" : "t1_programas",
+		"fecharegistro" : "2023-11-08"
+	},
+	{
+		"id" : 63,
+		"descripcion" : "CENTRO ADMINISTRATIVO MUNICIPAL CAM",
+		"estado" : 1,
+		"tipo" : 1,
+		"usuario" : 9976711,
+		"tabla" : "t1_programas",
+		"fecharegistro" : "2024-01-25"
+	},
+	{
+		"id" : 64,
+		"descripcion" : "POR MIS DERECHOS POBLACION LGTBI",
+		"estado" : 1,
+		"tipo" : 1,
+		"usuario" : 9976711,
+		"tabla" : "t1_programas",
+		"fecharegistro" : "2024-01-25"
+	},
+	{
+		"id" : 65,
+		"descripcion" : "Instituto Colombiano De Bienestar Familiar Centro Zonal Sur Oriente",
+		"estado" : 1,
+		"tipo" : 1,
+		"usuario" : 9976711,
+		"tabla" : "t1_programas",
+		"fecharegistro" : "2024-04-16"
+	}
+]

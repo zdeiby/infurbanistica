@@ -1,0 +1,20 @@
+/* Contenedor principal */
+.container {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 100vh; /* Altura completa de la ventana */
+    
+  }
+  
+  /* Contenedor de la barra de progreso */
+  .progress-container {
+    width: 50%; /* Ajusta el ancho según sea necesario */
+    padding: 10px; /* Espacio alrededor de la barra de progreso */
+    border-radius: 5px; /* Bordes redondeados */
+  }
+  
+  .progress {
+    width: 100%;
+  }
+  

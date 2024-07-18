@@ -1,0 +1,112 @@
+[
+	{
+		"id" : 1,
+		"descripcion" : "JEFE DEL HOGAR",
+		"estado" : 1
+	},
+	{
+		"id" : 2,
+		"descripcion" : "PADRES",
+		"estado" : 1
+	},
+	{
+		"id" : 3,
+		"descripcion" : "CÓNYUGE O COMPAÑERO(A) PE",
+		"estado" : 1
+	},
+	{
+		"id" : 4,
+		"descripcion" : "HIJO(A)",
+		"estado" : 1
+	},
+	{
+		"id" : 5,
+		"descripcion" : "HERMANO(A)",
+		"estado" : 1
+	},
+	{
+		"id" : 6,
+		"descripcion" : "ABUELO(A)",
+		"estado" : 1
+	},
+	{
+		"id" : 7,
+		"descripcion" : "NIETO(A)",
+		"estado" : 1
+	},
+	{
+		"id" : 8,
+		"descripcion" : "TÍO(A)",
+		"estado" : 1
+	},
+	{
+		"id" : 9,
+		"descripcion" : "SOBRINO(A)",
+		"estado" : 1
+	},
+	{
+		"id" : 10,
+		"descripcion" : "BISABUELO(A)",
+		"estado" : 1
+	},
+	{
+		"id" : 11,
+		"descripcion" : "BISNIETO(A)",
+		"estado" : 1
+	},
+	{
+		"id" : 12,
+		"descripcion" : "SUEGRO(A)",
+		"estado" : 1
+	},
+	{
+		"id" : 13,
+		"descripcion" : "YERNO",
+		"estado" : 1
+	},
+	{
+		"id" : 14,
+		"descripcion" : "NUERA",
+		"estado" : 1
+	},
+	{
+		"id" : 15,
+		"descripcion" : "HIJASTRO(A)",
+		"estado" : 1
+	},
+	{
+		"id" : 16,
+		"descripcion" : "PADRASTRO",
+		"estado" : 1
+	},
+	{
+		"id" : 17,
+		"descripcion" : "MADRASTRA",
+		"estado" : 1
+	},
+	{
+		"id" : 18,
+		"descripcion" : "CUÑADO(A)",
+		"estado" : 1
+	},
+	{
+		"id" : 19,
+		"descripcion" : "PADRES ADOPTANTES",
+		"estado" : 1
+	},
+	{
+		"id" : 20,
+		"descripcion" : "HIJOS(A) ADOPTIVOS",
+		"estado" : 1
+	},
+	{
+		"id" : 21,
+		"descripcion" : "OTROS PARIENTES",
+		"estado" : 1
+	},
+	{
+		"id" : 22,
+		"descripcion" : "OTROS NO PARIENTES",
+		"estado" : 1
+	}
+]
