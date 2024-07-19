@@ -658,35 +658,35 @@ const Cobertura: React.FC = () => {
 
 
   const fetchUsers = async (database = db) => {
-    if (database) {
-      const res = await database.exec('SELECT * FROM "c0_informaciondelevento";');
-      if (res[0]?.values && res[0]?.columns) {
-        const transformedPeople: Person[] = res[0].values.map((row: any[]) => {
-          return res[0].columns.reduce((obj, col, index) => {
-            obj[col] = row[index];
-            return obj;
-          }, {} as Person);
-        });
-        setPeoplec0(transformedPeople);
+    // if (database) {
+    //   const res = await database.exec('SELECT * FROM "c0_informaciondelevento";');
+    //   if (res[0]?.values && res[0]?.columns) {
+    //     const transformedPeople: Person[] = res[0].values.map((row: any[]) => {
+    //       return res[0].columns.reduce((obj, col, index) => {
+    //         obj[col] = row[index];
+    //         return obj;
+    //       }, {} as Person);
+    //     });
+    //     setPeoplec0(transformedPeople);
 
-      }
-    }
+    //   }
+    // }
 
   };
 
   const fetchIdentificacionEvento = async (database = db) => {
-    if (database) {
-      const res = await database.exec('SELECT * FROM "c1_identificacionevento";');
-      if (res[0]?.values && res[0]?.columns) {
-        const transformedEventos: IdentificacionEvento[] = res[0].values.map((row: any[]) => {
-          return res[0].columns.reduce((obj, col, index) => {
-            obj[col] = row[index];
-            return obj;
-          }, {} as IdentificacionEvento);
-        });
-        setEventos(transformedEventos);
-      }
-    }
+    // if (database) {
+    //   const res = await database.exec('SELECT * FROM "c1_identificacionevento";');
+    //   if (res[0]?.values && res[0]?.columns) {
+    //     const transformedEventos: IdentificacionEvento[] = res[0].values.map((row: any[]) => {
+    //       return res[0].columns.reduce((obj, col, index) => {
+    //         obj[col] = row[index];
+    //         return obj;
+    //       }, {} as IdentificacionEvento);
+    //     });
+    //     setEventos(transformedEventos);
+    //   }
+    // }
   };
 
   const fetchLocalizacionEvento = async (database = db) => {
@@ -705,250 +705,250 @@ const Cobertura: React.FC = () => {
   };
 
   const fetchEvacuacionYDanios = async (database = db) => {
-    if (database) {
-      const res = await database.exec('SELECT * FROM "c3_evacuacionydanos";');
-      if (res[0]?.values && res[0]?.columns) {
-        const transformedDanios: EvacuacionYDanios[] = res[0].values.map((row: any[]) => {
-          return res[0].columns.reduce((obj, col, index) => {
-            obj[col] = row[index];
-            return obj;
-          }, {} as EvacuacionYDanios);
-        });
-        setEvacuacionYDanios(transformedDanios); // Asegúrate de que `setEvacuacionYDanios` es la función correcta para actualizar el estado con los nuevos datos
-      }
-    }
+    // if (database) {
+    //   const res = await database.exec('SELECT * FROM "c3_evacuacionydanos";');
+    //   if (res[0]?.values && res[0]?.columns) {
+    //     const transformedDanios: EvacuacionYDanios[] = res[0].values.map((row: any[]) => {
+    //       return res[0].columns.reduce((obj, col, index) => {
+    //         obj[col] = row[index];
+    //         return obj;
+    //       }, {} as EvacuacionYDanios);
+    //     });
+    //     setEvacuacionYDanios(transformedDanios); // Asegúrate de que `setEvacuacionYDanios` es la función correcta para actualizar el estado con los nuevos datos
+    //   }
+    // }
   };
 
   const fetchDatosDeLaVivienda = async (database = db) => {
-    if (database) {
-      const res = await database.exec('SELECT * FROM "c4_datosdelavivienda";');
-      if (res[0]?.values && res[0]?.columns) {
-        const transformedViviendas: DatosDeLaVivienda[] = res[0].values.map((row: any[]) => {
-          return res[0].columns.reduce((obj, col, index) => {
-            obj[col] = row[index];
-            return obj;
-          }, {} as DatosDeLaVivienda);
-        });
-        setDatosDeLaVivienda(transformedViviendas); // Asegúrate de que `setDatosDeLaVivienda` es la función correcta para actualizar el estado con los nuevos datos
-      }
-    }
+    // if (database) {
+    //   const res = await database.exec('SELECT * FROM "c4_datosdelavivienda";');
+    //   if (res[0]?.values && res[0]?.columns) {
+    //     const transformedViviendas: DatosDeLaVivienda[] = res[0].values.map((row: any[]) => {
+    //       return res[0].columns.reduce((obj, col, index) => {
+    //         obj[col] = row[index];
+    //         return obj;
+    //       }, {} as DatosDeLaVivienda);
+    //     });
+    //     setDatosDeLaVivienda(transformedViviendas); // Asegúrate de que `setDatosDeLaVivienda` es la función correcta para actualizar el estado con los nuevos datos
+    //   }
+    // }
   };
   const fetchServiciosPublicos = async (database = db) => {
-    if (database) {
-      const res = await database.exec('SELECT * FROM "c5_serviciospublicos";');
-      if (res[0]?.values && res[0]?.columns) {
-        const transformedServicios: ServiciosPublicos[] = res[0].values.map((row: any[]) => {
-          return res[0].columns.reduce((obj, col, index) => {
-            obj[col] = row[index];
-            return obj;
-          }, {} as ServiciosPublicos);
-        });
-        setServiciosPublicos(transformedServicios); // Asegúrate de que `setServiciosPublicos` es la función correcta para actualizar el estado con los nuevos datos
-      }
-    }
+    // if (database) {
+    //   const res = await database.exec('SELECT * FROM "c5_serviciospublicos";');
+    //   if (res[0]?.values && res[0]?.columns) {
+    //     const transformedServicios: ServiciosPublicos[] = res[0].values.map((row: any[]) => {
+    //       return res[0].columns.reduce((obj, col, index) => {
+    //         obj[col] = row[index];
+    //         return obj;
+    //       }, {} as ServiciosPublicos);
+    //     });
+    //     setServiciosPublicos(transformedServicios); // Asegúrate de que `setServiciosPublicos` es la función correcta para actualizar el estado con los nuevos datos
+    //   }
+    // }
   };
   const fetchTiempoEnLaVivienda = async (database = db) => {
-    if (database) {
-      const res = await database.exec('SELECT * FROM "c6_tiempoenlavivienda";');
-      if (res[0]?.values && res[0]?.columns) {
-        const transformedTiempos: TiempoEnLaVivienda[] = res[0].values.map((row: any[]) => {
-          return res[0].columns.reduce((obj, col, index) => {
-            obj[col] = row[index];
-            return obj;
-          }, {} as TiempoEnLaVivienda);
-        });
-        setTiempoEnLaVivienda(transformedTiempos); // Asegúrate de que `setTiempoEnLaVivienda` es la función correcta para actualizar el estado con los nuevos datos
-      }
-    }
+    // if (database) {
+    //   const res = await database.exec('SELECT * FROM "c6_tiempoenlavivienda";');
+    //   if (res[0]?.values && res[0]?.columns) {
+    //     const transformedTiempos: TiempoEnLaVivienda[] = res[0].values.map((row: any[]) => {
+    //       return res[0].columns.reduce((obj, col, index) => {
+    //         obj[col] = row[index];
+    //         return obj;
+    //       }, {} as TiempoEnLaVivienda);
+    //     });
+    //     setTiempoEnLaVivienda(transformedTiempos); // Asegúrate de que `setTiempoEnLaVivienda` es la función correcta para actualizar el estado con los nuevos datos
+    //   }
+    // }
   };
 
   const fetchTenenciaYDocumentosVivienda = async (database = db) => {
-    if (database) {
-      const res = await database.exec('SELECT * FROM "c78_tenenciaydocumentosvivienda";');
-      if (res[0]?.values && res[0]?.columns) {
-        const transformedDocumentos: TenenciaYDocumentosVivienda[] = res[0].values.map((row: any[]) => {
-          return res[0].columns.reduce((obj, col, index) => {
-            obj[col] = row[index];
-            return obj;
-          }, {} as TenenciaYDocumentosVivienda);
-        });
-        setTenenciaYDocumentosVivienda(transformedDocumentos); // Asegúrate de que `setTenenciaYDocumentosVivienda` es la función correcta para actualizar el estado con los nuevos datos
-      }
-    }
+    // if (database) {
+    //   const res = await database.exec('SELECT * FROM "c78_tenenciaydocumentosvivienda";');
+    //   if (res[0]?.values && res[0]?.columns) {
+    //     const transformedDocumentos: TenenciaYDocumentosVivienda[] = res[0].values.map((row: any[]) => {
+    //       return res[0].columns.reduce((obj, col, index) => {
+    //         obj[col] = row[index];
+    //         return obj;
+    //       }, {} as TenenciaYDocumentosVivienda);
+    //     });
+    //     setTenenciaYDocumentosVivienda(transformedDocumentos); // Asegúrate de que `setTenenciaYDocumentosVivienda` es la función correcta para actualizar el estado con los nuevos datos
+    //   }
+    // }
   };
 
   const fetchConformacionFamiliar = async (database = db) => {
-    if (database) {
-      const res = await database.exec('SELECT * FROM "c9_conformacionfamiliar";');
-      if (res[0]?.values && res[0]?.columns) {
-        const transformedFamilias: ConformacionFamiliar[] = res[0].values.map((row: any[]) => {
-          return res[0].columns.reduce((obj, col, index) => {
-            obj[col] = row[index];
-            return obj;
-          }, {} as ConformacionFamiliar);
-        });
-        setConformacionFamiliar(transformedFamilias); // Asegúrate de que `setConformacionFamiliar` es la función correcta para actualizar el estado con los nuevos datos
-      }
-    }
+    // if (database) {
+    //   const res = await database.exec('SELECT * FROM "c9_conformacionfamiliar";');
+    //   if (res[0]?.values && res[0]?.columns) {
+    //     const transformedFamilias: ConformacionFamiliar[] = res[0].values.map((row: any[]) => {
+    //       return res[0].columns.reduce((obj, col, index) => {
+    //         obj[col] = row[index];
+    //         return obj;
+    //       }, {} as ConformacionFamiliar);
+    //     });
+    //     setConformacionFamiliar(transformedFamilias); // Asegúrate de que `setConformacionFamiliar` es la función correcta para actualizar el estado con los nuevos datos
+    //   }
+    // }
   };
 
   const fetchDatosGeneralesRemisiones = async (database = db) => {
-    if (database) {
-      const res = await database.exec('SELECT * FROM "c10_datosgeneralesremisiones";');
-      if (res[0]?.values && res[0]?.columns) {
-        const transformedRemisiones: DatosGeneralesRemisiones[] = res[0].values.map((row: any[]) => {
-          return res[0].columns.reduce((obj, col, index) => {
-            obj[col] = row[index];
-            return obj;
-          }, {} as DatosGeneralesRemisiones);
-        });
-        setDatosGeneralesRemisiones(transformedRemisiones); // Asegúrate de que `setDatosGeneralesRemisiones` es la función correcta para actualizar el estado con los nuevos datos
-      }
-    }
+    // if (database) {
+    //   const res = await database.exec('SELECT * FROM "c10_datosgeneralesremisiones";');
+    //   if (res[0]?.values && res[0]?.columns) {
+    //     const transformedRemisiones: DatosGeneralesRemisiones[] = res[0].values.map((row: any[]) => {
+    //       return res[0].columns.reduce((obj, col, index) => {
+    //         obj[col] = row[index];
+    //         return obj;
+    //       }, {} as DatosGeneralesRemisiones);
+    //     });
+    //     setDatosGeneralesRemisiones(transformedRemisiones); // Asegúrate de que `setDatosGeneralesRemisiones` es la función correcta para actualizar el estado con los nuevos datos
+    //   }
+    // }
   };
 
   const fetchRedDeApoyo = async (database = db) => {
-    if (database) {
-      const res = await database.exec('SELECT * FROM "c11_reddeapoyo";');
-      if (res[0]?.values && res[0]?.columns) {
-        const transformedRed: RedDeApoyo[] = res[0].values.map((row: any[]) => {
-          return res[0].columns.reduce((obj, col, index) => {
-            obj[col] = row[index];
-            return obj;
-          }, {} as RedDeApoyo);
-        });
-        setRedDeApoyo(transformedRed); // Asegúrate de que `setRedDeApoyo` es la función correcta para actualizar el estado con los nuevos datos
-      }
-    }
+    // if (database) {
+    //   const res = await database.exec('SELECT * FROM "c11_reddeapoyo";');
+    //   if (res[0]?.values && res[0]?.columns) {
+    //     const transformedRed: RedDeApoyo[] = res[0].values.map((row: any[]) => {
+    //       return res[0].columns.reduce((obj, col, index) => {
+    //         obj[col] = row[index];
+    //         return obj;
+    //       }, {} as RedDeApoyo);
+    //     });
+    //     setRedDeApoyo(transformedRed); // Asegúrate de que `setRedDeApoyo` es la función correcta para actualizar el estado con los nuevos datos
+    //   }
+    // }
   };
   const fetchAyudasEntregadas = async (database = db) => {
-    if (database) {
-      const res = await database.exec('SELECT * FROM "c12_ayudasentregadas";');
-      if (res[0]?.values && res[0]?.columns) {
-        const transformedAyudas: AyudasEntregadas[] = res[0].values.map((row: any[]) => {
-          return res[0].columns.reduce((obj, col, index) => {
-            obj[col] = row[index];
-            return obj;
-          }, {} as AyudasEntregadas);
-        });
-        setAyudasEntregadas(transformedAyudas); // Asegúrate de que `setAyudasEntregadas` es la función correcta para actualizar el estado con los nuevos datos
-      }
-    }
+    // if (database) {
+    //   const res = await database.exec('SELECT * FROM "c12_ayudasentregadas";');
+    //   if (res[0]?.values && res[0]?.columns) {
+    //     const transformedAyudas: AyudasEntregadas[] = res[0].values.map((row: any[]) => {
+    //       return res[0].columns.reduce((obj, col, index) => {
+    //         obj[col] = row[index];
+    //         return obj;
+    //       }, {} as AyudasEntregadas);
+    //     });
+    //     setAyudasEntregadas(transformedAyudas); // Asegúrate de que `setAyudasEntregadas` es la función correcta para actualizar el estado con los nuevos datos
+    //   }
+    // }
   };
 
   const fetchIntegrante = async (database = db) => {
-    if (database) {
-      const res = await database.exec('SELECT * FROM "c131_integrante";');
-      if (res[0]?.values && res[0]?.columns) {
-        const transformedIntegrantes: Integrante[] = res[0].values.map((row: any[]) => {
-          return res[0].columns.reduce((obj, col, index) => {
-            obj[col] = row[index];
-            return obj;
-          }, {} as Integrante);
-        });
-        setIntegrante(transformedIntegrantes); // Asegúrate de que `setIntegrante` es la función correcta para actualizar el estado con los nuevos datos
-      }
-    }
+    // if (database) {
+    //   const res = await database.exec('SELECT * FROM "c131_integrante";');
+    //   if (res[0]?.values && res[0]?.columns) {
+    //     const transformedIntegrantes: Integrante[] = res[0].values.map((row: any[]) => {
+    //       return res[0].columns.reduce((obj, col, index) => {
+    //         obj[col] = row[index];
+    //         return obj;
+    //       }, {} as Integrante);
+    //     });
+    //     setIntegrante(transformedIntegrantes); // Asegúrate de que `setIntegrante` es la función correcta para actualizar el estado con los nuevos datos
+    //   }
+    // }
   };
 
   const fetchMascotas = async (database = db) => {
-    if (database) {
-      const res = await database.exec('SELECT * FROM "c14_mascotas";');
-      if (res[0]?.values && res[0]?.columns) {
-        const transformedMascotas: Mascotas[] = res[0].values.map((row: any[]) => {
-          return res[0].columns.reduce((obj, col, index) => {
-            obj[col] = row[index];
-            return obj;
-          }, {} as Mascotas);
-        });
-        setMascotas(transformedMascotas); // Asegúrate de que `setMascotas` es la función correcta para actualizar el estado con los nuevos datos
-      }
-    }
+    // if (database) {
+    //   const res = await database.exec('SELECT * FROM "c14_mascotas";');
+    //   if (res[0]?.values && res[0]?.columns) {
+    //     const transformedMascotas: Mascotas[] = res[0].values.map((row: any[]) => {
+    //       return res[0].columns.reduce((obj, col, index) => {
+    //         obj[col] = row[index];
+    //         return obj;
+    //       }, {} as Mascotas);
+    //     });
+    //     setMascotas(transformedMascotas); // Asegúrate de que `setMascotas` es la función correcta para actualizar el estado con los nuevos datos
+    //   }
+    // }
   };
   const fetchUbicacionPosterior = async (database = db) => {
-    if (database) {
-      const res = await database.exec('SELECT * FROM "c15_ubicacionposterioratencionsocial";');
-      if (res[0]?.values && res[0]?.columns) {
-        const transformedUbicaciones: UbicacionPosteriorAtencionSocial[] = res[0].values.map((row: any[]) => {
-          return res[0].columns.reduce((obj, col, index) => {
-            obj[col] = row[index];
-            return obj;
-          }, {} as UbicacionPosteriorAtencionSocial);
-        });
-        setUbicacionPosterior(transformedUbicaciones); // Asegúrate de que `setUbicacionPosterior` es la función correcta para actualizar el estado con los nuevos datos
-      }
-    }
+    // if (database) {
+    //   const res = await database.exec('SELECT * FROM "c15_ubicacionposterioratencionsocial";');
+    //   if (res[0]?.values && res[0]?.columns) {
+    //     const transformedUbicaciones: UbicacionPosteriorAtencionSocial[] = res[0].values.map((row: any[]) => {
+    //       return res[0].columns.reduce((obj, col, index) => {
+    //         obj[col] = row[index];
+    //         return obj;
+    //       }, {} as UbicacionPosteriorAtencionSocial);
+    //     });
+    //     setUbicacionPosterior(transformedUbicaciones); // Asegúrate de que `setUbicacionPosterior` es la función correcta para actualizar el estado con los nuevos datos
+    //   }
+    // }
   };
   const fetchIntegrantesUbicacionPos = async (database = db) => {
-    if (database) {
-      const res = await database.exec('SELECT * FROM "c151_integrantesubicaciopos";');
-      if (res[0]?.values && res[0]?.columns) {
-        const transformedIntegrantes: IntegrantesUbicacionPos[] = res[0].values.map((row: any[]) => {
-          return res[0].columns.reduce((obj, col, index) => {
-            obj[col] = row[index];
-            return obj;
-          }, {} as IntegrantesUbicacionPos);
-        });
-        setIntegrantesUbicacionPos(transformedIntegrantes); // Asegúrate de que `setIntegrantesUbicacionPos` es la función correcta para actualizar el estado con los nuevos datos
-      }
-    }
+    // if (database) {
+    //   const res = await database.exec('SELECT * FROM "c151_integrantesubicaciopos";');
+    //   if (res[0]?.values && res[0]?.columns) {
+    //     const transformedIntegrantes: IntegrantesUbicacionPos[] = res[0].values.map((row: any[]) => {
+    //       return res[0].columns.reduce((obj, col, index) => {
+    //         obj[col] = row[index];
+    //         return obj;
+    //       }, {} as IntegrantesUbicacionPos);
+    //     });
+    //     setIntegrantesUbicacionPos(transformedIntegrantes); // Asegúrate de que `setIntegrantesUbicacionPos` es la función correcta para actualizar el estado con los nuevos datos
+    //   }
+    // }
   };
   const fetchObservaciones = async (database = db) => {
-    if (database) {
-      const res = await database.exec('SELECT * FROM "c16_observaciones";');
-      if (res[0]?.values && res[0]?.columns) {
-        const transformedObservaciones: Observaciones[] = res[0].values.map((row: any[]) => {
-          return res[0].columns.reduce((obj, col, index) => {
-            obj[col] = row[index];
-            return obj;
-          }, {} as Observaciones);
-        });
-        setObservaciones(transformedObservaciones); // Asegúrate de que `setObservaciones` es la función correcta para actualizar el estado con los nuevos datos
-      }
-    }
+    // if (database) {
+    //   const res = await database.exec('SELECT * FROM "c16_observaciones";');
+    //   if (res[0]?.values && res[0]?.columns) {
+    //     const transformedObservaciones: Observaciones[] = res[0].values.map((row: any[]) => {
+    //       return res[0].columns.reduce((obj, col, index) => {
+    //         obj[col] = row[index];
+    //         return obj;
+    //       }, {} as Observaciones);
+    //     });
+    //     setObservaciones(transformedObservaciones); // Asegúrate de que `setObservaciones` es la función correcta para actualizar el estado con los nuevos datos
+    //   }
+    // }
   };
   const fetchAutorizacion = async (database = db) => {
-    if (database) {
-      const res = await database.exec('SELECT * FROM "c17_autorizacion";');
-      if (res[0]?.values && res[0]?.columns) {
-        const transformedAutorizaciones: Autorizacion[] = res[0].values.map((row: any[]) => {
-          return res[0].columns.reduce((obj, col, index) => {
-            obj[col] = row[index];
-            return obj;
-          }, {} as Autorizacion);
-        });
-        setAutorizacion(transformedAutorizaciones); // Asegúrate de que `setAutorizacion` es la función correcta para actualizar el estado con los nuevos datos
-      }
-    }
+    // if (database) {
+    //   const res = await database.exec('SELECT * FROM "c17_autorizacion";');
+    //   if (res[0]?.values && res[0]?.columns) {
+    //     const transformedAutorizaciones: Autorizacion[] = res[0].values.map((row: any[]) => {
+    //       return res[0].columns.reduce((obj, col, index) => {
+    //         obj[col] = row[index];
+    //         return obj;
+    //       }, {} as Autorizacion);
+    //     });
+    //     setAutorizacion(transformedAutorizaciones); // Asegúrate de que `setAutorizacion` es la función correcta para actualizar el estado con los nuevos datos
+    //   }
+    // }
   };
 
   const fetchRemisiones = async (database = db) => {
-    if (database) {
-      const res = await database.exec('SELECT * FROM "c101_remisiones";');
-      if (res[0]?.values && res[0]?.columns) {
-        const transformedRemisiones: Remisiones[] = res[0].values.map((row: any[]) => {
-          return res[0].columns.reduce((obj, col, index) => {
-            obj[col] = row[index];
-            return obj;
-          }, {} as Remisiones);
-        });
-        setRemisiones(transformedRemisiones); // Asegúrate de que `setRemisiones` es la función correcta para actualizar el estado con los nuevos datos
-      }
-    }
+    // if (database) {
+    //   const res = await database.exec('SELECT * FROM "c101_remisiones";');
+    //   if (res[0]?.values && res[0]?.columns) {
+    //     const transformedRemisiones: Remisiones[] = res[0].values.map((row: any[]) => {
+    //       return res[0].columns.reduce((obj, col, index) => {
+    //         obj[col] = row[index];
+    //         return obj;
+    //       }, {} as Remisiones);
+    //     });
+    //     setRemisiones(transformedRemisiones); // Asegúrate de que `setRemisiones` es la función correcta para actualizar el estado con los nuevos datos
+    //   }
+    // }
   };
   const fetchRedApoyoIntegrantes = async (database = db) => {
-    if (database) {
-      const res = await database.exec('SELECT * FROM "c111_reddeapoyo";');
-      if (res[0]?.values && res[0]?.columns) {
-        const transformedRedApoyo: RedApoyoIntegrantes[] = res[0].values.map((row: any[]) => {
-          return res[0].columns.reduce((obj, col, index) => {
-            obj[col] = row[index];
-            return obj;
-          }, {} as RedApoyoIntegrantes);
-        });
-        setRedApoyoIntegrantes(transformedRedApoyo); // Asegúrate de que `setRedApoyoIntegrantes` es la función correcta para actualizar el estado con los nuevos datos
-      }
-    }
+    // if (database) {
+    //   const res = await database.exec('SELECT * FROM "c111_reddeapoyo";');
+    //   if (res[0]?.values && res[0]?.columns) {
+    //     const transformedRedApoyo: RedApoyoIntegrantes[] = res[0].values.map((row: any[]) => {
+    //       return res[0].columns.reduce((obj, col, index) => {
+    //         obj[col] = row[index];
+    //         return obj;
+    //       }, {} as RedApoyoIntegrantes);
+    //     });
+    //     setRedApoyoIntegrantes(transformedRedApoyo); // Asegúrate de que `setRedApoyoIntegrantes` es la función correcta para actualizar el estado con los nuevos datos
+    //   }
+    // }
   };
 
 
