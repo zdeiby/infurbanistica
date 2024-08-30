@@ -14,6 +14,7 @@ interface Person {
   idfiu: string | null;
   fechaentrevista:string | null;
   codigosticker:string | null;
+  solicitudrequerimiento: string | null;
   direccion: string | null;
   comuna: string | null;
   barrio: string | null;
@@ -67,6 +68,7 @@ const Tab3: React.FC = () => {
     idfiu: '',
     fechaentrevista:'',
     codigosticker:'',
+    solicitudrequerimiento:'',
     direccion: '',
     comuna: '',
     barrio: '',
@@ -98,6 +100,7 @@ const Tab3: React.FC = () => {
     idfiu: '',
     fechaentrevista:'',
     codigosticker:'',
+    solicitudrequerimiento:'',
     direccion: '',
     comuna: '',
     barrio: '',
@@ -187,6 +190,7 @@ const Tab3: React.FC = () => {
           idfiu: params.ficha,
           fechaentrevista:'',
           codigosticker:'',
+          solicitudrequerimiento:'',
           direccion: '',
           comuna: '',
           barrio: '',
@@ -239,6 +243,7 @@ const Tab3: React.FC = () => {
       idfiu: data.idfiu || params.ficha,
       fechaentrevista:data.fechaentrevista || '',
       codigosticker:data.codigosticker || '',
+      solicitudrequerimiento:data.solicitudrequerimiento || '',
       direccion: data.direccion || '',
       comuna: data.comuna || '',
       barrio: data.barrio || '',
@@ -310,10 +315,10 @@ useEffect(() => {
      event.preventDefault();
     console.log(items)
     try {
-      await db.exec(`INSERT OR REPLACE INTO infraccion_localizacion (idfiu,fechaentrevista, codigosticker, direccion, comuna, barrio, ruralurbano, sector, telefono1, telefono2, correo, estrato, fecharegistro, usuario, estado, tabla, dirCampo1, dirCampo2, dirCampo3, dirCampo4, dirCampo5, dirCampo6, dirCampo7, dirCampo8, dirCampo9, longitud, latitud)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);`,
+      await db.exec(`INSERT OR REPLACE INTO infraccion_localizacion (idfiu,fechaentrevista, codigosticker, solicitudrequerimiento,  direccion, comuna, barrio, ruralurbano, sector, telefono1, telefono2, correo, estrato, fecharegistro, usuario, estado, tabla, dirCampo1, dirCampo2, dirCampo3, dirCampo4, dirCampo5, dirCampo6, dirCampo7, dirCampo8, dirCampo9, longitud, latitud)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? , ?);`,
           [
-            items.idfiu, items.fechaentrevista, items.codigosticker, items.direccion, items.comuna, items.barrio, items.ruralurbano, items.sector, items.telefono1, items.telefono2, items.correo, items.estrato,
+            items.idfiu, items.fechaentrevista, items.codigosticker, items.solicitudrequerimiento, items.direccion, items.comuna, items.barrio, items.ruralurbano, items.sector, items.telefono1, items.telefono2, items.correo, items.estrato,
             items.fecharegistro, items.usuario, items.estado, items.tabla, items.dirCampo1, items.dirCampo2, items.dirCampo3, items.dirCampo4, items.dirCampo5, items.dirCampo6,
             items.dirCampo7, items.dirCampo8, items.dirCampo9, items.longitud, items.latitud
           ]);
@@ -515,6 +520,10 @@ useEffect(() => {
                 <div className="col-sm-3">
                   <label  className="form-label" >N° Sticker:</label>
                   <input type="text" onChange={(e) => handleInputChange(e, 'codigosticker')} value={items.codigosticker} placeholder="" className="form-control form-control-sm  "  />
+                </div>
+                <div className="col-sm-3">
+                  <label  className="form-label" >Solicitud / Requerimiento</label>
+                  <input type="text" onChange={(e) => handleInputChange(e, 'solicitudrequerimiento')} value={items.solicitudrequerimiento} placeholder="" className="form-control form-control-sm  "  />
                 </div>
 
           </div>

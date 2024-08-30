@@ -442,7 +442,7 @@ const Tab11: React.FC = () => {
         await db.exec(`INSERT OR REPLACE INTO infraccion_red_apoyo (idfiu, reddeapoyo, fecharegistro, usuario, estado, tabla)
           VALUES (?, ?, ?, ?, ?, ?);`,
           [
-            items.idfiu, 1, items.fecharegistro, items.usuario, items.estado, '111_reddeapoyo'
+            items.idfiu, 1, items.fecharegistro, items.usuario, items.estado, 'infraccion_red_apoyo'
           ]);
       }
 

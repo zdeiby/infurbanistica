@@ -10,43 +10,12 @@ import { isPlatform } from '@ionic/react';
 import { Filesystem, Directory, Encoding } from '@capacitor/filesystem';
 
 
-interface Person {
-  fichasocial: number;
-  fichatecnia: string;
-  motivovisita: number;
-  tipovisita: string;
-  horaactivacion: string;
-  horaatencion: string;
-  fechavisita: string;
-  fecharegistro: string;
-  usuario: number;
-  estado: string;
-  tabla: string;
-  tipo: number;
-  declaradafallida: string | null;
-  ficharecuperda: string | null;
-  horallegadaalevento: string;
-  remitir: string | null;
-  remitir2: string | null;
-}
-
-interface IdentificacionEvento {
-  fichasocial: number;
-  visitadagrd: string | null;
-  tipoevento: number | null;
-  fecharegistro: string | null;
-  usuario: number | null;
-  estado: number | null;
-  tabla: string | null;
-  otro: string | null;
-  quebrada: string | null;
-  inquilinato: string | null;
-}
 
 interface LocalizacionEvento {
   idfiu: number;
   fechaentrevista: string | null;
   codigosticker: string | null;
+  solicitudrequerimiento: string | null;
   direccion: string | null;
   comuna: number | null;
   barrio: number | null;
@@ -72,46 +41,8 @@ interface LocalizacionEvento {
   longitud: string | null;
   latitud: string | null;
 }
-
-interface EvacuacionYDanios {
-  fichasocial: number;
-  tipoevacuacion: number | null;
-  danosvivienda: number | null;
-  danosenseres: number | null;
-  fecharegistro: string | null;
-  usuario: number | null;
-  estado: number | null;
-  tabla: string | null;
-}
-
-interface DatosDeLaVivienda {
-  fichasocial: number;
-  tipovivienda: number | null;
-  materialpisos: number | null;
-  materialpisosotro: string | null;
-  materialparedes: number | null;
-  materialtechos: number | null;
-  fecharegistro: string | null;
-  usuario: number | null;
-  estado: number | null;
-  tabla: string | null;
-}
-interface ServiciosPublicos {
-  fichasocial: number;
-  energia: number | null;
-  acueducto: number | null;
-  alcantarillado: number | null;
-  gas: number | null;
-  telefono: number | null;
-  telefonofijo: string | null;
-  fecharegistro: string | null;
-  usuario: number | null;
-  estado: number | null;
-  tabla: string | null;
-}
-
 interface TiempoEnLaVivienda {
-  fichasocial: number;
+  idfiu: number;
   tiempovivienda: number | null;
   tiempoviviendaunidad: string | null;
   tiempomedellin: number | null;
@@ -129,7 +60,7 @@ interface TiempoEnLaVivienda {
 }
 
 interface TenenciaYDocumentosVivienda {
-  fichasocial: number;
+  idfiu: number;
   tenenciadelavivienda: number | null;
   propietario: string | null;
   propietariotel1: string | null;
@@ -152,139 +83,22 @@ interface TenenciaYDocumentosVivienda {
   estado: number | null;
   tabla: string | null;
 }
-
-interface ConformacionFamiliar {
-  fichasocial: number;
-  tipodefamilia: number | null;
-  fecharegistro: string | null;
-  usuario: number | null;
-  estado: number | null;
-  tabla: string | null;
-  observacion: string | null;
-  nameFile: string | null;
-}
-
-interface DatosGeneralesRemisiones {
-  idremision: number;
-  idintegrante: number;
-  fichasocial: number;
-  programa: number;
-  fecharegistro: string | null;
-  usuario: number | null;
-  estado: number | null;
-  tabla: string | null;
-  observacion: string | null;
-  motivo: string | null;
-}
-
-interface RedDeApoyo {
-  idredapoyo: number;
-  fichasocial: number | null;
-  ubicacion: string | null;
-  nombreauto: string | null;
-  parentesco: string | null;
-  direccion: string | null;
-  comuna: string | null;
-  barrio: string | null;
-  ruralurbano: string | null;
-  sector: string | null;
-  telefono1: string | null;
-  telefono2: string | null;
-  dirCampo1: string | null;
-  dirCampo2: string | null;
-  dirCampo3: string | null;
-  dirCampo4: string | null;
-  dirCampo5: string | null;
-  dirCampo6: string | null;
-  dirCampo7: string | null;
-  dirCampo8: string | null;
-  dirCampo9: string | null;
-  pais: string | null;
-  departamento: string | null;
-  municipio: string | null;
+interface ServiciosPublicos {
+  idfiu: number;
+  energia: number | null;
+  acueducto: number | null;
+  alcantarillado: number | null;
+  gas: number | null;
+  telefono: number | null;
+  telefonofijo: string | null;
   fecharegistro: string | null;
   usuario: number | null;
   estado: number | null;
   tabla: string | null;
 }
-interface AyudasEntregadas {
-  idayudas: number;
-  fichasocial: number;
-  paquetealimentario: number | null;
-  tipoa: number | null;
-  tipob: number | null;
-  tipoc: number | null;
-  noalimentarias: number | null;
-  quienoa: string | null;
-  factura: string | null;
-  dcocina: number | null;
-  daseohogar: number | null;
-  daseofamiliar: number | null;
-  dasehombre: number | null;
-  daseomujer: number | null;
-  daseonna: number | null;
-  daseoinfantil: number | null;
-  daseoespecial: number | null;
-  dcolchonetas: number | null;
-  dcobijas: number | null;
-  dsabanas: number | null;
-  dalmohadas: number | null;
-  enitdad: string | null;
-  otros: number | null;
-  cuales: string | null;
-  entidadotros: string | null;
-  fechadeentrega: string | null;
-  idintegrante: string | null;
-  fecharegistro: string | null;
-  usuario: number | null;
-  estado: number | null;
-  tabla: string | null;
-  tipoentraga: number | null;
-  ococina: number | null;
-  acocina: number | null;
-  oaseohogar: number | null;
-  aaseohogar: number | null;
-  oaseofamiliar: number | null;
-  aaseofamiliar: number | null;
-  oasehombre: number | null;
-  aasehombre: number | null;
-  oaseomujer: number | null;
-  aaseomujer: number | null;
-  oaseonna: number | null;
-  aaseonna: number | null;
-  oaseoinfantil: number | null;
-  aaseoinfantil: number | null;
-  oaseoespecial: number | null;
-  aaseoespecial: number | null;
-  ocolchonetas: number | null;
-  acolchonetas: number | null;
-  ocobijas: number | null;
-  acobijas: number | null;
-  osabanas: number | null;
-  asabanas: number | null;
-  oalmohadas: number | null;
-  aalmohadas: number | null;
-  quienpaq: string | null;
-  cualpaq: string | null;
-  quienasis: string | null;
-  cualasis: string | null;
-  asistencialiamentaria: number | null;
-  redentrega: number | null;
-  entregado: number | null;
-  observacion: string | null;
-  paquete1: string | null;
-  paquete2: string | null;
-  paquete3: string | null;
-  paquete4: string | null;
-  documentorecibeayuda: string | null;
-  nombrerecibeayuda: string | null;
-  nameFirma: string | null;
-  draw_dataUrl: Blob | null;
-}
-
 interface Integrante {
   idintegrante: number;
-  fichasocial: number | null;
+  idfiu: number | null;
   codigosibis: string | null;
   tipodedocumento: number | null;
   nacionalidad: number | null;
@@ -317,30 +131,26 @@ interface Integrante {
   estado: number | null;
   tabla: string | null;
   origen: string | null;
+  condicionespecial: string | null;
+  otrocondicionespecial: string | null;
 }
 interface Mascotas {
-  fichasocial: number;
+  idfiu: number;
   tienemascotas: number | null;
   cuantos: number | null;
   cuales: string | null;
-  albergalos: string | null;
-  dondelista: string | null;
-  donde: string | null;
-  requierealbergue: string | null;
   fecharegistro: string | null;
   usuario: number | null;
   estado: number | null;
   tabla: string | null;
 }
-interface UbicacionPosteriorAtencionSocial {
-  fichasocial: number;
-  ubicacionposterior: number;
-  cualtemporal: string | null;
-  dondeauxilio: string | null;
+
+interface RedDeApoyo {
+  idredapoyo: number;
+  idfiu: number | null;
+  ubicacion: string | null;
   nombreauto: string | null;
   parentesco: string | null;
-  prestada: string | null;
-  cuallugardistinto: string | null;
   direccion: string | null;
   comuna: string | null;
   barrio: string | null;
@@ -357,7 +167,6 @@ interface UbicacionPosteriorAtencionSocial {
   dirCampo7: string | null;
   dirCampo8: string | null;
   dirCampo9: string | null;
-  ubicacion: string | null;
   pais: string | null;
   departamento: string | null;
   municipio: string | null;
@@ -366,17 +175,33 @@ interface UbicacionPosteriorAtencionSocial {
   estado: number | null;
   tabla: string | null;
 }
-interface IntegrantesUbicacionPos {
-  idintegrante: number;
-  fichasocial: number;
-  ubicacionposterior: number | null;
+
+interface InfraccionSocioeconomico {
+  idfiu: number;
+  ingreso_empleo_formal: number;
+  ingreso_empleo_informal: number;
+  ingreso_subsidio: number;
+  ingreso_pension: number;
+  ingreso_ayuda: number;
+  ingreso_otro: number;
+  ingreso_total: number;
+  egreso_alimentacion: number;
+  egreso_educacion: number;
+  egreso_arriendo: number;
+  egreso_servicios: number;
+  egreso_salud: number;
+  egreso_transporte: number;
+  egreso_deuda: number;
+  egreso_otro: number;
+  egreso_total: number;
   fecharegistro: string | null;
-  usuario: number | null;
-  estado: number | null;
+  usuario: string | null;
+  estado: string | null;
   tabla: string | null;
 }
+
 interface Observaciones {
-  fichasocial: number;
+  idfiu: number;
   observacion: string | null;
   fecharegistro: string | null;
   usuario: number | null;
@@ -385,11 +210,9 @@ interface Observaciones {
 }
 
 interface Autorizacion {
-  fichasocial: number;
+  idfiu: number;
   idintegrante: number | null;
   entidad: string | null;
-  requerieseguimiento: number | null;
-  fechaprobable: string | null;
   diligenciadopor: number | null;
   acepto: string | null;
   fecharegistro: string | null;
@@ -405,23 +228,15 @@ interface Autorizacion {
   idseguimiento: number | null;
   firmatitular: string | null;
 }
-interface Remisiones {
-  fichasocial: number;
-  remisiones: number | null;
-  fecharegistro: string | null;
+interface RedApoyoIntegrantes {
+  idfiu: number;
+  reddeapoyo: number | null;
+  fecharegistro: string | null; // Usando string para datetime, ya que TypeScript no tiene un tipo datetime nativo.
   usuario: number | null;
   estado: number | null;
   tabla: string | null;
 }
 
-interface RedApoyoIntegrantes {
-  fichasocial: number;
-  reddeapoyo: number | null;
-  fecharegistro: string | null;
-  usuario: number | null;
-  estado: number | null;
-  tabla: string | null;
-}
 
 async function getFromIndexedDB() {
   return new Promise((resolve, reject) => {
@@ -469,29 +284,20 @@ async function getFromIndexedDB() {
 
 const Cobertura: React.FC = () => {
 
-
-
   const [db, setDb] = useState<any>(null);
-  const [people, setPeoplec0] = useState<Person[]>([]);
-  const [eventos, setEventos] = useState<IdentificacionEvento[]>([]);
-  const [localizacioneventos, setLocalizacionEventos] = useState<LocalizacionEvento[]>([]);
-  const [evacuacionYDanios, setEvacuacionYDanios] = useState<EvacuacionYDanios[]>([]);
-  const [datosDeLaVivienda, setDatosDeLaVivienda] = useState<DatosDeLaVivienda[]>([]);
-  const [serviciosPublicos, setServiciosPublicos] = useState<ServiciosPublicos[]>([]);
+  const [localizacioneventos, setLocalizacionEventos] = useState<LocalizacionEvento[]>([]);  
   const [tiempoEnLaVivienda, setTiempoEnLaVivienda] = useState<TiempoEnLaVivienda[]>([]);
   const [tenenciaYDocumentosVivienda, setTenenciaYDocumentosVivienda] = useState<TenenciaYDocumentosVivienda[]>([]);
-  const [conformacionFamiliar, setConformacionFamiliar] = useState<ConformacionFamiliar[]>([]);
-  const [datosGeneralesRemisiones, setDatosGeneralesRemisiones] = useState<DatosGeneralesRemisiones[]>([]);
-  const [redDeApoyo, setRedDeApoyo] = useState<RedDeApoyo[]>([]);
-  const [ayudasEntregadas, setAyudasEntregadas] = useState<AyudasEntregadas[]>([]);
+  const [serviciosPublicos, setServiciosPublicos] = useState<ServiciosPublicos[]>([]);
   const [integrante, setIntegrante] = useState<Integrante[]>([]);
   const [mascotas, setMascotas] = useState<Mascotas[]>([]);
-  const [ubicacionPosterior, setUbicacionPosterior] = useState<UbicacionPosteriorAtencionSocial[]>([]);
-  const [integrantesUbicacionPos, setIntegrantesUbicacionPos] = useState<IntegrantesUbicacionPos[]>([]);
+  const [redDeApoyo, setRedDeApoyo] = useState<RedDeApoyo[]>([]);  
+  const [redApoyoIntegrantes, setRedApoyoIntegrantes] = useState<RedApoyoIntegrantes[]>([]);
+  const [socioEconomico, setSocioEconomico] = useState<InfraccionSocioeconomico[]>([]);
   const [observaciones, setObservaciones] = useState<Observaciones[]>([]);
   const [autorizacion, setAutorizacion] = useState<Autorizacion[]>([]);
-  const [remisiones, setRemisiones] = useState<Remisiones[]>([]);
-  const [redApoyoIntegrantes, setRedApoyoIntegrantes] = useState<RedApoyoIntegrantes[]>([]);
+
+
   const [sincro, setSincro] = useState<any>(false);
   const [porcentaje, setPorcentaje] = useState<any>(1);
   const [showModal, setShowModal] = useState(false);
@@ -571,51 +377,37 @@ const Cobertura: React.FC = () => {
 
   useEffect(() => {
     const syncData = async () => {
-      await loadSQL(setDb, fetchUsers);
-      await fetchIdentificacionEvento();
-      await fetchLocalizacionEvento();
-      await fetchEvacuacionYDanios();
-      await fetchDatosDeLaVivienda();
-      await fetchServiciosPublicos();
+      await loadSQL(setDb, fetchLocalizacionEvento);
       await fetchTiempoEnLaVivienda();
       await fetchTenenciaYDocumentosVivienda();
-      await fetchConformacionFamiliar();
-      await fetchDatosGeneralesRemisiones();
-      await fetchRedDeApoyo();
-      await fetchAyudasEntregadas()
+      await fetchServiciosPublicos();
       await fetchIntegrante();
       await fetchMascotas();
-      await fetchUbicacionPosterior();
-      await fetchIntegrantesUbicacionPos();
+      await fetchRedDeApoyo();
+      await fetchRedApoyoIntegrantes();
+      await fetchSocioEconomico();
       await fetchObservaciones();
       await fetchAutorizacion();
-      await fetchRemisiones();
-      await fetchRedApoyoIntegrantes();
+ 
     };
     syncData();
   }, []);
 
   useEffect(() => {
     const syncData = async () => {
-      await fetchIdentificacionEvento();
-      await fetchLocalizacionEvento();
-      await fetchEvacuacionYDanios();
-      await fetchDatosDeLaVivienda();
-      await fetchServiciosPublicos();
+       await fetchLocalizacionEvento();
       await fetchTiempoEnLaVivienda();
       await fetchTenenciaYDocumentosVivienda();
-      await fetchConformacionFamiliar();
-      await fetchDatosGeneralesRemisiones();
-      await fetchRedDeApoyo();
-      await fetchAyudasEntregadas()
+      await fetchServiciosPublicos();
       await fetchIntegrante();
       await fetchMascotas();
-      await fetchUbicacionPosterior();
-      await fetchIntegrantesUbicacionPos();
+      await fetchRedDeApoyo();      
       await fetchObservaciones();
       await fetchAutorizacion();
-      await fetchRemisiones();
       await fetchRedApoyoIntegrantes();
+      await fetchSocioEconomico();
+
+ 
     };
     syncData();
   }, [db]);
@@ -657,37 +449,6 @@ const Cobertura: React.FC = () => {
   };
 
 
-  const fetchUsers = async (database = db) => {
-    // if (database) {
-    //   const res = await database.exec('SELECT * FROM "c0_informaciondelevento";');
-    //   if (res[0]?.values && res[0]?.columns) {
-    //     const transformedPeople: Person[] = res[0].values.map((row: any[]) => {
-    //       return res[0].columns.reduce((obj, col, index) => {
-    //         obj[col] = row[index];
-    //         return obj;
-    //       }, {} as Person);
-    //     });
-    //     setPeoplec0(transformedPeople);
-
-    //   }
-    // }
-
-  };
-
-  const fetchIdentificacionEvento = async (database = db) => {
-    // if (database) {
-    //   const res = await database.exec('SELECT * FROM "c1_identificacionevento";');
-    //   if (res[0]?.values && res[0]?.columns) {
-    //     const transformedEventos: IdentificacionEvento[] = res[0].values.map((row: any[]) => {
-    //       return res[0].columns.reduce((obj, col, index) => {
-    //         obj[col] = row[index];
-    //         return obj;
-    //       }, {} as IdentificacionEvento);
-    //     });
-    //     setEventos(transformedEventos);
-    //   }
-    // }
-  };
 
   const fetchLocalizacionEvento = async (database = db) => {
     if (database) {
@@ -704,290 +465,182 @@ const Cobertura: React.FC = () => {
     }
   };
 
-  const fetchEvacuacionYDanios = async (database = db) => {
-    // if (database) {
-    //   const res = await database.exec('SELECT * FROM "c3_evacuacionydanos";');
-    //   if (res[0]?.values && res[0]?.columns) {
-    //     const transformedDanios: EvacuacionYDanios[] = res[0].values.map((row: any[]) => {
-    //       return res[0].columns.reduce((obj, col, index) => {
-    //         obj[col] = row[index];
-    //         return obj;
-    //       }, {} as EvacuacionYDanios);
-    //     });
-    //     setEvacuacionYDanios(transformedDanios); // Asegúrate de que `setEvacuacionYDanios` es la función correcta para actualizar el estado con los nuevos datos
-    //   }
-    // }
-  };
-
-  const fetchDatosDeLaVivienda = async (database = db) => {
-    // if (database) {
-    //   const res = await database.exec('SELECT * FROM "c4_datosdelavivienda";');
-    //   if (res[0]?.values && res[0]?.columns) {
-    //     const transformedViviendas: DatosDeLaVivienda[] = res[0].values.map((row: any[]) => {
-    //       return res[0].columns.reduce((obj, col, index) => {
-    //         obj[col] = row[index];
-    //         return obj;
-    //       }, {} as DatosDeLaVivienda);
-    //     });
-    //     setDatosDeLaVivienda(transformedViviendas); // Asegúrate de que `setDatosDeLaVivienda` es la función correcta para actualizar el estado con los nuevos datos
-    //   }
-    // }
-  };
-  const fetchServiciosPublicos = async (database = db) => {
-    // if (database) {
-    //   const res = await database.exec('SELECT * FROM "c5_serviciospublicos";');
-    //   if (res[0]?.values && res[0]?.columns) {
-    //     const transformedServicios: ServiciosPublicos[] = res[0].values.map((row: any[]) => {
-    //       return res[0].columns.reduce((obj, col, index) => {
-    //         obj[col] = row[index];
-    //         return obj;
-    //       }, {} as ServiciosPublicos);
-    //     });
-    //     setServiciosPublicos(transformedServicios); // Asegúrate de que `setServiciosPublicos` es la función correcta para actualizar el estado con los nuevos datos
-    //   }
-    // }
-  };
   const fetchTiempoEnLaVivienda = async (database = db) => {
-    // if (database) {
-    //   const res = await database.exec('SELECT * FROM "c6_tiempoenlavivienda";');
-    //   if (res[0]?.values && res[0]?.columns) {
-    //     const transformedTiempos: TiempoEnLaVivienda[] = res[0].values.map((row: any[]) => {
-    //       return res[0].columns.reduce((obj, col, index) => {
-    //         obj[col] = row[index];
-    //         return obj;
-    //       }, {} as TiempoEnLaVivienda);
-    //     });
-    //     setTiempoEnLaVivienda(transformedTiempos); // Asegúrate de que `setTiempoEnLaVivienda` es la función correcta para actualizar el estado con los nuevos datos
-    //   }
-    // }
+     if (database) {
+       const res = await database.exec('SELECT * FROM "infraccion_tiempo_vivienda";');
+       if (res[0]?.values && res[0]?.columns) {
+         const transformedTiempos: TiempoEnLaVivienda[] = res[0].values.map((row: any[]) => {
+           return res[0].columns.reduce((obj, col, index) => {
+             obj[col] = row[index];
+             return obj;
+           }, {} as TiempoEnLaVivienda);
+         });
+         setTiempoEnLaVivienda(transformedTiempos); // Asegúrate de que `setTiempoEnLaVivienda` es la función correcta para actualizar el estado con los nuevos datos
+       }
+     }
   };
 
   const fetchTenenciaYDocumentosVivienda = async (database = db) => {
-    // if (database) {
-    //   const res = await database.exec('SELECT * FROM "c78_tenenciaydocumentosvivienda";');
-    //   if (res[0]?.values && res[0]?.columns) {
-    //     const transformedDocumentos: TenenciaYDocumentosVivienda[] = res[0].values.map((row: any[]) => {
-    //       return res[0].columns.reduce((obj, col, index) => {
-    //         obj[col] = row[index];
-    //         return obj;
-    //       }, {} as TenenciaYDocumentosVivienda);
-    //     });
-    //     setTenenciaYDocumentosVivienda(transformedDocumentos); // Asegúrate de que `setTenenciaYDocumentosVivienda` es la función correcta para actualizar el estado con los nuevos datos
-    //   }
-    // }
+     if (database) {
+       const res = await database.exec('SELECT * FROM "infraccion_tenencia_vivienda";');
+       if (res[0]?.values && res[0]?.columns) {
+         const transformedDocumentos: TenenciaYDocumentosVivienda[] = res[0].values.map((row: any[]) => {
+           return res[0].columns.reduce((obj, col, index) => {
+             obj[col] = row[index];
+             return obj;
+           }, {} as TenenciaYDocumentosVivienda);
+         });
+         setTenenciaYDocumentosVivienda(transformedDocumentos); // Asegúrate de que `setTenenciaYDocumentosVivienda` es la función correcta para actualizar el estado con los nuevos datos
+       }
+     }
   };
 
-  const fetchConformacionFamiliar = async (database = db) => {
-    // if (database) {
-    //   const res = await database.exec('SELECT * FROM "c9_conformacionfamiliar";');
-    //   if (res[0]?.values && res[0]?.columns) {
-    //     const transformedFamilias: ConformacionFamiliar[] = res[0].values.map((row: any[]) => {
-    //       return res[0].columns.reduce((obj, col, index) => {
-    //         obj[col] = row[index];
-    //         return obj;
-    //       }, {} as ConformacionFamiliar);
-    //     });
-    //     setConformacionFamiliar(transformedFamilias); // Asegúrate de que `setConformacionFamiliar` es la función correcta para actualizar el estado con los nuevos datos
-    //   }
-    // }
-  };
-
-  const fetchDatosGeneralesRemisiones = async (database = db) => {
-    // if (database) {
-    //   const res = await database.exec('SELECT * FROM "c10_datosgeneralesremisiones";');
-    //   if (res[0]?.values && res[0]?.columns) {
-    //     const transformedRemisiones: DatosGeneralesRemisiones[] = res[0].values.map((row: any[]) => {
-    //       return res[0].columns.reduce((obj, col, index) => {
-    //         obj[col] = row[index];
-    //         return obj;
-    //       }, {} as DatosGeneralesRemisiones);
-    //     });
-    //     setDatosGeneralesRemisiones(transformedRemisiones); // Asegúrate de que `setDatosGeneralesRemisiones` es la función correcta para actualizar el estado con los nuevos datos
-    //   }
-    // }
-  };
-
-  const fetchRedDeApoyo = async (database = db) => {
-    // if (database) {
-    //   const res = await database.exec('SELECT * FROM "c11_reddeapoyo";');
-    //   if (res[0]?.values && res[0]?.columns) {
-    //     const transformedRed: RedDeApoyo[] = res[0].values.map((row: any[]) => {
-    //       return res[0].columns.reduce((obj, col, index) => {
-    //         obj[col] = row[index];
-    //         return obj;
-    //       }, {} as RedDeApoyo);
-    //     });
-    //     setRedDeApoyo(transformedRed); // Asegúrate de que `setRedDeApoyo` es la función correcta para actualizar el estado con los nuevos datos
-    //   }
-    // }
-  };
-  const fetchAyudasEntregadas = async (database = db) => {
-    // if (database) {
-    //   const res = await database.exec('SELECT * FROM "c12_ayudasentregadas";');
-    //   if (res[0]?.values && res[0]?.columns) {
-    //     const transformedAyudas: AyudasEntregadas[] = res[0].values.map((row: any[]) => {
-    //       return res[0].columns.reduce((obj, col, index) => {
-    //         obj[col] = row[index];
-    //         return obj;
-    //       }, {} as AyudasEntregadas);
-    //     });
-    //     setAyudasEntregadas(transformedAyudas); // Asegúrate de que `setAyudasEntregadas` es la función correcta para actualizar el estado con los nuevos datos
-    //   }
-    // }
+  const fetchServiciosPublicos = async (database = db) => {
+     if (database) {
+       const res = await database.exec('SELECT * FROM "infraccion_servicios_publicos";');
+       if (res[0]?.values && res[0]?.columns) {
+         const transformedServicios: ServiciosPublicos[] = res[0].values.map((row: any[]) => {
+           return res[0].columns.reduce((obj, col, index) => {
+             obj[col] = row[index];
+             return obj;
+           }, {} as ServiciosPublicos);
+         });
+         setServiciosPublicos(transformedServicios); // Asegúrate de que `setServiciosPublicos` es la función correcta para actualizar el estado con los nuevos datos
+       }
+     }
   };
 
   const fetchIntegrante = async (database = db) => {
-    // if (database) {
-    //   const res = await database.exec('SELECT * FROM "c131_integrante";');
-    //   if (res[0]?.values && res[0]?.columns) {
-    //     const transformedIntegrantes: Integrante[] = res[0].values.map((row: any[]) => {
-    //       return res[0].columns.reduce((obj, col, index) => {
-    //         obj[col] = row[index];
-    //         return obj;
-    //       }, {} as Integrante);
-    //     });
-    //     setIntegrante(transformedIntegrantes); // Asegúrate de que `setIntegrante` es la función correcta para actualizar el estado con los nuevos datos
-    //   }
-    // }
+     if (database) {
+       const res = await database.exec('SELECT * FROM "infraccion_integrante_familiar";');
+       if (res[0]?.values && res[0]?.columns) {
+         const transformedIntegrantes: Integrante[] = res[0].values.map((row: any[]) => {
+           return res[0].columns.reduce((obj, col, index) => {
+             obj[col] = row[index];
+             return obj;
+           }, {} as Integrante);
+         });
+         setIntegrante(transformedIntegrantes); // Asegúrate de que `setIntegrante` es la función correcta para actualizar el estado con los nuevos datos
+       }
+     }
   };
 
   const fetchMascotas = async (database = db) => {
-    // if (database) {
-    //   const res = await database.exec('SELECT * FROM "c14_mascotas";');
-    //   if (res[0]?.values && res[0]?.columns) {
-    //     const transformedMascotas: Mascotas[] = res[0].values.map((row: any[]) => {
-    //       return res[0].columns.reduce((obj, col, index) => {
-    //         obj[col] = row[index];
-    //         return obj;
-    //       }, {} as Mascotas);
-    //     });
-    //     setMascotas(transformedMascotas); // Asegúrate de que `setMascotas` es la función correcta para actualizar el estado con los nuevos datos
-    //   }
-    // }
+     if (database) {
+       const res = await database.exec('SELECT * FROM "infraccion_mascotas";');
+       if (res[0]?.values && res[0]?.columns) {
+         const transformedMascotas: Mascotas[] = res[0].values.map((row: any[]) => {
+           return res[0].columns.reduce((obj, col, index) => {
+             obj[col] = row[index];
+             return obj;
+           }, {} as Mascotas);
+         });
+         setMascotas(transformedMascotas); // Asegúrate de que `setMascotas` es la función correcta para actualizar el estado con los nuevos datos
+       }
+     }
   };
-  const fetchUbicacionPosterior = async (database = db) => {
-    // if (database) {
-    //   const res = await database.exec('SELECT * FROM "c15_ubicacionposterioratencionsocial";');
-    //   if (res[0]?.values && res[0]?.columns) {
-    //     const transformedUbicaciones: UbicacionPosteriorAtencionSocial[] = res[0].values.map((row: any[]) => {
-    //       return res[0].columns.reduce((obj, col, index) => {
-    //         obj[col] = row[index];
-    //         return obj;
-    //       }, {} as UbicacionPosteriorAtencionSocial);
-    //     });
-    //     setUbicacionPosterior(transformedUbicaciones); // Asegúrate de que `setUbicacionPosterior` es la función correcta para actualizar el estado con los nuevos datos
-    //   }
-    // }
+
+  const fetchRedDeApoyo = async (database = db) => {
+     if (database) {
+       const res = await database.exec('SELECT * FROM "infraccion_integrante_red_apoyo";');
+       if (res[0]?.values && res[0]?.columns) {
+         const transformedRed: RedDeApoyo[] = res[0].values.map((row: any[]) => {
+           return res[0].columns.reduce((obj, col, index) => {
+             obj[col] = row[index];
+             return obj;
+           }, {} as RedDeApoyo);
+         });
+         setRedDeApoyo(transformedRed); // Asegúrate de que `setRedDeApoyo` es la función correcta para actualizar el estado con los nuevos datos
+       }
+     }
   };
-  const fetchIntegrantesUbicacionPos = async (database = db) => {
-    // if (database) {
-    //   const res = await database.exec('SELECT * FROM "c151_integrantesubicaciopos";');
-    //   if (res[0]?.values && res[0]?.columns) {
-    //     const transformedIntegrantes: IntegrantesUbicacionPos[] = res[0].values.map((row: any[]) => {
-    //       return res[0].columns.reduce((obj, col, index) => {
-    //         obj[col] = row[index];
-    //         return obj;
-    //       }, {} as IntegrantesUbicacionPos);
-    //     });
-    //     setIntegrantesUbicacionPos(transformedIntegrantes); // Asegúrate de que `setIntegrantesUbicacionPos` es la función correcta para actualizar el estado con los nuevos datos
-    //   }
-    // }
+
+  const fetchSocioEconomico = async (database = db) => {
+     if (database) {
+       const res = await database.exec('SELECT * FROM "infraccion_socioeconomico";');
+       if (res[0]?.values && res[0]?.columns) {
+         const transformedAyudas: InfraccionSocioeconomico[] = res[0].values.map((row: any[]) => {
+           return res[0].columns.reduce((obj, col, index) => {
+             obj[col] = row[index];
+             return obj;
+           }, {} as InfraccionSocioeconomico);
+         });
+         setSocioEconomico(transformedAyudas); // Asegúrate de que `setAyudasEntregadas` es la función correcta para actualizar el estado con los nuevos datos
+       }
+     }
   };
+
   const fetchObservaciones = async (database = db) => {
-    // if (database) {
-    //   const res = await database.exec('SELECT * FROM "c16_observaciones";');
-    //   if (res[0]?.values && res[0]?.columns) {
-    //     const transformedObservaciones: Observaciones[] = res[0].values.map((row: any[]) => {
-    //       return res[0].columns.reduce((obj, col, index) => {
-    //         obj[col] = row[index];
-    //         return obj;
-    //       }, {} as Observaciones);
-    //     });
-    //     setObservaciones(transformedObservaciones); // Asegúrate de que `setObservaciones` es la función correcta para actualizar el estado con los nuevos datos
-    //   }
-    // }
+     if (database) {
+       const res = await database.exec('SELECT * FROM "infraccion_observaciones";');
+       if (res[0]?.values && res[0]?.columns) {
+         const transformedObservaciones: Observaciones[] = res[0].values.map((row: any[]) => {
+           return res[0].columns.reduce((obj, col, index) => {
+             obj[col] = row[index];
+             return obj;
+           }, {} as Observaciones);
+         });
+         setObservaciones(transformedObservaciones); // Asegúrate de que `setObservaciones` es la función correcta para actualizar el estado con los nuevos datos
+       }
+     }
   };
+
   const fetchAutorizacion = async (database = db) => {
-    // if (database) {
-    //   const res = await database.exec('SELECT * FROM "c17_autorizacion";');
-    //   if (res[0]?.values && res[0]?.columns) {
-    //     const transformedAutorizaciones: Autorizacion[] = res[0].values.map((row: any[]) => {
-    //       return res[0].columns.reduce((obj, col, index) => {
-    //         obj[col] = row[index];
-    //         return obj;
-    //       }, {} as Autorizacion);
-    //     });
-    //     setAutorizacion(transformedAutorizaciones); // Asegúrate de que `setAutorizacion` es la función correcta para actualizar el estado con los nuevos datos
-    //   }
-    // }
+     if (database) {
+       const res = await database.exec('SELECT * FROM "infraccion_autorizacion";');
+       if (res[0]?.values && res[0]?.columns) {
+         const transformedAutorizaciones: Autorizacion[] = res[0].values.map((row: any[]) => {
+           return res[0].columns.reduce((obj, col, index) => {
+             obj[col] = row[index];
+             return obj;
+           }, {} as Autorizacion);
+         });
+         setAutorizacion(transformedAutorizaciones); // Asegúrate de que `setAutorizacion` es la función correcta para actualizar el estado con los nuevos datos
+       }
+     }
   };
 
-  const fetchRemisiones = async (database = db) => {
-    // if (database) {
-    //   const res = await database.exec('SELECT * FROM "c101_remisiones";');
-    //   if (res[0]?.values && res[0]?.columns) {
-    //     const transformedRemisiones: Remisiones[] = res[0].values.map((row: any[]) => {
-    //       return res[0].columns.reduce((obj, col, index) => {
-    //         obj[col] = row[index];
-    //         return obj;
-    //       }, {} as Remisiones);
-    //     });
-    //     setRemisiones(transformedRemisiones); // Asegúrate de que `setRemisiones` es la función correcta para actualizar el estado con los nuevos datos
-    //   }
-    // }
-  };
   const fetchRedApoyoIntegrantes = async (database = db) => {
-    // if (database) {
-    //   const res = await database.exec('SELECT * FROM "c111_reddeapoyo";');
-    //   if (res[0]?.values && res[0]?.columns) {
-    //     const transformedRedApoyo: RedApoyoIntegrantes[] = res[0].values.map((row: any[]) => {
-    //       return res[0].columns.reduce((obj, col, index) => {
-    //         obj[col] = row[index];
-    //         return obj;
-    //       }, {} as RedApoyoIntegrantes);
-    //     });
-    //     setRedApoyoIntegrantes(transformedRedApoyo); // Asegúrate de que `setRedApoyoIntegrantes` es la función correcta para actualizar el estado con los nuevos datos
-    //   }
-    // }
+     if (database) {
+       const res = await database.exec('SELECT * FROM "infraccion_red_apoyo";');
+       if (res[0]?.values && res[0]?.columns) {
+         const transformedRedApoyo: RedApoyoIntegrantes[] = res[0].values.map((row: any[]) => {
+           return res[0].columns.reduce((obj, col, index) => {
+             obj[col] = row[index];
+             return obj;
+           }, {} as RedApoyoIntegrantes);
+         });
+         setRedApoyoIntegrantes(transformedRedApoyo); // Asegúrate de que `setRedApoyoIntegrantes` es la función correcta para actualizar el estado con los nuevos datos
+       }
+     }
   };
-
-
 
 
 
   const sincronizacion = async () => {
-    //await  fetchUsers();
-    await fetchIdentificacionEvento();
     await saveDatabase();
-    await fetchLocalizacionEvento();
-    await fetchEvacuacionYDanios();
-    await fetchDatosDeLaVivienda();
-    await fetchServiciosPublicos();
+    await fetchLocalizacionEvento(); 
     await fetchTiempoEnLaVivienda();
     await fetchTenenciaYDocumentosVivienda();
-    await fetchConformacionFamiliar();
-    await fetchDatosGeneralesRemisiones();
-
-    await fetchRedDeApoyo();
-    await fetchAyudasEntregadas();
+    await fetchServiciosPublicos();
     await fetchIntegrante();
     await fetchMascotas();
-    await fetchUbicacionPosterior();
-    await fetchIntegrantesUbicacionPos();
+    await fetchSocioEconomico();
     await fetchObservaciones();
     await fetchAutorizacion();
-    await fetchRemisiones();
     await fetchRedApoyoIntegrantes();
+
+
     setSincro(true);
     setPorcentaje(0);
     closeModal();
-    try {
-      const response = await axios.post('https://aws.cah.org.co/comision/cah/index.php/app_comisionsocial/welcome/fc_guardarcap0', people, {
+    try {  //https://zdeiby.castelancarpinteyro.com/apicomision/index.php/Welcome/fc_guardar_infraccion_localizacion
+      const response = await axios.post('https://zdeiby.castelancarpinteyro.com/apicomision/index.php/Welcome/fc_guardar_infraccion_localizacion', localizacioneventos, {
         headers: {
           'Content-Type': 'application/json'
         }
       });
-      setPorcentaje(5)
+      setPorcentaje(10)
      // await openModal('Error al guardar', 'danger','ligth');
       console.log(response.data);
     } catch (error) {
@@ -997,37 +650,7 @@ const Cobertura: React.FC = () => {
     }
 
     try {
-      const response = await axios.post('https://aws.cah.org.co/comision/cah/index.php/app_comisionsocial/welcome/fc_guardarcap1', eventos, {
-        headers: {
-          'Content-Type': 'application/json'
-        }
-      });
-
-      console.log(response.data);
-      setPorcentaje(10)
-    } catch (error) {
-      console.error('Error al guardar los datos', error);
-      await openModal('Error al guardar', 'danger','ligth');
-      alert('Error al guardar los datos');
-    }
-
-    try {
-      const response = await axios.post('https://aws.cah.org.co/comision/cah/index.php/app_comisionsocial/welcome/fc_guardarcap2', localizacioneventos, {
-        headers: {
-          'Content-Type': 'application/json'
-        }
-      });
-
-      console.log(response.data);
-      setPorcentaje(15)
-    } catch (error) {
-      console.error('Error al guardar los datos', error);
-      await openModal('Error al guardar', 'danger','ligth');
-      alert('Error al guardar los datos');
-    }
-
-    try {
-      const response = await axios.post('https://aws.cah.org.co/comision/cah/index.php/app_comisionsocial/welcome/fc_guardarcap3', evacuacionYDanios, {
+      const response = await axios.post('https://zdeiby.castelancarpinteyro.com/apicomision/index.php/Welcome/fc_guardar_infraccion_tiempo_vivienda', tiempoEnLaVivienda, {
         headers: {
           'Content-Type': 'application/json'
         }
@@ -1039,72 +662,38 @@ const Cobertura: React.FC = () => {
       console.error('Error al guardar los datos', error);
       await openModal('Error al guardar', 'danger','ligth');
       alert('Error al guardar los datos');
-    } try {
-      const response = await axios.post('https://aws.cah.org.co/comision/cah/index.php/app_comisionsocial/welcome/fc_guardarcap4', datosDeLaVivienda, {
+    }
+
+    try {
+      const response = await axios.post('https://zdeiby.castelancarpinteyro.com/apicomision/index.php/Welcome/fc_guardar_infraccion_tenencia_vivienda', tenenciaYDocumentosVivienda, {
         headers: {
           'Content-Type': 'application/json'
         }
       });
-      setPorcentaje(25)
+
       console.log(response.data);
-    } catch (error) {
-      console.error('Error al guardar los datos', error);
-      await openModal('Error al guardar', 'danger','ligth');
-      alert('Error al guardar los datos');
-    } try {
-      const response = await axios.post('https://aws.cah.org.co/comision/cah/index.php/app_comisionsocial/welcome/fc_guardarcap5', serviciosPublicos, {
-        headers: {
-          'Content-Type': 'application/json'
-        }
-      });
       setPorcentaje(30)
-      console.log(response.data);
-    } catch (error) {
-      console.error('Error al guardar los datos', error);
-      await openModal('Error al guardar', 'danger','ligth');
-      alert('Error al guardar los datos');
-    } try {
-      const response = await axios.post('https://aws.cah.org.co/comision/cah/index.php/app_comisionsocial/welcome/fc_guardarcap6', tiempoEnLaVivienda, {
-        headers: {
-          'Content-Type': 'application/json'
-        }
-      });
-      setPorcentaje(35)
-      console.log(response.data);
-    } catch (error) {
-      console.error('Error al guardar los datos', error);
-      await openModal('Error al guardar', 'danger','ligth');
-      alert('Error al guardar los datos');
-    } try {
-      const response = await axios.post('https://aws.cah.org.co/comision/cah/index.php/app_comisionsocial/welcome/fc_guardarcap78', tenenciaYDocumentosVivienda, {
-        headers: {
-          'Content-Type': 'application/json'
-        }
-      });
-      setPorcentaje(40)
-      console.log(response.data);
-    } catch (error) {
-      console.error('Error al guardar los datos', error);
-      await openModal('Error al guardar', 'danger','ligth');
-      alert('Error al guardar los datos');
-    } try {
-      const response = await axios.post('https://aws.cah.org.co/comision/cah/index.php/app_comisionsocial/welcome/fc_guardarcap9', conformacionFamiliar, {
-        headers: {
-          'Content-Type': 'application/json'
-        }
-      });
-      setPorcentaje(45)
-      console.log(response.data);
     } catch (error) {
       console.error('Error al guardar los datos', error);
       await openModal('Error al guardar', 'danger','ligth');
       alert('Error al guardar los datos');
     }
 
-
-
     try {
-      const response = await axios.post('https://aws.cah.org.co/comision/cah/index.php/app_comisionsocial/welcome/fc_guardarcap10', datosGeneralesRemisiones, {
+      const response = await axios.post('https://zdeiby.castelancarpinteyro.com/apicomision/index.php/Welcome/fc_guardar_infraccion_servicios_publicos', serviciosPublicos, {
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+
+      console.log(response.data);
+      setPorcentaje(40)
+    } catch (error) {
+      console.error('Error al guardar los datos', error);
+      await openModal('Error al guardar', 'danger','ligth');
+      alert('Error al guardar los datos');
+    } try {
+      const response = await axios.post('https://zdeiby.castelancarpinteyro.com/apicomision/index.php/Welcome/fc_guardar_infraccion_mascotas', mascotas, {
         headers: {
           'Content-Type': 'application/json'
         }
@@ -1116,19 +705,7 @@ const Cobertura: React.FC = () => {
       await openModal('Error al guardar', 'danger','ligth');
       alert('Error al guardar los datos');
     } try {
-      const response = await axios.post('https://aws.cah.org.co/comision/cah/index.php/app_comisionsocial/welcome/fc_guardarcap11', redDeApoyo, {
-        headers: {
-          'Content-Type': 'application/json'
-        }
-      });
-      setPorcentaje(55)
-      console.log(response.data);
-    } catch (error) {
-      console.error('Error al guardar los datos', error);
-      await openModal('Error al guardar', 'danger','ligth');
-      alert('Error al guardar los datos');
-    } try {
-      const response = await axios.post('https://aws.cah.org.co/comision/cah/index.php/app_comisionsocial/welcome/fc_guardarcap12', ayudasEntregadas, {
+      const response = await axios.post('https://zdeiby.castelancarpinteyro.com/apicomision/index.php/Welcome/fc_guardar_infraccion_integrante_red_apoyo', redDeApoyo, {
         headers: {
           'Content-Type': 'application/json'
         }
@@ -1139,8 +716,10 @@ const Cobertura: React.FC = () => {
       console.error('Error al guardar los datos', error);
       await openModal('Error al guardar', 'danger','ligth');
       alert('Error al guardar los datos');
-    } try {
-      const response = await axios.post('https://aws.cah.org.co/comision/cah/index.php/app_comisionsocial/welcome/fc_guardarcap131', integrante, {
+    }
+
+    try {
+      const response = await axios.post('https://zdeiby.castelancarpinteyro.com/apicomision/index.php/Welcome/fc_guardar_infraccion_red_apoyo', redApoyoIntegrantes, {
         headers: {
           'Content-Type': 'application/json'
         }
@@ -1151,8 +730,13 @@ const Cobertura: React.FC = () => {
       console.error('Error al guardar los datos', error);
       await openModal('Error al guardar', 'danger','ligth');
       alert('Error al guardar los datos');
-    } try {
-      const response = await axios.post('https://aws.cah.org.co/comision/cah/index.php/app_comisionsocial/welcome/fc_guardarcap14', mascotas, {
+    }
+    
+    
+    
+    
+    try {
+      const response = await axios.post('https://zdeiby.castelancarpinteyro.com/apicomision/index.php/Welcome/fc_guardar_infraccion_integrante_familiar', integrante, {
         headers: {
           'Content-Type': 'application/json'
         }
@@ -1164,19 +748,7 @@ const Cobertura: React.FC = () => {
       await openModal('Error al guardar', 'danger','ligth');
       alert('Error al guardar los datos');
     } try {
-      const response = await axios.post('https://aws.cah.org.co/comision/cah/index.php/app_comisionsocial/welcome/fc_guardarcap15', ubicacionPosterior, {
-        headers: {
-          'Content-Type': 'application/json'
-        }
-      });
-      setPorcentaje(75)
-      console.log(response.data);
-    } catch (error) {
-      console.error('Error al guardar los datos', error);
-      await openModal('Error al guardar', 'danger','ligth');
-      alert('Error al guardar los datos');
-    } try {
-      const response = await axios.post('https://aws.cah.org.co/comision/cah/index.php/app_comisionsocial/welcome/fc_guardarcap151', integrantesUbicacionPos, {
+      const response = await axios.post('https://zdeiby.castelancarpinteyro.com/apicomision/index.php/Welcome/fc_guardar_infraccion_socioeconomico', socioEconomico, {
         headers: {
           'Content-Type': 'application/json'
         }
@@ -1188,19 +760,7 @@ const Cobertura: React.FC = () => {
       await openModal('Error al guardar', 'danger','ligth');
       alert('Error al guardar los datos');
     } try {
-      const response = await axios.post('https://aws.cah.org.co/comision/cah/index.php/app_comisionsocial/welcome/fc_guardarcap16', observaciones, {
-        headers: {
-          'Content-Type': 'application/json'
-        }
-      });
-      setPorcentaje(85)
-      console.log(response.data);
-    } catch (error) {
-      console.error('Error al guardar los datos', error);
-      await openModal('Error al guardar', 'danger','ligth');
-      alert('Error al guardar los datos');
-    } try {
-      const response = await axios.post('https://aws.cah.org.co/comision/cah/index.php/app_comisionsocial/welcome/fc_guardarcap17', autorizacion, {
+      const response = await axios.post('https://zdeiby.castelancarpinteyro.com/apicomision/index.php/Welcome/fc_guardar_infraccion_observaciones', observaciones, {
         headers: {
           'Content-Type': 'application/json'
         }
@@ -1211,19 +771,8 @@ const Cobertura: React.FC = () => {
       console.error('Error al guardar los datos', error);
       await openModal('Error al guardar', 'danger','ligth');
       alert('Error al guardar los datos');
-    } try {
-      const response = await axios.post('https://aws.cah.org.co/comision/cah/index.php/app_comisionsocial/welcome/fc_guardarcap101', remisiones, {
-        headers: {
-          'Content-Type': 'application/json'
-        }
-      });
-      setPorcentaje(95)
-      console.log(response.data);
-    } catch (error) {
-      console.error('Error al guardar los datos', error);
-      await openModal('Error al guardar', 'danger','ligth');
-      alert('Error al guardar los datos');
     }
+
 // SINCRONIZAR DE BAJADA USUARIOS
     try {
       const response = await axios.get('https://aws.cah.org.co/comision/cah/index.php/app_comisionsocial/welcome/fc_info');
@@ -1237,18 +786,13 @@ const Cobertura: React.FC = () => {
       }
 
       saveDatabase();
-      fetchUsers();
+      fetchLocalizacionEvento();
     } catch (err) {
       console.error('Error al exportar los datos JSON: t1_programas', err);
     }
 
-
-
-
-
-
     try {
-      const response = await axios.post('https://aws.cah.org.co/comision/cah/index.php/app_comisionsocial/welcome/fc_guardarcap111', redApoyoIntegrantes, {
+      const response = await axios.post('https://zdeiby.castelancarpinteyro.com/apicomision/index.php/Welcome/fc_guardar_infraccion_autorizacion', autorizacion, {
         headers: {
           'Content-Type': 'application/json'
         }
@@ -1264,94 +808,6 @@ const Cobertura: React.FC = () => {
     }
 
     setSincro(false);
-
-    // try {
-    //   const response = await axios.get('/jsonstablas/t1_programas.json');
-    //   const jsonData = response.data;
-    //  // setProgramas(jsonData);
-
-    //   for (const item of jsonData) {
-    //     await db.run(`INSERT OR REPLACE INTO t1_programas (id, descripcion, estado, tipo, usuario, tabla, fecharegistro) VALUES (?, ?, ?, ?, ?, ?, ?);`, [
-    //       item.id, item.descripcion, item.estado, item.tipo, item.usuario, item.tabla, item.fecharegistro
-    //     ]);
-    //   }
-
-    //   saveDatabase();
-    //   fetchUsers();
-    // } catch (err) {
-    //   console.error('Error al exportar los datos JSON: t1_programas', err);
-    // }
-
-    // try {
-    //   const response = await axios.get('/jsonstablas/t1_parentesco.json');
-    //   const jsonData = response.data;
-    //  // setProgramas(jsonData);
-
-    //   for (const item of jsonData) {
-    //     await db.run(`INSERT OR REPLACE INTO t1_parentesco  (id, descripcion, estado) VALUES (?, ?, ?);`, [
-    //       item.id, item.descripcion, item.estado
-    //     ]);
-    //   }
-
-    //   saveDatabase();
-    //   fetchUsers();
-    // } catch (err) {
-    //   console.error('Error al exportar los datos JSON: t1_parentesco ', err);
-    // }
-
-    // try {
-    //   const response = await axios.get('/jsonstablas/t1_comunas.json');
-    //   const jsonData = response.data;
-    //  // setProgramas(jsonData);
-
-    //   for (const item of jsonData) {
-    //     await db.run(`INSERT OR REPLACE INTO t1_comunas  (id, descripcion, estado) VALUES (?, ?, ?);`, [
-    //       item.id, item.descripcion, item.estado
-    //     ]);
-    //   }
-
-    //   saveDatabase();
-    //   fetchUsers();
-    // } catch (err) {
-    //   console.error('Error al exportar los datos JSON: t1_comunas ', err);
-    // }
-
-
-    // try {
-    //   const response = await axios.get('/jsonstablas/t1_barrios.json');
-    //   const jsonData = response.data;
-    //  // setProgramas(jsonData);
-
-    //   for (const item of jsonData) {
-    //     await db.run(`INSERT OR REPLACE INTO t1_barrios   (id, descripcion, comuna, estado) VALUES (?, ?, ?, ?);`, [
-    //       item.id, item.descripcion, item.comuna, item.estado, 
-    //     ]);
-    //   }
-
-    //   saveDatabase();
-    //   fetchUsers();
-    // } catch (err) {
-    //   console.error('Error al exportar los datos JSON: t1_barrios  ', err);
-    // }
-
-
-    // try {
-    //   const response = await axios.get('/jsonstablas/t1_ubicacionposterior.json');
-    //   const jsonData = response.data;
-    //  // setProgramas(jsonData);
-
-    //   for (const item of jsonData) {
-    //     await db.run(`INSERT OR REPLACE INTO t1_ubicacionposterior (id, descripcion, estado) VALUES (?, ?, ?);`, [
-    //       item.id, item.descripcion, item.estado, 
-    //     ]);
-    //   }
-
-    //   saveDatabase();
-    //   fetchUsers();
-    //   window.alert('sincronizacion exitosa')
-    // } catch (err) {
-    //   console.error('Error al exportar los datos JSON: t1_ubicacionposterior  ', err);
-    // }
 
 
   }
@@ -1385,8 +841,8 @@ const Cobertura: React.FC = () => {
     }
   };
 
-  const handleEditClick = (fichasocial: string) => {
-    window.location.href = `/tabs/tab3/${fichasocial}`;
+  const handleEditClick = (idfiu: string) => {
+    window.location.href = `/tabs/tab3/${idfiu}`;
   };
 
   const [searchText, setSearchText] = useState('');
