@@ -983,7 +983,7 @@ const Tab11: React.FC = () => {
 
         {/* <div><IonButton color="success" onClick={enviar}>Guardar</IonButton><IonButton routerLink={`/tabs/tab12/${params.ficha}`}>Siguiente</IonButton></div> */}
         <div><button className='btn btn-success' type="submit" onClick={(e)=>(enviar(db,e))}>Guardar</button>&nbsp;
-       <div className={`btn btn-primary `} onClick={() => {  window.location.href = `/tabs/tab17/${params.ficha}`; }}> Siguiente</div>
+       <div className={`btn btn-primary `} onClick={() => {  window.location.href = `/tabs/tab15/${params.ficha}`; }}> Siguiente</div>
        </div>
        </form>
 

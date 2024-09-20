@@ -7,6 +7,7 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar,
   IonBadge,IonSelectOption, IonText, IonDatetimeButton,IonModal,IonDatetime,
   IonIcon} from '@ionic/react';
 import { useHistory, useParams } from 'react-router-dom';
+import GpsCoordinates from '../components/Geolocalizacion';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import loadSQL from '../models/database';
 
@@ -133,6 +134,7 @@ const Tab3: React.FC = () => {
     loadSQL(setDb, fetchUsers);
     fetchBarrios();
     fetchComunas();
+    
   }, []);
 
  
@@ -232,6 +234,15 @@ const Tab3: React.FC = () => {
     const seconds = String(date.getSeconds()).padStart(2, '0');
   
     return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+  };
+
+
+  const handleLatLonChange = (lat: string, lon: string) => {   // para la geolocalizacion
+    setItems((prevItems) => ({
+      ...prevItems,
+      latitud: lat,
+      longitud: lon,
+    }));
   };
 
 
@@ -763,6 +774,7 @@ useEffect(() => {
   </IonList>
 
   <IonList>
+  <GpsCoordinates onLatLonChange={handleLatLonChange} />
   <div className="row g-3 was-validated ">
             <div className="col-sm">
               <label  className="form-label" >Latitud:</label>

@@ -92,10 +92,10 @@ const MenuLat: React.FC = () => {
         <IonIcon slot="start" icon={peopleCircle} />
         <IonLabel>8 - RED DE APOYO</IonLabel>
       </IonItem>
-      <IonItem button routerLink={`/tabs/tab17/${ficha2}`}>
+      {/* <IonItem button routerLink={`/tabs/tab17/${ficha2}`}>
         <IonIcon slot="start" icon={home} />
         <IonLabel>10 - ASPECTOS SOCIOECONÓMICOS DEL GRUPO FAMILIAR</IonLabel>
-      </IonItem> 
+      </IonItem>  */}
       {/* <IonItem button routerLink={`/tabs/tab14/${ficha2}`}>
         <IonIcon slot="start" icon={home} />
         <IonLabel>15 - UBICACION DE LA FAMILIA POSTERIOR A LA ATENCION SOCIAL</IonLabel>

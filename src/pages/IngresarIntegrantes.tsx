@@ -37,6 +37,7 @@ interface Person {
   enfermedades: string | null;
   actividad: string | null;
   ocupacion: string | null;
+  condicionmigratoria:string | null;
   estadousuario: string | null;
   campesino: string | null;
   desplazado: string | null;
@@ -83,6 +84,7 @@ const IngresarIntegrantes: React.FC = () => {
     enfermedades: '',
     actividad: '',
     ocupacion: '',
+    condicionmigratoria:'',
     estadousuario: '',
     campesino: '',
     desplazado: '',
@@ -173,6 +175,7 @@ console.log(idintegrante, 'idintegrante')
           enfermedades: '6',
           actividad: '',
           ocupacion: '',
+          condicionmigratoria:'',
           estadousuario: '3',
           campesino: '',
           desplazado: '',
@@ -229,6 +232,7 @@ console.log(idintegrante, 'idintegrante')
         enfermedades: data.enfermedades || '',
         actividad: data.actividad || '',
         ocupacion: data.ocupacion || '',
+        condicionmigratoria: data.condicionmigratoria || '',
         estadousuario: data.estadousuario || '',
         campesino: data.campesino || '',
         desplazado: data.desplazado || '',
@@ -307,12 +311,12 @@ console.log(idintegrante, 'idintegrante')
      event.preventDefault();
     console.log(items)
     try {
-      await db.exec(`INSERT OR REPLACE INTO infraccion_integrante_familiar (idintegrante, idfiu, codigosibis, tipodedocumento, nacionalidad, numerodedocumento, nombre1, nombre2, apellido1, apellido2, fechadenacimiento, sexo, orientacionsexual, identidaddegenero, etnia, estadocivil, gestantelactante, escolaridad, parentesco, discapacidad, regimendesalud, enfermedades, actividad, ocupacion, estadousuario, campesino, desplazado, sisbenizado, victima, fecharegistro, usuario, estado, tabla, origen, condicionespecial, otrocondicionespecial)
-        VALUES (?,?,?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);`,
+      await db.exec(`INSERT OR REPLACE INTO infraccion_integrante_familiar (idintegrante, idfiu, codigosibis, tipodedocumento, nacionalidad, numerodedocumento, nombre1, nombre2, apellido1, apellido2, fechadenacimiento, sexo, orientacionsexual, identidaddegenero, etnia, estadocivil, gestantelactante, escolaridad, parentesco, discapacidad, regimendesalud, enfermedades, actividad, ocupacion,  condicionmigratoria, estadousuario, campesino, desplazado, sisbenizado, victima, fecharegistro, usuario, estado, tabla, origen, condicionespecial, otrocondicionespecial)
+        VALUES (?,?,?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);`,
         [
           items.idintegrante, items.idfiu, items.codigosibis, items.tipodedocumento, items.nacionalidad, items.numerodedocumento, items.nombre1, items.nombre2, items.apellido1,
           items.apellido2, items.fechadenacimiento, items.sexo, items.orientacionsexual, items.identidaddegenero, items.etnia, items.estadocivil, items.gestantelactante, items.escolaridad,
-          items.parentesco, items.discapacidad, items.regimendesalud, items.enfermedades, items.actividad, items.ocupacion, items.estadousuario, items.campesino, items.desplazado,
+          items.parentesco, items.discapacidad, items.regimendesalud, items.enfermedades, items.actividad, items.ocupacion, items.condicionmigratoria, items.estadousuario, items.campesino, items.desplazado,
           items.sisbenizado, items.victima, items.fecharegistro, items.usuario, items.estado, items.tabla, items.origen, items.condicionespecial,
           items.otrocondicionespecial
         ]);
@@ -347,6 +351,7 @@ console.log(idintegrante, 'idintegrante')
           enfermedades: '6',
           actividad: '',
           ocupacion: '',
+          condicionmigratoria: '',
           estadousuario: '3',
           campesino: '',
           desplazado: '',
@@ -438,6 +443,11 @@ console.log(idintegrante, 'idintegrante')
                   <option value="18"> AZERBAIYAN </option><option value="19"> BAHAMAS </option><option value="20"> BAHREIN </option><option value="21"> BANGLADESH </option><option value="22"> BARBADOS </option><option value="23"> BELARUS </option><option value="24"> BELGICA </option><option value="25"> BELICE </option><option value="26"> BENIN </option><option value="27"> BERMUDAS </option><option value="28"> BHUTÁN </option><option value="29"> BOLIVIA </option><option value="30"> BOSNIA Y HERZEGOVINA </option><option value="31"> BOTSWANA </option><option value="32"> BRASIL </option><option value="33"> BRUNEI </option><option value="34"> BULGARIA </option><option value="35"> BURKINA FASO </option><option value="36"> BURUNDI </option><option value="37"> CABO VERDE </option><option value="38"> CAMBOYA </option><option value="39"> CAMERUN </option><option value="40"> CANADA </option><option value="41"> CHAD </option><option value="42"> CHILE </option><option value="43"> CHINA </option><option value="44"> CHIPRE </option><option value="1"> COLOMBIA </option><option value="45"> COMORES </option><option value="46"> CONGO </option><option value="47"> COREA </option><option value="48"> COREA DEL NORTE  </option><option value="49"> COSTA DE MARFIL </option><option value="50"> COSTA RICA </option><option value="51"> CROACIA </option><option value="52"> CUBA </option><option value="53"> DINAMARCA </option><option value="54"> DJIBOUTI </option><option value="55"> DOMINICA </option><option value="56"> ECUADOR </option><option value="57"> EGIPTO </option><option value="58"> EL SALVADOR </option><option value="59"> EMIRATOS ARABES UNIDOS </option><option value="60"> ERITREA </option><option value="61"> ESLOVENIA </option><option value="62"> ESPAÑA </option><option value="63"> ESTADOS UNIDOS DE AMERICA </option><option value="64"> ESTONIA </option><option value="65"> ETIOPIA </option><option value="66"> FIJI </option><option value="67"> FILIPINAS </option><option value="68"> FINLANDIA </option><option value="69"> FRANCIA </option><option value="70"> GABON </option><option value="71"> GAMBIA </option><option value="72"> GEORGIA </option><option value="73"> GHANA </option><option value="74"> GIBRALTAR </option><option value="75"> GRANADA </option><option value="76"> GRECIA </option><option value="77"> GROENLANDIA </option><option value="78"> GUADALUPE </option><option value="79"> GUAM </option><option value="80"> GUATEMALA </option><option value="81"> GUAYANA FRANCESA </option><option value="82"> GUERNESEY </option><option value="83"> GUINEA </option><option value="84"> GUINEA ECUATORIAL </option><option value="85"> GUINEA-BISSAU </option><option value="86"> GUYANA </option><option value="87"> HAITI </option><option value="88"> HONDURAS </option><option value="89"> HONG KONG </option><option value="90"> HUNGRIA </option><option value="91"> INDIA </option><option value="92"> INDONESIA </option><option value="93"> IRAN </option><option value="94"> IRAQ </option><option value="95"> IRLANDA </option><option value="96"> ISLA DE MAN </option><option value="97"> ISLA NORFOLK </option><option value="98"> ISLANDIA </option><option value="99"> ISLAS ALAND </option><option value="100"> ISLAS CAIMÁN </option><option value="101"> ISLAS COOK </option><option value="102"> ISLAS DEL CANAL </option><option value="103"> ISLAS FEROE </option><option value="104"> ISLAS MALVINAS </option><option value="105"> ISLAS MARIANAS DEL NORTE </option><option value="106"> ISLAS MARSHALL </option><option value="107"> ISLAS PITCAIRN </option><option value="108"> ISLAS SALOMON </option><option value="109"> ISLAS TURCAS Y CAICOS </option><option value="110"> ISLAS VIRGENES BRITANICAS </option><option value="111"> ISLAS VÍRGENES DE LOS ESTADOS UNIDOS </option><option value="112"> ISRAEL </option><option value="113"> ITALIA </option><option value="114"> JAMAICA </option><option value="115"> JAPON </option><option value="116"> JERSEY </option><option value="117"> JORDANIA </option><option value="118"> KAZAJSTAN </option><option value="119"> KENIA </option><option value="120"> KIRGUISTAN </option><option value="121"> KIRIBATI </option><option value="122"> KUWAIT </option><option value="123"> LAOS </option><option value="124"> LESOTHO </option><option value="125"> LETONIA </option><option value="126"> LIBANO </option><option value="127"> LIBERIA </option><option value="128"> LIBIA </option><option value="129"> LIECHTENSTEIN </option><option value="130"> LITUANIA </option><option value="131"> LUXEMBURGO </option><option value="132"> MACAO </option><option value="133"> MACEDONIA  </option><option value="134"> MADAGASCAR </option><option value="135"> MALASIA </option><option value="136"> MALAWI </option><option value="137"> MALDIVAS </option><option value="138"> MALI </option><option value="139"> MALTA </option><option value="140"> MARRUECOS </option><option value="141"> MARTINICA </option><option value="142"> MAURICIO </option><option value="143"> MAURITANIA </option><option value="144"> MAYOTTE </option><option value="145"> MEXICO </option><option value="146"> MICRONESIA </option><option value="147"> MOLDAVIA </option><option value="148"> MONACO </option><option value="149"> MONGOLIA </option><option value="150"> MONTENEGRO </option><option value="151"> MONTSERRAT </option><option value="152"> MOZAMBIQUE </option><option value="153"> MYANMAR </option><option value="154"> NAMIBIA </option><option value="155"> NAURU </option><option value="156"> NEPAL </option><option value="157"> NICARAGUA </option><option value="158"> NIGER </option><option value="159"> NIGERIA </option><option value="160"> NIUE </option><option value="161"> NORUEGA </option><option value="162"> NUEVA CALEDONIA </option><option value="163"> NUEVA ZELANDA </option><option value="164"> OMAN </option><option value="165"> OTROS PAISES  O TERRITORIOS DE AMERICA DEL NORTE </option><option value="166"> OTROS PAISES O TERRITORIOS  DE SUDAMERICA </option><option value="167"> OTROS PAISES O TERRITORIOS DE AFRICA </option><option value="168"> OTROS PAISES O TERRITORIOS DE ASIA </option><option value="169"> OTROS PAISES O TERRITORIOS DE LA UNION EUROPEA </option><option value="170"> OTROS PAISES O TERRITORIOS DE OCEANIA </option><option value="171"> OTROS PAISES O TERRITORIOS DEL CARIBE Y AMERICA CENTRAL </option><option value="172"> OTROS PAISES O TERRITORIOS DEL RESTO DE EUROPA </option><option value="173"> PAISES BAJOS </option><option value="174"> PAKISTAN </option><option value="175"> PALAOS </option><option value="176"> PALESTINA </option><option value="177"> PANAMA </option><option value="178"> PAPUA NUEVA GUINEA </option><option value="179"> PARAGUAY </option><option value="180"> PERU </option><option value="181"> POLINESIA FRANCESA </option><option value="182"> POLONIA </option><option value="183"> PORTUGAL </option><option value="184"> PUERTO RICO </option><option value="185"> QATAR </option><option value="186"> REINO UNIDO </option><option value="187"> REP.DEMOCRATICA DEL CONGO </option><option value="188"> REPUBLICA CENTROAFRICANA </option><option value="189"> REPUBLICA CHECA </option><option value="190"> REPUBLICA DOMINICANA </option><option value="191"> REPUBLICA ESLOVACA </option><option value="192"> REUNION </option><option value="193"> RUANDA </option><option value="194"> RUMANIA </option><option value="195"> RUSIA </option><option value="196"> SAHARA OCCIDENTAL </option><option value="197"> SAMOA </option><option value="198"> SAMOA AMERICANA </option><option value="199"> SAN BARTOLOME </option><option value="200"> SAN CRISTOBAL Y NIEVES </option><option value="201"> SAN MARINO </option><option value="202"> SAN MARTIN (PARTE FRANCESA) </option><option value="203"> SAN PEDRO Y MIQUELON  </option><option value="204"> SAN VICENTE Y LAS GRANADINAS </option><option value="205"> SANTA HELENA </option><option value="206"> SANTA LUCIA </option><option value="207"> SANTA SEDE </option><option value="208"> SANTO TOME Y PRINCIPE </option><option value="209"> SENEGAL </option><option value="210"> SERBIA </option><option value="211"> SEYCHELLES </option><option value="212"> SIERRA LEONA </option><option value="213"> SINGAPUR </option><option value="214"> SIRIA </option><option value="215"> SOMALIA </option><option value="216"> SRI LANKA </option><option value="217"> SUDAFRICA </option><option value="218"> SUDAN </option><option value="219"> SUECIA </option><option value="220"> SUIZA </option><option value="221"> SURINAM </option><option value="222"> SVALBARD Y JAN MAYEN </option><option value="223"> SWAZILANDIA </option><option value="224"> TADYIKISTAN </option><option value="225"> TAILANDIA </option><option value="226"> TANZANIA </option><option value="227"> TIMOR ORIENTAL </option><option value="228"> TOGO </option><option value="229"> TOKELAU </option><option value="230"> TONGA </option><option value="231"> TRINIDAD Y TOBAGO </option><option value="232"> TUNEZ </option><option value="233"> TURKMENISTAN </option><option value="234"> TURQUIA </option><option value="235"> TUVALU </option><option value="236"> UCRANIA </option><option value="237"> UGANDA </option><option value="238"> URUGUAY </option><option value="239"> UZBEKISTAN </option><option value="240"> VANUATU </option><option value="2"> VENEZUELA </option><option value="241"> VIETNAM </option><option value="242"> WALLIS Y FORTUNA </option><option value="243"> YEMEN </option><option value="244"> ZAMBIA </option><option value="245"> ZIMBABWE </option>
                 </select>
               </div>
+              {items.nacionalidad != '1' ? (
+              <div className="col-sm-6">
+                <label className="form-label">Condición migratoria:</label>
+                <input type="text" onChange={(e) => handleInputChange(e, 'condicionmigratoria')} value={items.condicionmigratoria} placeholder="" className="form-control form-control-sm  " />                              
+              </div> ) : ''}
               <div className="col-sm-6">
                 <label className="form-label">Tipo de documento:</label>
                 <select onChange={(e) => handleInputChange(e, 'tipodedocumento')} value={items.tipodedocumento} className="form-control form-control-sm" id="pregunta2_3" aria-describedby="validationServer04Feedback" required>
@@ -597,11 +607,12 @@ console.log(idintegrante, 'idintegrante')
                 <select onChange={(e) => handleInputChange(e, 'ocupacion')} value={items.ocupacion} className="form-control form-control-sm" id="pregunta2_3" aria-describedby="validationServer04Feedback" required>
                   <option value=""> SELECCIONE </option><option value="8"> ACTIVIDADES DE SOBREVIVENCIA </option><option value="7"> AMA DE CASA </option><option value="4"> DESEMPLEADO </option><option value="1"> EMPLEADO </option><option value="6"> ESTUDIANTE </option><option value="2"> INDEPENDIENTE </option><option value="3"> INFORMAL </option><option value="5"> NINGUNA </option><option value="9"> SIN DATO </option>                               </select>
               </div>
-              <div className="col-sm-6">
+              {/* <div className="col-sm-6">
                 <label className="form-label">Estado:</label>
                 <select onChange={(e) => handleInputChange(e, 'estadousuario')} value={items.estadousuario} className="form-control form-control-sm" id="pregunta2_3" aria-describedby="validationServer04Feedback" required>
                   <option value=""> SELECCIONE </option><option value="4"> DESAPARECIDO </option><option value="2"> FALLECIDO </option><option value="3"> ILESO </option><option value="1"> LESIONADO </option>                                 </select>
-              </div>
+              </div> */}
+             
               <div className="col-sm-6">
                 <label className="form-label">Campesino:</label>
                 <select onChange={(e) => handleInputChange(e, 'campesino')} value={items.campesino} className="form-control form-control-sm" id="pregunta2_3" aria-describedby="validationServer04Feedback" required>

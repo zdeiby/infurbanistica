@@ -214,7 +214,7 @@ const Tab6: React.FC = () => {
 
       <div className=' shadow p-3 mb-5 bg-white rounded'>
 <IonList>
-<div className="row g-3 was-validated ">
+{/* <div className="row g-3 was-validated ">
         <div className="col-sm-4">
         <label  className="form-label">Energía:</label>
           <select onChange={(e) => handleInputChange(e, 'energia')} value={items.energia} className="form-control form-control-sm" id="pregunta2_3" aria-describedby="validationServer04Feedback" required>
@@ -235,10 +235,32 @@ const Tab6: React.FC = () => {
           </div>
 
           
+        </div> */}
+        <div className="row g-3 was-validated ">
+        <div className="col-sm-4">
+        <label  className="form-label">Energía:</label>
+          <select onChange={(e) => handleInputChange(e, 'energia')} value={items.energia} className="form-control form-control-sm" id="pregunta2_3" aria-describedby="validationServer04Feedback" required>
+          <option value=""> SELECCIONE </option><option value="2">SI </option><option value="1">NO</option>
+            </select>
+          </div>
+          <div className="col-sm-4">
+          <label  className="form-label">Acueducto:</label>
+          <select onChange={(e) => handleInputChange(e, 'acueducto')} value={items.acueducto} className="form-control form-control-sm" id="pregunta2_3" aria-describedby="validationServer04Feedback" required>
+          <option value=""> SELECCIONE </option><option value="2">SI </option><option value="1">NO</option>
+          </select>
+          </div>
+          <div className="col-sm-4">
+          <label  className="form-label">Alcantarillado:</label>
+          <select onChange={(e) => handleInputChange(e, 'alcantarillado')} value={items.alcantarillado} className="form-control form-control-sm" id="pregunta2_3" aria-describedby="validationServer04Feedback" required>
+          <option value=""> SELECCIONE </option><option value="2">SI </option><option value="1">NO</option>
+           </select>
+          </div>
+
+          
         </div>
 </IonList>
 <IonList>
-<div className="row g-3 was-validated ">
+{/* <div className="row g-3 was-validated ">
         <div className="col-sm">
         <label  className="form-label">Gas:</label>
           <select onChange={(e) => handleInputChange(e, 'gas')} value={items.gas} className="form-control form-control-sm" id="pregunta2_3" aria-describedby="validationServer04Feedback" required>
@@ -249,6 +271,27 @@ const Tab6: React.FC = () => {
           <label  className="form-label">Telefono:</label>
           <select onChange={(e) => handleInputChange(e, 'telefono')} value={items.telefono} className="form-control form-control-sm" id="pregunta2_3" aria-describedby="validationServer04Feedback" required>
           <option value=""> SELECCIONE </option><option value="4"> COMUNAL </option><option value="8"> CONVENCIONAL </option><option value="2"> FRAUDE </option><option value="1"> NO TIENE </option><option value="3"> PREPAGO </option><option value="5"> VEREDAL </option>
+          </select>
+          </div>
+          {(items.telefono !='1' && items.telefono)? 
+          <div className="col-sm">
+              <label  className="form-label">Telefono fijo:</label>
+              <input onChange={(e) => handleInputChange(e, 'telefonofijo')} value={items.telefonofijo} type="number" placeholder="" className="form-control form-control-sm  "  required/>
+                        <small  className="form-text text-muted">Minimo 10 digitos, si es fijo debe incluir el 604.</small>
+          </div> :'' }
+
+        </div> */}
+        <div className="row g-3 was-validated ">
+        <div className="col-sm">
+        <label  className="form-label">Gas:</label>
+          <select onChange={(e) => handleInputChange(e, 'gas')} value={items.gas} className="form-control form-control-sm" id="pregunta2_3" aria-describedby="validationServer04Feedback" required>
+          <option value=""> SELECCIONE </option><option value="2">SI </option><option value="1">NO</option>
+            </select>
+          </div>
+          <div className="col-sm">
+          <label  className="form-label">Telefono:</label>
+          <select onChange={(e) => handleInputChange(e, 'telefono')} value={items.telefono} className="form-control form-control-sm" id="pregunta2_3" aria-describedby="validationServer04Feedback" required>
+          <option value=""> SELECCIONE </option><option value="2">SI </option><option value="1">NO</option>
           </select>
           </div>
           {(items.telefono !='1' && items.telefono)? 
