@@ -182,6 +182,23 @@ const Login = () => {
       console.error('Error al exportar los datos JSON: t1_barrios  ', err);
     }
 
+    try {
+      const response = await axios.get('/jsonstablas/t1_paises.json');
+      const jsonData = response.data;
+     // setProgramas(jsonData);
+
+      for (const item of jsonData) {
+        await db.run(`INSERT OR REPLACE INTO t1_paises   (id, descripcion, codigo, estado) VALUES (?, ?, ?, ?);`, [
+          item.id, item.descripcion, item.codigo, item.estado, 
+        ]);
+      }
+
+      saveDatabase();
+      fetchUsers();
+    } catch (err) {
+      console.error('Error al exportar los datos JSON: t1_paises  ', err);
+    }
+
 
     try {
       const response = await axios.get('/jsonstablas/t1_ubicacionposterior.json');

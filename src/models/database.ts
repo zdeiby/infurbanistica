@@ -513,7 +513,7 @@ const loadSQL = async (setDb, fetchUsers) => {
   
           `);
       database.run(`
-          CREATE TABLE IF NOT EXISTS infraccion_autorizacion (
+           CREATE TABLE IF NOT EXISTS infraccion_autorizacion (
           idfiu INTEGER NOT NULL,
           idintegrante INTEGER DEFAULT NULL,
           entidad TEXT DEFAULT NULL,
@@ -528,31 +528,37 @@ const loadSQL = async (setDb, fetchUsers) => {
           apoyosocial TEXT DEFAULT NULL,
           draw_dataUrl BLOB DEFAULT NULL,
           nameFirma TEXT DEFAULT NULL,
-          residen TEXT DEFAULT NULL,
-          condicionmigratoria TEXT DEFAULT NULL,
-          tipodedocumento TEXT DEFAULT NULL,
-          numerodedocumento TEXT DEFAULT NULL,
-          nombre TEXT DEFAULT NULL,
-          fechadenacimiento TEXT DEFAULT NULL,
-          telefono TEXT DEFAULT NULL,
-          nacionalidad TEXT DEFAULT NULL,
           autorizofirma VARCHAR(25) DEFAULT NULL,
           idseguimiento INTEGER DEFAULT NULL,
           firmatitular VARCHAR(25) DEFAULT NULL,
           PRIMARY KEY (idfiu)
         );
           `);
-      // database.run(`
-      //       CREATE TABLE IF NOT EXISTS c101_remisiones (
-      //       fichasocial INTEGER NOT NULL,
-      //       remisiones INTEGER DEFAULT NULL,
-      //       fecharegistro DATETIME DEFAULT NULL,
-      //       usuario INTEGER DEFAULT NULL,
-      //       estado INTEGER DEFAULT NULL,
-      //       tabla VARCHAR(100) DEFAULT NULL,
-      //       PRIMARY KEY (fichasocial)
-      //     );
-      //       `);
+       database.run(`
+            CREATE TABLE IF NOT EXISTS infraccion_no_integrantes (
+              id INTEGER NOT NULL, 
+              idfiu INTEGER   NOT NULL,
+              tipodefamilia TEXT,
+              nacionalidad TEXT,
+              condicionmigrante TEXT,
+              etpv TEXT,
+              tipodedocumento TEXT,
+              numerodedocumento TEXT,
+              nombre1 TEXT,
+              nombre2 TEXT,
+              apellido1 TEXT,
+              apellido2 TEXT,
+              fechadenacimiento DATE,
+              telefono TEXT,
+              relacion TEXT,
+              fecharegistro DATETIME,
+              usuario INTEGER,
+              estado INTEGER,
+              tabla TEXT,
+              PRIMARY KEY (idfiu, id) 
+            );
+      
+             `);
 
       database.run(`
             CREATE TABLE IF NOT EXISTS t1_programas (
@@ -602,6 +608,14 @@ const loadSQL = async (setDb, fetchUsers) => {
                     estado INTEGER DEFAULT NULL
                   );
                       `);
+                      database.run(`
+                        CREATE TABLE IF NOT EXISTS t1_paises (
+                          id INTEGER PRIMARY KEY NOT NULL,
+                          descripcion TEXT DEFAULT NULL,
+                          codigo INTEGER DEFAULT NULL,
+                          estado INTEGER DEFAULT NULL
+                        );
+                            `);
 
                       database.run(`
                         CREATE TABLE IF NOT EXISTS t1_ubicacionposterior (

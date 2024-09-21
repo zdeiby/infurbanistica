@@ -56,6 +56,7 @@ import MenuLat from './components/MenuLat';
 import IngresarAyudas from './pages/ingresarayudas';
 import EditarUbi from './pages/ubicacionposterioreditar';
 import DownloadDatabase from './pages/descargarbd';
+import Tab18 from './pages/Tab18';
 
 setupIonicReact();
 
@@ -151,6 +152,9 @@ const App: React.FC = () => {
                 </Route>
                 <Route exact path="/tabs/tab16/:ficha">
                   <Tab16 />
+                </Route>
+                <Route exact path="/tabs/tab18/:ficha">
+                  <Tab18 />
                 </Route>
                 <Route exact path="/tabs/tab17/:ficha">
                   <Tab17 />

@@ -28,6 +28,7 @@ const Tab9: React.FC = () => {
   const [people, setPeople] = useState<Person[]>([]);
   const [integrantes, setIntegrantes] = useState([]);
   const [db, setDb] = useState<any>(null);
+  const [jefe, setJefe] = useState(false);
   const [items, setItems] = useState({
     idfiu: '',
     tipodefamilia: '',
@@ -81,6 +82,12 @@ const Tab9: React.FC = () => {
   const fetchUsers = async (database = db) => {
     if (db) {
       const res = await database.exec(`SELECT * FROM infraccion_conformacion_familiar WHERE idfiu=${params.ficha}`);
+       const jefedehogar = await database.exec(`SELECT * FROM infraccion_integrante_familiar WHERE idfiu=${params.ficha} AND parentesco = 1`);
+       if (jefedehogar[0]?.values && jefedehogar[0].values.length > 0) {
+        setJefe(true); // Si hay registros, asignamos true a 'jefe'.
+      }
+
+      console.log('jefedehogar'+jefe)
       if (res[0]?.values && res[0]?.columns) {
         const transformedPeople: Person[] = res[0].values.map((row: any[]) => {
           return res[0].columns.reduce((obj, col, index) => {
@@ -312,7 +319,8 @@ const Tab9: React.FC = () => {
 
         <br />
 
-        <div><IonButton color="success" onClick={enviar}>Guardar</IonButton><IonButton routerLink={`/tabs/tab13/${params.ficha}`}>Siguiente</IonButton></div>
+        <div><IonButton color="success" onClick={enviar}>Guardar</IonButton>
+        <IonButton routerLink={`/tabs/tab13/${params.ficha}`} disabled={!jefe}>Siguiente</IonButton></div>
 
       </IonContent>
     </IonPage>

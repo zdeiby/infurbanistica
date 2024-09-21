@@ -1,0 +1,1472 @@
+[
+	{
+		"id" : 1,
+		"descripcion" : "COLOMBIA",
+		"codigo" : "343",
+		"estado" : 1
+	},
+	{
+		"id" : 2,
+		"descripcion" : "VENEZUELA",
+		"codigo" : "351",
+		"estado" : 1
+	},
+	{
+		"id" : 3,
+		"descripcion" : "AFGANISTAN",
+		"codigo" : "401",
+		"estado" : 1
+	},
+	{
+		"id" : 4,
+		"descripcion" : "ALBANIA",
+		"codigo" : "101",
+		"estado" : 1
+	},
+	{
+		"id" : 5,
+		"descripcion" : "ALEMANIA",
+		"codigo" : "126",
+		"estado" : 1
+	},
+	{
+		"id" : 6,
+		"descripcion" : "ANDORRA",
+		"codigo" : "124",
+		"estado" : 1
+	},
+	{
+		"id" : 7,
+		"descripcion" : "ANGOLA",
+		"codigo" : "202",
+		"estado" : 1
+	},
+	{
+		"id" : 8,
+		"descripcion" : "ANGUILLA",
+		"codigo" : "388",
+		"estado" : 1
+	},
+	{
+		"id" : 9,
+		"descripcion" : "ANTIGUA Y BARBUDA",
+		"codigo" : "310",
+		"estado" : 1
+	},
+	{
+		"id" : 10,
+		"descripcion" : "ANTILLAS HOLANDESAS",
+		"codigo" : "384",
+		"estado" : 1
+	},
+	{
+		"id" : 11,
+		"descripcion" : "ARABIA SAUDI",
+		"codigo" : "402",
+		"estado" : 1
+	},
+	{
+		"id" : 12,
+		"descripcion" : "ARGELIA",
+		"codigo" : "203",
+		"estado" : 1
+	},
+	{
+		"id" : 13,
+		"descripcion" : "ARGENTINA",
+		"codigo" : "340",
+		"estado" : 1
+	},
+	{
+		"id" : 14,
+		"descripcion" : "ARMENIA",
+		"codigo" : "148",
+		"estado" : 1
+	},
+	{
+		"id" : 15,
+		"descripcion" : "ARUBA",
+		"codigo" : "386",
+		"estado" : 1
+	},
+	{
+		"id" : 16,
+		"descripcion" : "AUSTRALIA",
+		"codigo" : "501",
+		"estado" : 1
+	},
+	{
+		"id" : 17,
+		"descripcion" : "AUSTRIA",
+		"codigo" : "102",
+		"estado" : 1
+	},
+	{
+		"id" : 18,
+		"descripcion" : "AZERBAIYAN",
+		"codigo" : "442",
+		"estado" : 1
+	},
+	{
+		"id" : 19,
+		"descripcion" : "BAHAMAS",
+		"codigo" : "311",
+		"estado" : 1
+	},
+	{
+		"id" : 20,
+		"descripcion" : "BAHREIN",
+		"codigo" : "403",
+		"estado" : 1
+	},
+	{
+		"id" : 21,
+		"descripcion" : "BANGLADESH",
+		"codigo" : "404",
+		"estado" : 1
+	},
+	{
+		"id" : 22,
+		"descripcion" : "BARBADOS",
+		"codigo" : "312",
+		"estado" : 1
+	},
+	{
+		"id" : 23,
+		"descripcion" : "BELARUS",
+		"codigo" : "138",
+		"estado" : 1
+	},
+	{
+		"id" : 24,
+		"descripcion" : "BELGICA",
+		"codigo" : "103",
+		"estado" : 1
+	},
+	{
+		"id" : 25,
+		"descripcion" : "BELICE",
+		"codigo" : "313",
+		"estado" : 1
+	},
+	{
+		"id" : 26,
+		"descripcion" : "BENIN",
+		"codigo" : "204",
+		"estado" : 1
+	},
+	{
+		"id" : 27,
+		"descripcion" : "BERMUDAS",
+		"codigo" : "392",
+		"estado" : 1
+	},
+	{
+		"id" : 28,
+		"descripcion" : "BHUTÁN",
+		"codigo" : "453",
+		"estado" : 1
+	},
+	{
+		"id" : 29,
+		"descripcion" : "BOLIVIA",
+		"codigo" : "341",
+		"estado" : 1
+	},
+	{
+		"id" : 30,
+		"descripcion" : "BOSNIA Y HERZEGOVINA",
+		"codigo" : "145",
+		"estado" : 1
+	},
+	{
+		"id" : 31,
+		"descripcion" : "BOTSWANA",
+		"codigo" : "205",
+		"estado" : 1
+	},
+	{
+		"id" : 32,
+		"descripcion" : "BRASIL",
+		"codigo" : "342",
+		"estado" : 1
+	},
+	{
+		"id" : 33,
+		"descripcion" : "BRUNEI",
+		"codigo" : "439",
+		"estado" : 1
+	},
+	{
+		"id" : 34,
+		"descripcion" : "BULGARIA",
+		"codigo" : "104",
+		"estado" : 1
+	},
+	{
+		"id" : 35,
+		"descripcion" : "BURKINA FASO",
+		"codigo" : "201",
+		"estado" : 1
+	},
+	{
+		"id" : 36,
+		"descripcion" : "BURUNDI",
+		"codigo" : "206",
+		"estado" : 1
+	},
+	{
+		"id" : 37,
+		"descripcion" : "CABO VERDE",
+		"codigo" : "207",
+		"estado" : 1
+	},
+	{
+		"id" : 38,
+		"descripcion" : "CAMBOYA",
+		"codigo" : "417",
+		"estado" : 1
+	},
+	{
+		"id" : 39,
+		"descripcion" : "CAMERUN",
+		"codigo" : "208",
+		"estado" : 1
+	},
+	{
+		"id" : 40,
+		"descripcion" : "CANADA",
+		"codigo" : "301",
+		"estado" : 1
+	},
+	{
+		"id" : 41,
+		"descripcion" : "CHAD",
+		"codigo" : "246",
+		"estado" : 1
+	},
+	{
+		"id" : 42,
+		"descripcion" : "CHILE",
+		"codigo" : "344",
+		"estado" : 1
+	},
+	{
+		"id" : 43,
+		"descripcion" : "CHINA",
+		"codigo" : "407",
+		"estado" : 1
+	},
+	{
+		"id" : 44,
+		"descripcion" : "CHIPRE",
+		"codigo" : "106",
+		"estado" : 1
+	},
+	{
+		"id" : 45,
+		"descripcion" : "COMORES",
+		"codigo" : "209",
+		"estado" : 1
+	},
+	{
+		"id" : 46,
+		"descripcion" : "CONGO",
+		"codigo" : "210",
+		"estado" : 1
+	},
+	{
+		"id" : 47,
+		"descripcion" : "COREA",
+		"codigo" : "430",
+		"estado" : 1
+	},
+	{
+		"id" : 48,
+		"descripcion" : "COREA DEL NORTE ",
+		"codigo" : "431",
+		"estado" : 1
+	},
+	{
+		"id" : 49,
+		"descripcion" : "COSTA DE MARFIL",
+		"codigo" : "211",
+		"estado" : 1
+	},
+	{
+		"id" : 50,
+		"descripcion" : "COSTA RICA",
+		"codigo" : "314",
+		"estado" : 1
+	},
+	{
+		"id" : 51,
+		"descripcion" : "CROACIA",
+		"codigo" : "146",
+		"estado" : 1
+	},
+	{
+		"id" : 52,
+		"descripcion" : "CUBA",
+		"codigo" : "315",
+		"estado" : 1
+	},
+	{
+		"id" : 53,
+		"descripcion" : "DINAMARCA",
+		"codigo" : "107",
+		"estado" : 1
+	},
+	{
+		"id" : 54,
+		"descripcion" : "DJIBOUTI",
+		"codigo" : "212",
+		"estado" : 1
+	},
+	{
+		"id" : 55,
+		"descripcion" : "DOMINICA",
+		"codigo" : "316",
+		"estado" : 1
+	},
+	{
+		"id" : 56,
+		"descripcion" : "ECUADOR",
+		"codigo" : "345",
+		"estado" : 1
+	},
+	{
+		"id" : 57,
+		"descripcion" : "EGIPTO",
+		"codigo" : "213",
+		"estado" : 1
+	},
+	{
+		"id" : 58,
+		"descripcion" : "EL SALVADOR",
+		"codigo" : "317",
+		"estado" : 1
+	},
+	{
+		"id" : 59,
+		"descripcion" : "EMIRATOS ARABES UNIDOS",
+		"codigo" : "408",
+		"estado" : 1
+	},
+	{
+		"id" : 60,
+		"descripcion" : "ERITREA",
+		"codigo" : "253",
+		"estado" : 1
+	},
+	{
+		"id" : 61,
+		"descripcion" : "ESLOVENIA",
+		"codigo" : "147",
+		"estado" : 1
+	},
+	{
+		"id" : 62,
+		"descripcion" : "ESPAÑA",
+		"codigo" : "108",
+		"estado" : 1
+	},
+	{
+		"id" : 63,
+		"descripcion" : "ESTADOS UNIDOS DE AMERICA",
+		"codigo" : "302",
+		"estado" : 1
+	},
+	{
+		"id" : 64,
+		"descripcion" : "ESTONIA",
+		"codigo" : "141",
+		"estado" : 1
+	},
+	{
+		"id" : 65,
+		"descripcion" : "ETIOPIA",
+		"codigo" : "214",
+		"estado" : 1
+	},
+	{
+		"id" : 66,
+		"descripcion" : "FIJI",
+		"codigo" : "502",
+		"estado" : 1
+	},
+	{
+		"id" : 67,
+		"descripcion" : "FILIPINAS",
+		"codigo" : "409",
+		"estado" : 1
+	},
+	{
+		"id" : 68,
+		"descripcion" : "FINLANDIA",
+		"codigo" : "109",
+		"estado" : 1
+	},
+	{
+		"id" : 69,
+		"descripcion" : "FRANCIA",
+		"codigo" : "110",
+		"estado" : 1
+	},
+	{
+		"id" : 70,
+		"descripcion" : "GABON",
+		"codigo" : "215",
+		"estado" : 1
+	},
+	{
+		"id" : 71,
+		"descripcion" : "GAMBIA",
+		"codigo" : "216",
+		"estado" : 1
+	},
+	{
+		"id" : 72,
+		"descripcion" : "GEORGIA",
+		"codigo" : "139",
+		"estado" : 1
+	},
+	{
+		"id" : 73,
+		"descripcion" : "GHANA",
+		"codigo" : "217",
+		"estado" : 1
+	},
+	{
+		"id" : 74,
+		"descripcion" : "GIBRALTAR",
+		"codigo" : "174",
+		"estado" : 1
+	},
+	{
+		"id" : 75,
+		"descripcion" : "GRANADA",
+		"codigo" : "318",
+		"estado" : 1
+	},
+	{
+		"id" : 76,
+		"descripcion" : "GRECIA",
+		"codigo" : "111",
+		"estado" : 1
+	},
+	{
+		"id" : 77,
+		"descripcion" : "GROENLANDIA",
+		"codigo" : "371",
+		"estado" : 1
+	},
+	{
+		"id" : 78,
+		"descripcion" : "GUADALUPE",
+		"codigo" : "383",
+		"estado" : 1
+	},
+	{
+		"id" : 79,
+		"descripcion" : "GUAM",
+		"codigo" : "454",
+		"estado" : 1
+	},
+	{
+		"id" : 80,
+		"descripcion" : "GUATEMALA",
+		"codigo" : "319",
+		"estado" : 1
+	},
+	{
+		"id" : 81,
+		"descripcion" : "GUAYANA FRANCESA",
+		"codigo" : "394",
+		"estado" : 1
+	},
+	{
+		"id" : 82,
+		"descripcion" : "GUERNESEY",
+		"codigo" : "170",
+		"estado" : 1
+	},
+	{
+		"id" : 83,
+		"descripcion" : "GUINEA",
+		"codigo" : "218",
+		"estado" : 1
+	},
+	{
+		"id" : 84,
+		"descripcion" : "GUINEA ECUATORIAL",
+		"codigo" : "220",
+		"estado" : 1
+	},
+	{
+		"id" : 85,
+		"descripcion" : "GUINEA-BISSAU",
+		"codigo" : "219",
+		"estado" : 1
+	},
+	{
+		"id" : 86,
+		"descripcion" : "GUYANA",
+		"codigo" : "346",
+		"estado" : 1
+	},
+	{
+		"id" : 87,
+		"descripcion" : "HAITI",
+		"codigo" : "320",
+		"estado" : 1
+	},
+	{
+		"id" : 88,
+		"descripcion" : "HONDURAS",
+		"codigo" : "321",
+		"estado" : 1
+	},
+	{
+		"id" : 89,
+		"descripcion" : "HONG KONG",
+		"codigo" : "450",
+		"estado" : 1
+	},
+	{
+		"id" : 90,
+		"descripcion" : "HUNGRIA",
+		"codigo" : "112",
+		"estado" : 1
+	},
+	{
+		"id" : 91,
+		"descripcion" : "INDIA",
+		"codigo" : "410",
+		"estado" : 1
+	},
+	{
+		"id" : 92,
+		"descripcion" : "INDONESIA",
+		"codigo" : "411",
+		"estado" : 1
+	},
+	{
+		"id" : 93,
+		"descripcion" : "IRAN",
+		"codigo" : "413",
+		"estado" : 1
+	},
+	{
+		"id" : 94,
+		"descripcion" : "IRAQ",
+		"codigo" : "412",
+		"estado" : 1
+	},
+	{
+		"id" : 95,
+		"descripcion" : "IRLANDA",
+		"codigo" : "113",
+		"estado" : 1
+	},
+	{
+		"id" : 96,
+		"descripcion" : "ISLA DE MAN",
+		"codigo" : "173",
+		"estado" : 1
+	},
+	{
+		"id" : 97,
+		"descripcion" : "ISLA NORFOLK",
+		"codigo" : "521",
+		"estado" : 1
+	},
+	{
+		"id" : 98,
+		"descripcion" : "ISLANDIA",
+		"codigo" : "114",
+		"estado" : 1
+	},
+	{
+		"id" : 99,
+		"descripcion" : "ISLAS ALAND",
+		"codigo" : "177",
+		"estado" : 1
+	},
+	{
+		"id" : 100,
+		"descripcion" : "ISLAS CAIMÁN",
+		"codigo" : "380",
+		"estado" : 1
+	},
+	{
+		"id" : 101,
+		"descripcion" : "ISLAS COOK",
+		"codigo" : "513",
+		"estado" : 1
+	},
+	{
+		"id" : 102,
+		"descripcion" : "ISLAS DEL CANAL",
+		"codigo" : "175",
+		"estado" : 1
+	},
+	{
+		"id" : 103,
+		"descripcion" : "ISLAS FEROE",
+		"codigo" : "172",
+		"estado" : 1
+	},
+	{
+		"id" : 104,
+		"descripcion" : "ISLAS MALVINAS",
+		"codigo" : "395",
+		"estado" : 1
+	},
+	{
+		"id" : 105,
+		"descripcion" : "ISLAS MARIANAS DEL NORTE",
+		"codigo" : "448",
+		"estado" : 1
+	},
+	{
+		"id" : 106,
+		"descripcion" : "ISLAS MARSHALL",
+		"codigo" : "440",
+		"estado" : 1
+	},
+	{
+		"id" : 107,
+		"descripcion" : "ISLAS PITCAIRN",
+		"codigo" : "524",
+		"estado" : 1
+	},
+	{
+		"id" : 108,
+		"descripcion" : "ISLAS SALOMON",
+		"codigo" : "506",
+		"estado" : 1
+	},
+	{
+		"id" : 109,
+		"descripcion" : "ISLAS TURCAS Y CAICOS",
+		"codigo" : "381",
+		"estado" : 1
+	},
+	{
+		"id" : 110,
+		"descripcion" : "ISLAS VIRGENES BRITANICAS",
+		"codigo" : "393",
+		"estado" : 1
+	},
+	{
+		"id" : 111,
+		"descripcion" : "ISLAS VÍRGENES DE LOS ESTADOS UNIDOS",
+		"codigo" : "382",
+		"estado" : 1
+	},
+	{
+		"id" : 112,
+		"descripcion" : "ISRAEL",
+		"codigo" : "414",
+		"estado" : 1
+	},
+	{
+		"id" : 113,
+		"descripcion" : "ITALIA",
+		"codigo" : "115",
+		"estado" : 1
+	},
+	{
+		"id" : 114,
+		"descripcion" : "JAMAICA",
+		"codigo" : "322",
+		"estado" : 1
+	},
+	{
+		"id" : 115,
+		"descripcion" : "JAPON",
+		"codigo" : "415",
+		"estado" : 1
+	},
+	{
+		"id" : 116,
+		"descripcion" : "JERSEY",
+		"codigo" : "176",
+		"estado" : 1
+	},
+	{
+		"id" : 117,
+		"descripcion" : "JORDANIA",
+		"codigo" : "416",
+		"estado" : 1
+	},
+	{
+		"id" : 118,
+		"descripcion" : "KAZAJSTAN",
+		"codigo" : "443",
+		"estado" : 1
+	},
+	{
+		"id" : 119,
+		"descripcion" : "KENIA",
+		"codigo" : "221",
+		"estado" : 1
+	},
+	{
+		"id" : 120,
+		"descripcion" : "KIRGUISTAN",
+		"codigo" : "444",
+		"estado" : 1
+	},
+	{
+		"id" : 121,
+		"descripcion" : "KIRIBATI",
+		"codigo" : "522",
+		"estado" : 1
+	},
+	{
+		"id" : 122,
+		"descripcion" : "KUWAIT",
+		"codigo" : "418",
+		"estado" : 1
+	},
+	{
+		"id" : 123,
+		"descripcion" : "LAOS",
+		"codigo" : "419",
+		"estado" : 1
+	},
+	{
+		"id" : 124,
+		"descripcion" : "LESOTHO",
+		"codigo" : "222",
+		"estado" : 1
+	},
+	{
+		"id" : 125,
+		"descripcion" : "LETONIA",
+		"codigo" : "136",
+		"estado" : 1
+	},
+	{
+		"id" : 126,
+		"descripcion" : "LIBANO",
+		"codigo" : "420",
+		"estado" : 1
+	},
+	{
+		"id" : 127,
+		"descripcion" : "LIBERIA",
+		"codigo" : "223",
+		"estado" : 1
+	},
+	{
+		"id" : 128,
+		"descripcion" : "LIBIA",
+		"codigo" : "224",
+		"estado" : 1
+	},
+	{
+		"id" : 129,
+		"descripcion" : "LIECHTENSTEIN",
+		"codigo" : "116",
+		"estado" : 1
+	},
+	{
+		"id" : 130,
+		"descripcion" : "LITUANIA",
+		"codigo" : "142",
+		"estado" : 1
+	},
+	{
+		"id" : 131,
+		"descripcion" : "LUXEMBURGO",
+		"codigo" : "117",
+		"estado" : 1
+	},
+	{
+		"id" : 132,
+		"descripcion" : "MACAO",
+		"codigo" : "455",
+		"estado" : 1
+	},
+	{
+		"id" : 133,
+		"descripcion" : "MACEDONIA ",
+		"codigo" : "156",
+		"estado" : 1
+	},
+	{
+		"id" : 134,
+		"descripcion" : "MADAGASCAR",
+		"codigo" : "225",
+		"estado" : 1
+	},
+	{
+		"id" : 135,
+		"descripcion" : "MALASIA",
+		"codigo" : "421",
+		"estado" : 1
+	},
+	{
+		"id" : 136,
+		"descripcion" : "MALAWI",
+		"codigo" : "226",
+		"estado" : 1
+	},
+	{
+		"id" : 137,
+		"descripcion" : "MALDIVAS",
+		"codigo" : "422",
+		"estado" : 1
+	},
+	{
+		"id" : 138,
+		"descripcion" : "MALI",
+		"codigo" : "227",
+		"estado" : 1
+	},
+	{
+		"id" : 139,
+		"descripcion" : "MALTA",
+		"codigo" : "118",
+		"estado" : 1
+	},
+	{
+		"id" : 140,
+		"descripcion" : "MARRUECOS",
+		"codigo" : "228",
+		"estado" : 1
+	},
+	{
+		"id" : 141,
+		"descripcion" : "MARTINICA",
+		"codigo" : "390",
+		"estado" : 1
+	},
+	{
+		"id" : 142,
+		"descripcion" : "MAURICIO",
+		"codigo" : "229",
+		"estado" : 1
+	},
+	{
+		"id" : 143,
+		"descripcion" : "MAURITANIA",
+		"codigo" : "230",
+		"estado" : 1
+	},
+	{
+		"id" : 144,
+		"descripcion" : "MAYOTTE",
+		"codigo" : "262",
+		"estado" : 1
+	},
+	{
+		"id" : 145,
+		"descripcion" : "MEXICO",
+		"codigo" : "303",
+		"estado" : 1
+	},
+	{
+		"id" : 146,
+		"descripcion" : "MICRONESIA",
+		"codigo" : "511",
+		"estado" : 1
+	},
+	{
+		"id" : 147,
+		"descripcion" : "MOLDAVIA",
+		"codigo" : "137",
+		"estado" : 1
+	},
+	{
+		"id" : 148,
+		"descripcion" : "MONACO",
+		"codigo" : "119",
+		"estado" : 1
+	},
+	{
+		"id" : 149,
+		"descripcion" : "MONGOLIA",
+		"codigo" : "423",
+		"estado" : 1
+	},
+	{
+		"id" : 150,
+		"descripcion" : "MONTENEGRO",
+		"codigo" : "158",
+		"estado" : 1
+	},
+	{
+		"id" : 151,
+		"descripcion" : "MONTSERRAT",
+		"codigo" : "387",
+		"estado" : 1
+	},
+	{
+		"id" : 152,
+		"descripcion" : "MOZAMBIQUE",
+		"codigo" : "231",
+		"estado" : 1
+	},
+	{
+		"id" : 153,
+		"descripcion" : "MYANMAR",
+		"codigo" : "405",
+		"estado" : 1
+	},
+	{
+		"id" : 154,
+		"descripcion" : "NAMIBIA",
+		"codigo" : "232",
+		"estado" : 1
+	},
+	{
+		"id" : 155,
+		"descripcion" : "NAURU",
+		"codigo" : "515",
+		"estado" : 1
+	},
+	{
+		"id" : 156,
+		"descripcion" : "NEPAL",
+		"codigo" : "424",
+		"estado" : 1
+	},
+	{
+		"id" : 157,
+		"descripcion" : "NICARAGUA",
+		"codigo" : "323",
+		"estado" : 1
+	},
+	{
+		"id" : 158,
+		"descripcion" : "NIGER",
+		"codigo" : "233",
+		"estado" : 1
+	},
+	{
+		"id" : 159,
+		"descripcion" : "NIGERIA",
+		"codigo" : "234",
+		"estado" : 1
+	},
+	{
+		"id" : 160,
+		"descripcion" : "NIUE",
+		"codigo" : "523",
+		"estado" : 1
+	},
+	{
+		"id" : 161,
+		"descripcion" : "NORUEGA",
+		"codigo" : "120",
+		"estado" : 1
+	},
+	{
+		"id" : 162,
+		"descripcion" : "NUEVA CALEDONIA",
+		"codigo" : "526",
+		"estado" : 1
+	},
+	{
+		"id" : 163,
+		"descripcion" : "NUEVA ZELANDA",
+		"codigo" : "504",
+		"estado" : 1
+	},
+	{
+		"id" : 164,
+		"descripcion" : "OMAN",
+		"codigo" : "425",
+		"estado" : 1
+	},
+	{
+		"id" : 165,
+		"descripcion" : "OTROS PAISES  O TERRITORIOS DE AMERICA DEL NORTE",
+		"codigo" : "396",
+		"estado" : 1
+	},
+	{
+		"id" : 166,
+		"descripcion" : "OTROS PAISES O TERRITORIOS  DE SUDAMERICA",
+		"codigo" : "399",
+		"estado" : 1
+	},
+	{
+		"id" : 167,
+		"descripcion" : "OTROS PAISES O TERRITORIOS DE AFRICA",
+		"codigo" : "299",
+		"estado" : 1
+	},
+	{
+		"id" : 168,
+		"descripcion" : "OTROS PAISES O TERRITORIOS DE ASIA",
+		"codigo" : "499",
+		"estado" : 1
+	},
+	{
+		"id" : 169,
+		"descripcion" : "OTROS PAISES O TERRITORIOS DE LA UNION EUROPEA",
+		"codigo" : "198",
+		"estado" : 1
+	},
+	{
+		"id" : 170,
+		"descripcion" : "OTROS PAISES O TERRITORIOS DE OCEANIA",
+		"codigo" : "599",
+		"estado" : 1
+	},
+	{
+		"id" : 171,
+		"descripcion" : "OTROS PAISES O TERRITORIOS DEL CARIBE Y AMERICA CENTRAL",
+		"codigo" : "398",
+		"estado" : 1
+	},
+	{
+		"id" : 172,
+		"descripcion" : "OTROS PAISES O TERRITORIOS DEL RESTO DE EUROPA",
+		"codigo" : "199",
+		"estado" : 1
+	},
+	{
+		"id" : 173,
+		"descripcion" : "PAISES BAJOS",
+		"codigo" : "121",
+		"estado" : 1
+	},
+	{
+		"id" : 174,
+		"descripcion" : "PAKISTAN",
+		"codigo" : "426",
+		"estado" : 1
+	},
+	{
+		"id" : 175,
+		"descripcion" : "PALAOS",
+		"codigo" : "516",
+		"estado" : 1
+	},
+	{
+		"id" : 176,
+		"descripcion" : "PALESTINA",
+		"codigo" : "449",
+		"estado" : 1
+	},
+	{
+		"id" : 177,
+		"descripcion" : "PANAMA",
+		"codigo" : "324",
+		"estado" : 1
+	},
+	{
+		"id" : 178,
+		"descripcion" : "PAPUA NUEVA GUINEA",
+		"codigo" : "505",
+		"estado" : 1
+	},
+	{
+		"id" : 179,
+		"descripcion" : "PARAGUAY",
+		"codigo" : "347",
+		"estado" : 1
+	},
+	{
+		"id" : 180,
+		"descripcion" : "PERU",
+		"codigo" : "348",
+		"estado" : 1
+	},
+	{
+		"id" : 181,
+		"descripcion" : "POLINESIA FRANCESA",
+		"codigo" : "520",
+		"estado" : 1
+	},
+	{
+		"id" : 182,
+		"descripcion" : "POLONIA",
+		"codigo" : "122",
+		"estado" : 1
+	},
+	{
+		"id" : 183,
+		"descripcion" : "PORTUGAL",
+		"codigo" : "123",
+		"estado" : 1
+	},
+	{
+		"id" : 184,
+		"descripcion" : "PUERTO RICO",
+		"codigo" : "391",
+		"estado" : 1
+	},
+	{
+		"id" : 185,
+		"descripcion" : "QATAR",
+		"codigo" : "427",
+		"estado" : 1
+	},
+	{
+		"id" : 186,
+		"descripcion" : "REINO UNIDO",
+		"codigo" : "125",
+		"estado" : 1
+	},
+	{
+		"id" : 187,
+		"descripcion" : "REP.DEMOCRATICA DEL CONGO",
+		"codigo" : "250",
+		"estado" : 1
+	},
+	{
+		"id" : 188,
+		"descripcion" : "REPUBLICA CENTROAFRICANA",
+		"codigo" : "235",
+		"estado" : 1
+	},
+	{
+		"id" : 189,
+		"descripcion" : "REPUBLICA CHECA",
+		"codigo" : "143",
+		"estado" : 1
+	},
+	{
+		"id" : 190,
+		"descripcion" : "REPUBLICA DOMINICANA",
+		"codigo" : "326",
+		"estado" : 1
+	},
+	{
+		"id" : 191,
+		"descripcion" : "REPUBLICA ESLOVACA",
+		"codigo" : "144",
+		"estado" : 1
+	},
+	{
+		"id" : 192,
+		"descripcion" : "REUNION",
+		"codigo" : "261",
+		"estado" : 1
+	},
+	{
+		"id" : 193,
+		"descripcion" : "RUANDA",
+		"codigo" : "237",
+		"estado" : 1
+	},
+	{
+		"id" : 194,
+		"descripcion" : "RUMANIA",
+		"codigo" : "128",
+		"estado" : 1
+	},
+	{
+		"id" : 195,
+		"descripcion" : "RUSIA",
+		"codigo" : "154",
+		"estado" : 1
+	},
+	{
+		"id" : 196,
+		"descripcion" : "SAHARA OCCIDENTAL",
+		"codigo" : "263",
+		"estado" : 1
+	},
+	{
+		"id" : 197,
+		"descripcion" : "SAMOA",
+		"codigo" : "507",
+		"estado" : 1
+	},
+	{
+		"id" : 198,
+		"descripcion" : "SAMOA AMERICANA",
+		"codigo" : "528",
+		"estado" : 1
+	},
+	{
+		"id" : 199,
+		"descripcion" : "SAN BARTOLOME",
+		"codigo" : "389",
+		"estado" : 1
+	},
+	{
+		"id" : 200,
+		"descripcion" : "SAN CRISTOBAL Y NIEVES",
+		"codigo" : "329",
+		"estado" : 1
+	},
+	{
+		"id" : 201,
+		"descripcion" : "SAN MARINO",
+		"codigo" : "129",
+		"estado" : 1
+	},
+	{
+		"id" : 202,
+		"descripcion" : "SAN MARTIN (PARTE FRANCESA)",
+		"codigo" : "385",
+		"estado" : 1
+	},
+	{
+		"id" : 203,
+		"descripcion" : "SAN PEDRO Y MIQUELON ",
+		"codigo" : "370",
+		"estado" : 1
+	},
+	{
+		"id" : 204,
+		"descripcion" : "SAN VICENTE Y LAS GRANADINAS",
+		"codigo" : "325",
+		"estado" : 1
+	},
+	{
+		"id" : 205,
+		"descripcion" : "SANTA HELENA",
+		"codigo" : "260",
+		"estado" : 1
+	},
+	{
+		"id" : 206,
+		"descripcion" : "SANTA LUCIA",
+		"codigo" : "328",
+		"estado" : 1
+	},
+	{
+		"id" : 207,
+		"descripcion" : "SANTA SEDE",
+		"codigo" : "130",
+		"estado" : 1
+	},
+	{
+		"id" : 208,
+		"descripcion" : "SANTO TOME Y PRINCIPE",
+		"codigo" : "238",
+		"estado" : 1
+	},
+	{
+		"id" : 209,
+		"descripcion" : "SENEGAL",
+		"codigo" : "239",
+		"estado" : 1
+	},
+	{
+		"id" : 210,
+		"descripcion" : "SERBIA",
+		"codigo" : "157",
+		"estado" : 1
+	},
+	{
+		"id" : 211,
+		"descripcion" : "SEYCHELLES",
+		"codigo" : "240",
+		"estado" : 1
+	},
+	{
+		"id" : 212,
+		"descripcion" : "SIERRA LEONA",
+		"codigo" : "241",
+		"estado" : 1
+	},
+	{
+		"id" : 213,
+		"descripcion" : "SINGAPUR",
+		"codigo" : "432",
+		"estado" : 1
+	},
+	{
+		"id" : 214,
+		"descripcion" : "SIRIA",
+		"codigo" : "433",
+		"estado" : 1
+	},
+	{
+		"id" : 215,
+		"descripcion" : "SOMALIA",
+		"codigo" : "242",
+		"estado" : 1
+	},
+	{
+		"id" : 216,
+		"descripcion" : "SRI LANKA",
+		"codigo" : "434",
+		"estado" : 1
+	},
+	{
+		"id" : 217,
+		"descripcion" : "SUDAFRICA",
+		"codigo" : "236",
+		"estado" : 1
+	},
+	{
+		"id" : 218,
+		"descripcion" : "SUDAN",
+		"codigo" : "243",
+		"estado" : 1
+	},
+	{
+		"id" : 219,
+		"descripcion" : "SUECIA",
+		"codigo" : "131",
+		"estado" : 1
+	},
+	{
+		"id" : 220,
+		"descripcion" : "SUIZA",
+		"codigo" : "132",
+		"estado" : 1
+	},
+	{
+		"id" : 221,
+		"descripcion" : "SURINAM",
+		"codigo" : "349",
+		"estado" : 1
+	},
+	{
+		"id" : 222,
+		"descripcion" : "SVALBARD Y JAN MAYEN",
+		"codigo" : "171",
+		"estado" : 1
+	},
+	{
+		"id" : 223,
+		"descripcion" : "SWAZILANDIA",
+		"codigo" : "244",
+		"estado" : 1
+	},
+	{
+		"id" : 224,
+		"descripcion" : "TADYIKISTAN",
+		"codigo" : "445",
+		"estado" : 1
+	},
+	{
+		"id" : 225,
+		"descripcion" : "TAILANDIA",
+		"codigo" : "435",
+		"estado" : 1
+	},
+	{
+		"id" : 226,
+		"descripcion" : "TANZANIA",
+		"codigo" : "245",
+		"estado" : 1
+	},
+	{
+		"id" : 227,
+		"descripcion" : "TIMOR ORIENTAL",
+		"codigo" : "517",
+		"estado" : 1
+	},
+	{
+		"id" : 228,
+		"descripcion" : "TOGO",
+		"codigo" : "247",
+		"estado" : 1
+	},
+	{
+		"id" : 229,
+		"descripcion" : "TOKELAU",
+		"codigo" : "525",
+		"estado" : 1
+	},
+	{
+		"id" : 230,
+		"descripcion" : "TONGA",
+		"codigo" : "508",
+		"estado" : 1
+	},
+	{
+		"id" : 231,
+		"descripcion" : "TRINIDAD Y TOBAGO",
+		"codigo" : "327",
+		"estado" : 1
+	},
+	{
+		"id" : 232,
+		"descripcion" : "TUNEZ",
+		"codigo" : "248",
+		"estado" : 1
+	},
+	{
+		"id" : 233,
+		"descripcion" : "TURKMENISTAN",
+		"codigo" : "446",
+		"estado" : 1
+	},
+	{
+		"id" : 234,
+		"descripcion" : "TURQUIA",
+		"codigo" : "436",
+		"estado" : 1
+	},
+	{
+		"id" : 235,
+		"descripcion" : "TUVALU",
+		"codigo" : "512",
+		"estado" : 1
+	},
+	{
+		"id" : 236,
+		"descripcion" : "UCRANIA",
+		"codigo" : "135",
+		"estado" : 1
+	},
+	{
+		"id" : 237,
+		"descripcion" : "UGANDA",
+		"codigo" : "249",
+		"estado" : 1
+	},
+	{
+		"id" : 238,
+		"descripcion" : "URUGUAY",
+		"codigo" : "350",
+		"estado" : 1
+	},
+	{
+		"id" : 239,
+		"descripcion" : "UZBEKISTAN",
+		"codigo" : "447",
+		"estado" : 1
+	},
+	{
+		"id" : 240,
+		"descripcion" : "VANUATU",
+		"codigo" : "509",
+		"estado" : 1
+	},
+	{
+		"id" : 241,
+		"descripcion" : "VIETNAM",
+		"codigo" : "437",
+		"estado" : 1
+	},
+	{
+		"id" : 242,
+		"descripcion" : "WALLIS Y FORTUNA",
+		"codigo" : "527",
+		"estado" : 1
+	},
+	{
+		"id" : 243,
+		"descripcion" : "YEMEN",
+		"codigo" : "441",
+		"estado" : 1
+	},
+	{
+		"id" : 244,
+		"descripcion" : "ZAMBIA",
+		"codigo" : "251",
+		"estado" : 1
+	},
+	{
+		"id" : 245,
+		"descripcion" : "ZIMBABWE",
+		"codigo" : "252",
+		"estado" : 1
+	}
+]

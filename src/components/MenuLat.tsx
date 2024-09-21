@@ -104,9 +104,13 @@ const MenuLat: React.FC = () => {
         <IonIcon slot="start" icon={text} />
         <IonLabel>11 - OBSERVACIONES</IonLabel>
       </IonItem>
+      <IonItem button routerLink={`/tabs/tab18/${ficha2}`}>
+        <IonIcon slot="start" icon={information} />
+        <IonLabel>12 -PERSONAS NO HACEN PARTE DEL HOGAR</IonLabel>
+      </IonItem>
       <IonItem button routerLink={`/tabs/tab16/${ficha2}`}>
         <IonIcon slot="start" icon={information} />
-        <IonLabel>12 - INFORMACION DE QUIEN RESPONDE LA ENCUENTA</IonLabel>
+        <IonLabel>13 - INFORMACION DE QUIEN RESPONDE LA ENCUENTA</IonLabel>
       </IonItem>
 
     </IonMenuToggle>
