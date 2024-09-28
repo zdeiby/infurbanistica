@@ -407,10 +407,10 @@ console.log(idintegrante, 'idintegrante')
         <div className=' shadow p-3 mb-5 bg-white rounded'>
           <IonList>
             <div className="row g-3 was-validated ">
-              <div className="col-sm-6">
+              {/* <div className="col-sm-6">
                 <label className="form-label" >Codigo SIBIS:</label>
                 <input type="number" onChange={(e) => handleInputChange(e, 'codigosibis')} value={items.codigosibis} placeholder="" className="form-control form-control-sm  " />
-              </div>
+              </div> */}
               {/* <div className="col-sm-6">
                                 <label className="form-label">Eliminar:</label>
                                 <select onChange={(e) => handleInputChange(e, 'tipodefamilia')} value={items.tipodefamilia} className="form-control form-control-sm" id="pregunta2_3" aria-describedby="validationServer04Feedback" required>
@@ -445,8 +445,12 @@ console.log(idintegrante, 'idintegrante')
               </div>
               {items.nacionalidad != '1' ? (
               <div className="col-sm-6">
+                {/* <label className="form-label">Condición migratoria:</label>
+                <input type="text" onChange={(e) => handleInputChange(e, 'condicionmigratoria')} value={items.condicionmigratoria} placeholder="" className="form-control form-control-sm  " />  */}
                 <label className="form-label">Condición migratoria:</label>
-                <input type="text" onChange={(e) => handleInputChange(e, 'condicionmigratoria')} value={items.condicionmigratoria} placeholder="" className="form-control form-control-sm  " />                              
+                  <select onChange={(e) => handleInputChange(e, 'condicionmigratoria')} value={items.condicionmigratoria} className="form-control form-control-sm" id="pregunta2_3" aria-describedby="validationServer04Feedback" >
+                  <option value=""> SELECCIONE </option><option value="1"> IRREGULAR </option><option value="3"> REFUGIADO </option><option value="2"> REGULAR </option><option value="4"> RETORNADO </option>  
+                  </select>                             
               </div> ) : ''}
               <div className="col-sm-6">
                 <label className="form-label">Tipo de documento:</label>
@@ -599,7 +603,47 @@ console.log(idintegrante, 'idintegrante')
               <div className="col-sm-6">
                 <label className="form-label">Actividad:</label>
                 <select onChange={(e) => handleInputChange(e, 'actividad')} value={items.actividad} className="form-control form-control-sm" id="pregunta2_3" aria-describedby="validationServer04Feedback" required>
-                  <option value=""> SELECCIONE </option><option value="13"> ACCIONES DE MENDICIDAD </option><option value="10"> AGRICULTOR </option><option value="2"> AMA DE CASA </option><option value="38"> ARTESANO </option><option value="32"> ARTISTA CALLEJERO  </option><option value="22"> ASEO EN CASAS DE FAMILIA </option><option value="34"> ATENCION AL CLIENTE </option><option value="39"> AYUDANTE DE CARGA Y DESCARGA </option><option value="28"> BISUTERIA </option><option value="15"> CARPINTERIA </option><option value="25"> COCINERO(A) - AUXILIAR </option><option value="36"> CONDUCTOR </option><option value="29"> CONFECCIONES  </option><option value="27"> CONSTRUCCION- ALBAÑIL-AYUDANTE </option><option value="30"> CUIDADOR CARROS - ALISTADOR </option><option value="24"> CUIDADOR(A) </option><option value="12"> EN BÚSQUEDA DE EMPLEO </option><option value="6"> ESTUDIA </option><option value="7"> ESTUDIA Y TRABAJA </option><option value="11"> JUBILADO </option><option value="17"> LIMPIA VIDRIOS </option><option value="16"> MECANICA </option><option value="26"> MESERO(A) </option><option value="8"> NINGUNA </option><option value="35"> OPERADOR LOGISTICO </option><option value="5"> PENSIONADO </option><option value="9"> PRIVADO DE LA LIBERTAD </option><option value="33"> RECICLAJE </option><option value="4"> RENTISTA </option><option value="3"> SERVICIO MILITAR </option><option value="23"> SERVICIOS DE BELLEZA -BARBERIA </option><option value="31"> SERVICIOS SEXUALES  </option><option value="14"> SIN DATO </option><option value="1"> TRABAJA </option><option value="19"> VENTA DE COMIDAS RAPIDAS </option><option value="20"> VENTA DE DULCES </option><option value="21"> VENTA DE MERCANCIA  </option><option value="18"> VENTA DE VERDURAS Y FRUTAS </option><option value="37"> VOLANTERO </option><option value="40"> ZAPATERÍA </option>
+                  <option value=""> SELECCIONE </option>
+                  <option value="13"> ACCIONES DE MENDICIDAD </option>
+                  <option value="10"> AGRICULTOR </option>
+                  <option value="2"> AMA DE CASA </option>
+                  {/* <option value="38"> ARTESANO </option>
+                  <option value="32"> ARTISTA CALLEJERO  </option>
+                  <option value="22"> ASEO EN CASAS DE FAMILIA </option>
+                  <option value="34"> ATENCION AL CLIENTE </option>
+                  <option value="39"> AYUDANTE DE CARGA Y DESCARGA </option>
+                  <option value="28"> BISUTERIA </option>
+                  <option value="15"> CARPINTERIA </option>
+                  <option value="25"> COCINERO(A) - AUXILIAR </option>
+                  <option value="36"> CONDUCTOR </option>
+                  <option value="29"> CONFECCIONES  </option>
+                  <option value="27"> CONSTRUCCION- ALBAÑIL-AYUDANTE </option>
+                  <option value="30"> CUIDADOR CARROS - ALISTADOR </option>
+                  <option value="24"> CUIDADOR(A) </option> */}
+                  <option value="12"> EN BÚSQUEDA DE EMPLEO </option>
+                  <option value="6"> ESTUDIA </option>
+                  <option value="7"> ESTUDIA Y TRABAJA </option>
+                  <option value="11"> JUBILADO </option>
+                  {/* <option value="17"> LIMPIA VIDRIOS </option>
+                  <option value="16"> MECANICA </option>
+                  <option value="26"> MESERO(A) </option> */}
+                  <option value="8"> NINGUNA </option>
+                  {/* <option value="35"> OPERADOR LOGISTICO </option> */}
+                  <option value="5"> PENSIONADO </option>
+                  <option value="9"> PRIVADO DE LA LIBERTAD </option>
+                  {/* <option value="33"> RECICLAJE </option> */}
+                  <option value="4"> RENTISTA </option>
+                  <option value="3"> SERVICIO MILITAR </option>
+                  {/* <option value="23"> SERVICIOS DE BELLEZA -BARBERIA </option>
+                  <option value="31"> SERVICIOS SEXUALES  </option> */}
+                  <option value="14"> SIN DATO </option>
+                  <option value="1"> TRABAJA </option>
+                  {/* <option value="19"> VENTA DE COMIDAS RAPIDAS </option>
+                  <option value="20"> VENTA DE DULCES </option>
+                  <option value="21"> VENTA DE MERCANCIA  </option>
+                  <option value="18"> VENTA DE VERDURAS Y FRUTAS </option>
+                  <option value="37"> VOLANTERO </option>
+                  <option value="40"> ZAPATERÍA </option> */}
                 </select>
               </div>
               <div className="col-sm-6">

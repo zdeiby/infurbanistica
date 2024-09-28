@@ -138,7 +138,7 @@ const Tab8: React.FC = () => {
           ninguno: '1',
           otro: '1',
           cualdocumentos: '',
-          unidadproductuva: '1',
+          unidadproductuva: '',
           cualunidadproductiva: '',
           fecharegistro: getCurrentDateTime(),
           usuario: localStorage.getItem('cedula'),
@@ -219,10 +219,17 @@ const Tab8: React.FC = () => {
   }, [items]);
 
   const validarCampos = () => {
-    const camposObligatorios = ['tenenciadelavivienda'];
+    const camposObligatorios = ['tenenciadelavivienda', 'unidadproductuva','cualunidadproductiva'];
     if (items.tenenciadelavivienda === '2' || items.tenenciadelavivienda === '3') {
       camposObligatorios.push('propietario');
     }
+    if (items.unidadproductuva === '1') {
+      let index = camposObligatorios.indexOf('cualunidadproductiva');
+      if (index !== -1) {
+          camposObligatorios.splice(index, 1);
+      }
+  }
+  
   
     for (let campo of camposObligatorios) {
       if (!items[campo]) {
@@ -386,7 +393,9 @@ const Tab8: React.FC = () => {
             <div className="col-sm">
                 <label className="form-label">La vivienda cuenta con unidad productiva:</label>
                 <select onChange={(e) => handleInputChange(e, 'unidadproductuva')} value={items.unidadproductuva} className="form-control form-control-sm" id="pregunta2_3" aria-describedby="validationServer04Feedback" required>
-                <option value="1"> NO </option><option value="2"> SI </option>
+                <option value=""> Seleccione </option>
+                <option value="1"> NO </option>
+                <option value="2"> SI </option>
                 </select>
               </div>
               {(items.unidadproductuva =='2')?

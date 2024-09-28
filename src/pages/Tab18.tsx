@@ -201,7 +201,7 @@ const [items2, setItems2] = useState({
         r.etpv
       FROM 
         infraccion_no_integrantes r
-    JOIN 
+   left JOIN 
         t1_paises naci ON r.nacionalidad = naci.id
       WHERE 
         r.idfiu=${params.ficha}
@@ -297,26 +297,26 @@ const [items2, setItems2] = useState({
   }, [items]);
   
   const validarCampos = () => {
-    // Campos obligatorios generales
-    const camposObligatorios = ['tipodefamilia'];
+    // // Campos obligatorios generales
+    // const camposObligatorios = ['tipodefamilia'];
   
-    // Si tipodefamilia es '2', agregar campos adicionales
-    if (items.tipodefamilia === '2') {
-      camposObligatorios.push('nacionalidad', 'tipodedocumento', 'numerodedocumento', 'nombre1', 'apellido1', 'fechadenacimiento', 'relacion');
+    // // Si tipodefamilia es '2', agregar campos adicionales
+    // if (items.tipodefamilia === '2') {
+    //   camposObligatorios.push('nacionalidad', 'tipodedocumento', 'numerodedocumento', 'nombre1', 'apellido1', 'fechadenacimiento', 'relacion');
   
-      // Si hay alguna condición específica para nacionalidad o relación, agregar más validaciones aquí
-      if (items.nacionalidad !== '1') {
-        camposObligatorios.push('condicionmigrante'); // Por ejemplo, si la persona no es de Colombia
-      }
-    }
+    //   // Si hay alguna condición específica para nacionalidad o relación, agregar más validaciones aquí
+    //   if (items.nacionalidad !== '1') {
+    //     camposObligatorios.push('condicionmigrante'); // Por ejemplo, si la persona no es de Colombia
+    //   }
+    // }
   
-    // Verificación de los campos obligatorios
-    for (let campo of camposObligatorios) {
-      if (!items[campo]) {
-        return false;
-      }
-    }
-    return true;
+    // // Verificación de los campos obligatorios
+    // for (let campo of camposObligatorios) {
+    //   if (!items[campo]) {
+    //     return false;
+    //   }
+    // }
+    // return true;
   };
   
   const generarNuevoIdParaFiu = async (idfiu) => {
@@ -346,9 +346,9 @@ const [items2, setItems2] = useState({
   };
   
   const enviar = async (database = db, event: React.MouseEvent<HTMLButtonElement>) => {
-    if (!validarCampos()) {
-      return;
-    }
+    // if (!validarCampos()) {
+    //   return;
+    // }
     event.preventDefault();
   
     try {
@@ -394,7 +394,7 @@ const [items2, setItems2] = useState({
       // Limpiar los campos
       setItems({
         idfiu: params.ficha,
-        tipodefamilia: '',
+        tipodefamilia: items.tipodefamilia,
         nacionalidad: '',
         condicionmigrante: '',
         etpv:'',
@@ -545,7 +545,7 @@ const [items2, setItems2] = useState({
             <div className="row g-3 was-validated ">
               <div className="col-sm">
                 <label className="form-label">¿En su hogar hay personas que residen en la unidad habitacional pero que no forman parte del hogar?</label>
-                <select onChange={(e) => handleInputChange(e, 'tipodefamilia')} value={items.tipodefamilia || ''} className="form-control form-control-sm" id="pregunta2_3" aria-describedby="validationServer04Feedback" required>
+                <select onChange={(e) => handleInputChange(e, 'tipodefamilia')} value={items.tipodefamilia} className="form-control form-control-sm" id="pregunta2_3" aria-describedby="validationServer04Feedback" >
                   <option value=""> SELECCIONE </option><option value="1"> NO </option><option value="2"> SI </option>
                 </select>
               </div>
@@ -568,7 +568,7 @@ const [items2, setItems2] = useState({
          <div className="row g-3 was-validated ">
              <div className="col-sm-12">
                  <label className="form-label">Nacionalidad:</label>
-                 <select onChange={(e) => handleInputChange(e, 'nacionalidad')} value={items.nacionalidad} className="form-control form-control-sm" id="pregunta2_3" aria-describedby="validationServer04Feedback" required>
+                 <select onChange={(e) => handleInputChange(e, 'nacionalidad')} value={items.nacionalidad} className="form-control form-control-sm" id="pregunta2_3" aria-describedby="validationServer04Feedback" >
                    <option value=""> SELECCIONE </option>
                    <option value="3"> AFGANISTAN </option>
                    <option value="4"> ALBANIA </option>
@@ -595,7 +595,7 @@ const [items2, setItems2] = useState({
         <div className="row g-3 was-validated ">
              <div className="col-sm-6">
                 <label className="form-label">Condición migratoria:</label>
-                <select onChange={(e) => handleInputChange(e, 'condicionmigrante')} value={items.condicionmigrante} className="form-control form-control-sm" id="pregunta2_3" aria-describedby="validationServer04Feedback" required>
+                <select onChange={(e) => handleInputChange(e, 'condicionmigrante')} value={items.condicionmigrante} className="form-control form-control-sm" id="pregunta2_3" aria-describedby="validationServer04Feedback" >
                 <option value=""> SELECCIONE </option><option value="1"> IRREGULAR </option><option value="3"> REFUGIADO </option><option value="2"> REGULAR </option><option value="4"> RETORNADO </option>  
                 </select>
                 </div>
@@ -606,7 +606,7 @@ const [items2, setItems2] = useState({
              <div className="row g-3 was-validated ">
              <div className="col-sm-6">
                 <label className="form-label">Ha iniciado trámites para el Estatuto Temporal de Protección para Migrantes Venezolanos (ETPV):</label>
-                <select onChange={(e) => handleInputChange(e, 'etpv')} value={items.etpv} className="form-control form-control-sm" id="pregunta2_3" aria-describedby="validationServer04Feedback" required>
+                <select onChange={(e) => handleInputChange(e, 'etpv')} value={items.etpv} className="form-control form-control-sm" id="pregunta2_3" aria-describedby="validationServer04Feedback" >
                 <option value=""> SELECCIONE </option><option value="1"> NO </option><option value="2"> SI </option>
                 </select>
                 </div>
@@ -619,7 +619,7 @@ const [items2, setItems2] = useState({
                   <div className="col-sm-6">
                     <label className="form-label">Tipo de documento:</label>
                     <select 
-                      onChange={(e) => handleInputChange(e, 'tipodedocumento')}  required
+                      onChange={(e) => handleInputChange(e, 'tipodedocumento')}  
                       value={items.tipodedocumento} 
                       className="form-control form-control-sm"
                       
@@ -660,7 +660,7 @@ const [items2, setItems2] = useState({
                         value={(items.tipodedocumento === '13' || items.tipodedocumento === '14') ? 'NO APLICA' : items.numerodedocumento} 
                         placeholder="" 
                         className="form-control form-control-sm"  
-                        required 
+                         
                         readOnly={items.tipodedocumento === '13' || items.tipodedocumento === '14'}  // Desactivar edición si es NO APLICA
                         />
 
@@ -671,7 +671,7 @@ const [items2, setItems2] = useState({
                 <div className="row g-3 was-validated ">
                     <div className="col-sm-3">
                     <label className="form-label" >Primer nombre:</label>
-                    <input type="text" onChange={(e) => handleInputChange(e, 'nombre1')} value={items.nombre1} placeholder="" className="form-control form-control-sm  " required />
+                    <input type="text" onChange={(e) => handleInputChange(e, 'nombre1')} value={items.nombre1} placeholder="" className="form-control form-control-sm  "  />
                     </div>
                     <div className="col-sm-3">
                     <label className="form-label" >Segundo nombre:</label>
@@ -679,7 +679,7 @@ const [items2, setItems2] = useState({
                     </div>
                     <div className="col-sm-3">
                     <label className="form-label" >Primer apellido:</label>
-                    <input type="text" onChange={(e) => handleInputChange(e, 'apellido1')} value={items.apellido1} placeholder="" className="form-control form-control-sm  " required />
+                    <input type="text" onChange={(e) => handleInputChange(e, 'apellido1')} value={items.apellido1} placeholder="" className="form-control form-control-sm  "  />
                     </div>
                     <div className="col-sm-3">
                     <label className="form-label" >Segundo apellido:</label>
@@ -690,7 +690,7 @@ const [items2, setItems2] = useState({
   
                <div className="col-sm">
                  <label className="form-label" >Fecha de nacimiento</label>
-                 <input type="date" onChange={(e) => handleInputChange(e, 'fechadenacimiento')} value={items.fechadenacimiento} placeholder="" className="form-control form-control-sm  "  required/>
+                 <input type="date" onChange={(e) => handleInputChange(e, 'fechadenacimiento')} value={items.fechadenacimiento} placeholder="" className="form-control form-control-sm  "  />
                </div>
                <div className="form-group col-sm">
                  <blockquote className="blockquote text-center">
@@ -709,7 +709,7 @@ const [items2, setItems2] = useState({
 
             <div className="col-sm-6">
                 <label className="form-label">Relación con unidad habitacional:</label>
-                <select onChange={(e) => handleInputChange(e, 'relacion')} value={items.relacion} className="form-control form-control-sm" id="pregunta2_3" aria-describedby="validationServer04Feedback" required>
+                <select onChange={(e) => handleInputChange(e, 'relacion')} value={items.relacion} className="form-control form-control-sm" id="pregunta2_3" aria-describedby="validationServer04Feedback" >
                 <option value=""> SELECCIONE </option><option value="2"> SI </option><option value="1"> NO </option>
                 </select>
                 </div>
